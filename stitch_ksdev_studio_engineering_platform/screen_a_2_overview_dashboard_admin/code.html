@@ -1,0 +1,528 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed":"#131b2e","surface-tint":"#0053db","border-hover":"#CBD5E1","secondary-fixed-dim":"#bec6e0","secondary-container":"#dae2fd","primary-fixed-dim":"#b4c5ff","text-secondary":"#475569","surface-variant":"#d3e4fe","inverse-primary":"#b4c5ff","surface-container-low":"#eff4ff","primary":"#004ac6","tertiary":"#006242","secondary-fixed":"#dae2fd","on-background":"#0b1c30","text-primary":"#0F172A","on-secondary-container":"#5c647a","on-tertiary-fixed-variant":"#005236","on-tertiary-container":"#bdffdb","surface-bright":"#f8f9ff","on-tertiary":"#ffffff","canvas-pure":"#FFFFFF","surface-muted":"#F1F5F9","error":"#ba1a1a","on-error-container":"#93000a","inverse-surface":"#213145","on-surface":"#0b1c30","surface":"#f8f9ff","surface-container-highest":"#d3e4fe","tertiary-container":"#007d55","text-muted":"#64748B","primary-container":"#2563eb","background":"#f8f9ff","status-danger":"#DC2626","on-primary-fixed":"#00174b","surface-subtle":"#F8FAFC","on-primary-fixed-variant":"#003ea8","border-subtle":"#E2E8F0","error-container":"#ffdad6","accent-primary-hover":"#1D4ED8","on-error":"#ffffff","tertiary-fixed":"#6ffbbe","accent-tint":"#EFF6FF","on-secondary-fixed-variant":"#3f465c","outline":"#737686","surface-container-lowest":"#ffffff","secondary":"#565e74","surface-container":"#e5eeff","on-primary-container":"#eeefff","primary-fixed":"#dbe1ff","on-surface-variant":"#434655","on-secondary":"#ffffff","surface-container-high":"#dce9ff","on-primary":"#ffffff","surface-dim":"#cbdbf5","tertiary-fixed-dim":"#4edea3","outline-variant":"#c3c6d7","on-tertiary-fixed":"#002113","accent-devops":"#4F46E5","status-warning":"#D97706","inverse-on-surface":"#eaf1ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","space-lg":"1.5rem","space-md":"1rem","space-xl":"2rem","space-xs":"0.25rem","margin":"1.5rem","gutter-lg":"2rem","gutter":"1.5rem","gutter-sm":"1rem","margin-desktop":"2rem","margin-mobile":"1rem"},"fontFamily":{"body-default":["Inter"],"display-hero":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-lead":["Inter"],"display-hero-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"ui-action":["Inter"],"code-meta":["JetBrains Mono"],"code-badge":["JetBrains Mono"],"ui-caption":["Inter"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"body-default":["1rem",{"lineHeight":"1.6","letterSpacing":"0em","fontWeight":"400"}],"display-hero":["3.5rem",{"lineHeight":"1.1","letterSpacing":"-0.03em","fontWeight":"800"}],"headline-lg":["2.25rem",{"lineHeight":"1.2","letterSpacing":"-0.025em","fontWeight":"700"}],"body-lead":["1.125rem",{"lineHeight":"1.65","letterSpacing":"0em","fontWeight":"400"}],"display-hero-mobile":["2.25rem",{"lineHeight":"1.15","letterSpacing":"-0.025em","fontWeight":"700"}],"body-sm":["0.875rem",{"lineHeight":"1.55","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["1.75rem",{"lineHeight":"1.25","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["1.125rem",{"lineHeight":"1.4","letterSpacing":"-0.01em","fontWeight":"600"}],"ui-action":["0.875rem",{"lineHeight":"1.25","letterSpacing":"0.01em","fontWeight":"600"}],"code-meta":["0.8125rem",{"lineHeight":"1.4","letterSpacing":"0em","fontWeight":"400"}],"code-badge":["0.75rem",{"lineHeight":"1.2","letterSpacing":"0.04em","fontWeight":"500"}],"ui-caption":["0.75rem",{"lineHeight":"1.3","letterSpacing":"0.01em","fontWeight":"500"}],"headline-md":["1.375rem",{"lineHeight":"1.3","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface-subtle font-body-default text-body-default text-text-primary antialiased min-h-screen"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-canvas-pure z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center justify-between"><a class="flex items-center gap-space-xs no-underline" data-path="overview-dashboard" href="#"><span class="font-headline-md text-headline-md font-bold tracking-tight text-text-primary">ksdev<span class="text-primary-container">_</span></span></a><span class="font-code-badge text-code-badge px-space-xs py-0.5 rounded bg-surface-muted text-text-secondary">ADMIN CMS v2.4</span></div><div class="px-space-md py-space-sm"><nav class="flex flex-col gap-1" data-active-classes="bg-accent-tint text-primary font-bold rounded-lg"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2.5 transition-colors bg-accent-tint text-primary font-bold rounded-lg" data-path="overview-dashboard" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span>Overview Dashboard</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="site-copy-and-settings" href="#"><span class="material-symbols-outlined text-[18px]">tune</span>Site Copy &amp; Settings</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="services-and-pricing" href="#"><span class="material-symbols-outlined text-[18px]">payments</span>Services &amp; Pricing</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="projects-directory" href="#"><span class="material-symbols-outlined text-[18px]">folder</span>Projects Directory</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="new-project" href="#"><span class="material-symbols-outlined text-[18px]">add_circle</span>New Project</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="tech-stack-catalog" href="#"><span class="material-symbols-outlined text-[18px]">terminal</span>Tech Stack Catalog</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="admin-users-and-roles" href="#"><span class="material-symbols-outlined text-[18px]">shield_person</span>Admin Users &amp; Roles</a></nav></div></div><div class="p-space-md bg-canvas-pure flex flex-col gap-space-md"><div class="p-space-sm rounded-lg bg-surface-muted flex flex-col gap-1.5"><div class="flex items-center justify-between font-code-meta text-code-meta text-text-secondary"><span class="flex items-center gap-1.5"><span class="h-2 w-2 rounded-full bg-tertiary-container animate-pulse"></span>API: Online</span><span class="text-tertiary font-medium">200 OK</span></div><div class="flex items-center justify-between font-code-meta text-code-meta text-text-secondary"><span class="flex items-center gap-1.5"><span class="h-2 w-2 rounded-full bg-primary-container"></span>DB: Supabase</span><span class="text-primary font-medium">Connected</span></div></div><a class="flex items-center justify-center gap-space-xs w-full py-2 px-space-md rounded-lg text-ui-action font-ui-action text-text-secondary hover:bg-surface-muted hover:text-status-danger transition-colors" data-path="admin-login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span>Log Out</a></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-canvas-pure/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-lg"><div class="flex items-center gap-space-sm font-code-meta text-code-meta text-text-muted"><span class="text-text-secondary">ksdev</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-text-primary font-medium font-ui-action text-ui-action">Console</span></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-1 px-3 py-1.5 rounded-lg text-ui-action font-ui-action text-text-primary bg-canvas-pure hover:bg-surface-muted hover:text-primary transition-colors" href="/" target="_blank"><span class="material-symbols-outlined text-[16px]">north_east</span>View Live Site</a><div class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge"><span class="h-1.5 w-1.5 rounded-full bg-status-warning"></span>ENV: PROD</div><div class="flex items-center gap-space-sm pl-space-xs"><div class="hidden sm:flex flex-col text-right"><span class="text-ui-action font-ui-action text-text-primary leading-tight">Admin Principal</span><span class="font-code-badge text-code-badge text-text-muted">admin@ksdev.studio</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface-subtle px-gutter-lg py-space-xl"><div class="flex flex-col w-full gap-space-xl">
+<!-- Top Meta & Title Banner -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-code-badge text-code-badge text-text-secondary uppercase tracking-wider font-semibold">
+          SYSTEM STATUS /// OPERATIONAL CONTROL CENTER
+        </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg font-bold text-text-primary tracking-tight">
+        Studio Overview &amp; Funnel Status
+      </h1>
+<p class="font-body-sm text-body-sm text-text-secondary">
+        Autonomous telemetry, client intake pipelines, and global live availability controls.
+      </p>
+</div>
+<!-- Quick Meta Pill -->
+<div class="flex items-center gap-3 self-start md:self-auto bg-surface-muted px-3.5 py-2 rounded-xl shadow-sm">
+<div class="flex items-center gap-1.5 font-code-meta text-code-meta text-text-primary">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">schedule</span>
+<span>UTC 14:28:19</span>
+</div>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-code-badge text-code-badge uppercase text-primary font-semibold">Build #488-REL</span>
+</div>
+</div>
+<!-- Interactive Master Toggle Card: Live Availability Controller -->
+<section class="relative bg-canvas-pure rounded-xl p-space-lg shadow-sm overflow-hidden" style="box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04), 0 1px 2px -1px rgba(15, 23, 42, 0.02);">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-tertiary-container"></div>
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg pl-space-xs">
+<!-- Left side info -->
+<div class="flex items-start gap-space-md max-w-2xl">
+<div class="mt-1 flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-xl bg-tertiary/10 text-tertiary">
+<span class="relative flex h-3.5 w-3.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-tertiary-container"></span>
+</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex flex-wrap items-center gap-2.5">
+<span class="font-headline-sm text-headline-sm font-bold text-text-primary">
+              Public Availability Status: <span class="text-tertiary" id="availability-label">ACTIVE</span>
+</span>
+<span class="px-2 py-0.5 rounded-full font-code-badge text-code-badge bg-tertiary/10 text-tertiary font-medium">
+              Accepting Rush SOWs
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+            Controls the real-time green pulse indicator and “Available for New Projects” badge across all public funnel screens, hero sections, and Fiverr checkout redirects.
+          </p>
+</div>
+</div>
+<!-- Right side switch & metadata -->
+<div class="flex flex-col sm:flex-row lg:flex-col items-start sm:items-center lg:items-end gap-3 w-full lg:w-auto pt-3 lg:pt-0">
+<div class="flex items-center gap-3">
+<span class="font-code-meta text-code-meta text-text-muted">STATUS TOGGLE</span>
+<button aria-checked="true" class="relative inline-flex h-8 w-14 flex-shrink-0 cursor-pointer rounded-full bg-tertiary-container transition-colors duration-200 ease-in-out focus:outline-none" id="toggle-availability" role="switch" type="button">
+<span class="sr-only">Toggle public availability</span>
+<span class="translate-x-7 pointer-events-none inline-block h-6 w-6 transform rounded-full bg-canvas-pure shadow-md transition duration-200 ease-in-out mt-1 ml-1" id="toggle-knob"></span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 font-code-meta text-code-meta text-text-muted">
+<span class="material-symbols-outlined text-[14px]">history</span>
+<span>Updated today at 09:42 UTC by Admin</span>
+</div>
+</div>
+</div>
+</section>
+<!-- KPI Metric Cards (4-column grid) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-canvas-pure rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:-translate-y-0.5 transition-all duration-150 group" style="box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);">
+<div class="flex items-start justify-between">
+<span class="font-ui-caption text-ui-caption text-text-muted font-medium uppercase tracking-wider">Published Projects</span>
+<span class="p-1.5 rounded-lg bg-surface-muted text-primary group-hover:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+</span>
+</div>
+<div class="flex flex-col gap-1 mt-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-display-hero-mobile text-display-hero-mobile font-bold text-text-primary tracking-tight">12</span>
+<span class="inline-flex items-center font-code-badge text-code-badge font-semibold text-tertiary bg-tertiary/10 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px] mr-0.5">trending_up</span>+16.6%
+          </span>
+</div>
+<span class="font-code-meta text-code-meta text-primary font-medium">+2 published this month</span>
+<p class="font-body-sm text-body-sm text-text-muted truncate mt-1">Active in public portfolio &amp; case studies</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-canvas-pure rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:-translate-y-0.5 transition-all duration-150 group" style="box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);">
+<div class="flex items-start justify-between">
+<span class="font-ui-caption text-ui-caption text-text-muted font-medium uppercase tracking-wider">Draft &amp; Queued</span>
+<span class="p-1.5 rounded-lg bg-surface-muted text-status-warning group-hover:bg-amber-100 transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit_document</span>
+</span>
+</div>
+<div class="flex flex-col gap-1 mt-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-display-hero-mobile text-display-hero-mobile font-bold text-text-primary tracking-tight">3</span>
+<span class="font-code-badge text-code-badge text-text-secondary bg-surface-muted px-2 py-0.5 rounded-full font-medium">Awaiting Review</span>
+</div>
+<span class="font-code-meta text-code-meta text-status-warning font-medium">1 pending media upload</span>
+<p class="font-body-sm text-body-sm text-text-muted truncate mt-1">Staging branch: <code class="font-code-badge text-text-secondary">feature/v2-showcase</code></p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-canvas-pure rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:-translate-y-0.5 transition-all duration-150 group" style="box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);">
+<div class="flex items-start justify-between">
+<span class="font-ui-caption text-ui-caption text-text-muted font-medium uppercase tracking-wider">Service Packages</span>
+<span class="p-1.5 rounded-lg bg-surface-muted text-accent-devops group-hover:bg-indigo-100 transition-colors">
+<span class="material-symbols-outlined text-[18px]">layers</span>
+</span>
+</div>
+<div class="flex flex-col gap-1 mt-space-md">
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg font-bold text-text-primary tracking-tight">3 Active</span>
+<span class="font-code-badge text-code-badge text-text-secondary">/ 1 Staged</span>
+</div>
+<span class="font-code-meta text-code-meta text-text-primary font-medium">Full-Stack, Cloud, Mobile</span>
+<p class="font-body-sm text-body-sm text-text-muted truncate mt-1">Coming: AI Micro-Services Tier</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-canvas-pure rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:-translate-y-0.5 transition-all duration-150 group" style="box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);">
+<div class="flex items-start justify-between">
+<span class="font-ui-caption text-ui-caption text-text-muted font-medium uppercase tracking-wider">Funnel Inquiries (30d)</span>
+<span class="p-1.5 rounded-lg bg-surface-muted text-tertiary-container group-hover:bg-emerald-100 transition-colors">
+<span class="material-symbols-outlined text-[18px]">conversion_path</span>
+</span>
+</div>
+<div class="flex flex-col gap-1 mt-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-display-hero-mobile text-display-hero-mobile font-bold text-text-primary tracking-tight">48</span>
+<span class="font-code-badge text-code-badge text-text-secondary">SOWs Built</span>
+</div>
+<div class="flex items-center gap-1.5 font-code-meta text-code-meta text-tertiary font-medium">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary-container"></span>
+<span>1.4h avg reply (&lt;2h SLA met)</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted truncate mt-1">100% on-time milestone delivery</p>
+</div>
+</div>
+</section>
+<!-- Two-Column Master Work Area -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Inquiries & SOW Briefs (approx. 60% -> col-span-7) -->
+<section class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="bg-canvas-pure rounded-xl shadow-sm overflow-hidden flex flex-col" style="box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);">
+<!-- Table Header Panel -->
+<div class="p-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm bg-canvas-pure">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm font-bold text-text-primary tracking-tight">
+              Recent Studio Inquiries &amp; SOW Briefs
+            </h2>
+<p class="font-code-meta text-code-meta text-text-muted">
+              Live automated leads routed through custom contact forms &amp; Fiverr Escrow
+            </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-code-badge text-code-badge px-2.5 py-1 rounded bg-surface-muted text-text-secondary font-medium">
+              4 Pending Review
+            </span>
+</div>
+</div>
+<!-- Table Container -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-subtle font-code-badge text-code-badge text-text-secondary uppercase">
+<th class="py-3 px-space-md font-semibold">Client / System</th>
+<th class="py-3 px-space-sm font-semibold">Domain</th>
+<th class="py-3 px-space-sm font-semibold">Budget Tier</th>
+<th class="py-3 px-space-sm font-semibold">Target</th>
+<th class="py-3 px-space-sm font-semibold">Status</th>
+<th class="py-3 px-space-md text-right font-semibold">Action</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-text-primary">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-subtle transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-variant text-primary flex items-center justify-center font-bold text-ui-caption font-ui-caption flex-shrink-0">
+                      AL
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-ui-action text-ui-action font-semibold text-text-primary group-hover:text-primary transition-colors truncate">
+                        Apex Logistics Core
+                      </span>
+<span class="font-code-meta text-code-meta text-text-muted">apex-logistics.io</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="font-code-badge text-code-badge text-text-secondary bg-surface-muted px-2 py-0.5 rounded">
+                    Cloud &amp; K8s
+                  </span>
+</td>
+<td class="py-3.5 px-space-sm font-code-meta text-code-meta text-text-primary font-medium">
+                  $10k+ Retainer
+                </td>
+<td class="py-3.5 px-space-sm font-code-meta text-code-meta">
+<span class="text-status-danger font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span>Rush (&lt;2w)
+                  </span>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-code-badge text-code-badge bg-accent-tint text-primary font-medium">
+                    Reviewing SOW
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<button class="font-ui-action text-ui-action font-medium text-primary hover:text-accent-primary-hover hover:underline inline-flex items-center gap-1">
+                    Open Brief
+                    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-subtle transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-tertiary-container/10 text-tertiary flex items-center justify-center font-bold text-ui-caption font-ui-caption flex-shrink-0">
+                      HT
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-ui-action text-ui-action font-semibold text-text-primary group-hover:text-primary transition-colors truncate">
+                        Hyperion Time-Series
+                      </span>
+<span class="font-code-meta text-code-meta text-text-muted">hyperion-lab.de</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="font-code-badge text-code-badge text-text-secondary bg-surface-muted px-2 py-0.5 rounded">
+                    Full-Stack Custom
+                  </span>
+</td>
+<td class="py-3.5 px-space-sm font-code-meta text-code-meta text-text-primary font-medium">
+                  $3k - $10k
+                </td>
+<td class="py-3.5 px-space-sm font-code-meta text-code-meta text-text-secondary">
+                  Standard
+                </td>
+<td class="py-3.5 px-space-sm">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-code-badge text-code-badge bg-tertiary/10 text-tertiary font-medium">
+                    Fiverr Escrow Locked
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<button class="font-ui-action text-ui-action font-medium text-text-primary hover:text-primary hover:underline inline-flex items-center gap-1">
+                    View Gig
+                    <span class="material-symbols-outlined text-[14px]">north_east</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-subtle transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-ui-caption font-ui-caption flex-shrink-0">
+                      VH
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-ui-action text-ui-action font-semibold text-text-primary group-hover:text-primary transition-colors truncate">
+                        Vanguard Health Clinic
+                      </span>
+<span class="font-code-meta text-code-meta text-text-muted">vanguard-care.org</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="font-code-badge text-code-badge text-text-secondary bg-surface-muted px-2 py-0.5 rounded">
+                    WebRTC / React
+                  </span>
+</td>
+<td class="py-3.5 px-space-sm font-code-meta text-code-meta text-text-primary font-medium">
+                  $3k - $10k
+                </td>
+<td class="py-3.5 px-space-sm font-code-meta text-code-meta text-text-secondary">
+                  Flexible
+                </td>
+<td class="py-3.5 px-space-sm">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-code-badge text-code-badge bg-surface-muted text-text-secondary font-medium">
+                    SOW Sent
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<button class="font-ui-action text-ui-action font-medium text-primary hover:text-accent-primary-hover hover:underline inline-flex items-center gap-1">
+                    Open Brief
+                    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-subtle transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-amber-100 text-status-warning flex items-center justify-center font-bold text-ui-caption font-ui-caption flex-shrink-0">
+                      SM
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-ui-action text-ui-action font-semibold text-text-primary group-hover:text-primary transition-colors truncate">
+                        Solstice Micro-Trading
+                      </span>
+<span class="font-code-meta text-code-meta text-text-muted">solstice-quant.ch</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="font-code-badge text-code-badge text-text-secondary bg-surface-muted px-2 py-0.5 rounded">
+                    Rust / Golang API
+                  </span>
+</td>
+<td class="py-3.5 px-space-sm font-code-meta text-code-meta text-text-primary font-medium">
+                  $10k+ Retainer
+                </td>
+<td class="py-3.5 px-space-sm font-code-meta text-code-meta">
+<span class="text-status-danger font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span>Rush
+                  </span>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-code-badge text-code-badge bg-amber-50 text-status-warning font-medium">
+                    Engineering Review
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<button class="font-ui-action text-ui-action font-medium text-primary hover:text-accent-primary-hover hover:underline inline-flex items-center gap-1">
+                    Open Brief
+                    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer Pagination / Link -->
+<div class="p-space-md bg-surface-subtle flex items-center justify-between">
+<span class="font-code-meta text-code-meta text-text-secondary">Showing 4 of 48 active pipeline briefs</span>
+<a class="font-ui-action text-ui-action font-semibold text-primary hover:text-accent-primary-hover inline-flex items-center gap-1" data-path="projects-directory" href="#">
+            Browse All Inquiries &amp; SOWs
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Studio Funnel Mini Performance Gauge (Visual Enrichment) -->
+<div class="bg-canvas-pure rounded-xl p-space-md shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md" style="box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);">
+<div class="flex items-center gap-space-md">
+<!-- Sparkline representation inline SVG -->
+<div class="w-12 h-12 rounded-xl bg-accent-tint flex items-center justify-center text-primary flex-shrink-0">
+<svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 24 24">
+<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+<polyline points="16 7 22 7 22 13"></polyline>
+</svg>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-text-primary">Fiverr Escrow &amp; Direct Funnel Velocity</span>
+<span class="font-body-sm text-body-sm text-text-muted">30-day conversion rate holding at 38.4% from landing page inquiry to signed contract.</span>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<span class="font-code-badge text-code-badge bg-tertiary/10 text-tertiary px-3 py-1.5 rounded-lg font-semibold">
+            Health: OPTIMAL
+          </span>
+</div>
+</div>
+</section>
+<!-- Right Column: Quick Studio Actions & System Health (approx. 40% -> col-span-5) -->
+<section class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Quick Studio Actions Panel -->
+<div class="bg-canvas-pure rounded-xl p-space-md shadow-sm flex flex-col gap-space-md" style="box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm font-bold text-text-primary tracking-tight">
+            Quick Studio Actions
+          </h2>
+<span class="font-code-badge text-code-badge text-text-muted">FAST-TRACK</span>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- Primary CTA Button (Royal Cobalt) -->
+<a class="w-full flex items-center justify-between px-space-md py-3 rounded-lg bg-primary-container text-canvas-pure hover:bg-accent-primary-hover transition-colors font-ui-action text-ui-action font-semibold shadow-sm" data-path="new-project" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+              + New Case Study / Project
+            </span>
+<span class="font-code-badge text-code-badge text-canvas-pure/80">CMD+N</span>
+</a>
+<!-- Outline White Action 1 -->
+<a class="w-full flex items-center justify-between px-space-md py-2.5 rounded-lg bg-canvas-pure text-text-primary hover:bg-surface-subtle transition-colors font-ui-action text-ui-action font-medium shadow-sm" data-path="services-and-pricing" href="#" style="box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-text-secondary">payments</span>
+              Edit Fiverr Pricing Tiers
+            </span>
+<span class="material-symbols-outlined text-[16px] text-text-muted">chevron_right</span>
+</a>
+<!-- Outline White Action 2 -->
+<a class="w-full flex items-center justify-between px-space-md py-2.5 rounded-lg bg-canvas-pure text-text-primary hover:bg-surface-subtle transition-colors font-ui-action text-ui-action font-medium shadow-sm" data-path="site-copy-and-settings" href="#" style="box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-text-secondary">format_quote</span>
+              Update Hero Funnel Copy
+            </span>
+<span class="material-symbols-outlined text-[16px] text-text-muted">chevron_right</span>
+</a>
+<!-- Outline White Action 3 -->
+<a class="w-full flex items-center justify-between px-space-md py-2.5 rounded-lg bg-canvas-pure text-text-primary hover:bg-surface-subtle transition-colors font-ui-action text-ui-action font-medium shadow-sm" data-path="tech-stack-catalog" href="#" style="box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-text-secondary">terminal</span>
+              Manage Tech Stack Tags
+            </span>
+<span class="material-symbols-outlined text-[16px] text-text-muted">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- System Telemetry & Database Connection Widget -->
+<div class="bg-canvas-pure rounded-xl p-space-md shadow-sm flex flex-col gap-space-md" style="box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-text-secondary">dns</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-text-primary">
+              System Telemetry &amp; Infra
+            </h3>
+</div>
+<span class="flex items-center gap-1 font-code-badge text-code-badge text-tertiary">
+<span class="h-2 w-2 rounded-full bg-tertiary-container animate-pulse"></span>
+            ALL HEALTHY
+          </span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Telemetry Row 1: DB -->
+<div class="p-3 rounded-lg bg-surface-subtle flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-ui-action text-ui-action font-medium text-text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">database</span>
+                PostgreSQL Database
+              </span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-tertiary/10 text-tertiary font-medium">
+                18ms latency
+              </span>
+</div>
+<div class="flex items-center justify-between font-code-meta text-code-meta text-text-muted">
+<span>Supabase US-East (Virginia)</span>
+<span>Pool: 8/60 conn</span>
+</div>
+</div>
+<!-- Telemetry Row 2: Edge Cache -->
+<div class="p-3 rounded-lg bg-surface-subtle flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-ui-action text-ui-action font-medium text-text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-accent-devops">cloud_sync</span>
+                Edge CDN &amp; Caching
+              </span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-accent-tint text-primary font-medium">
+                99.98% hit ratio
+              </span>
+</div>
+<div class="flex items-center justify-between font-code-meta text-code-meta text-text-muted">
+<span>Cloudflare Enterprise Edge</span>
+<span>SSL: TLS 1.3 Strict</span>
+</div>
+</div>
+<!-- Telemetry Row 3: Admin Session -->
+<div class="p-3 rounded-lg bg-surface-subtle flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-ui-action text-ui-action font-medium text-text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-text-secondary">shield_person</span>
+                Active Sessions
+              </span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-medium">
+                1 Principal Online
+              </span>
+</div>
+<div class="flex items-center justify-between font-code-meta text-code-meta text-text-muted">
+<span>Auth Method: Hardware Key (FIDO2)</span>
+<span>IP: 198.51.100.24</span>
+</div>
+</div>
+</div>
+<!-- Latency Line Indicator (Inline Visual Component) -->
+<div class="pt-1 flex flex-col gap-1">
+<div class="flex items-center justify-between font-code-meta text-code-meta text-text-muted">
+<span>Core Cluster Health</span>
+<span class="text-tertiary font-semibold">100% Operational</span>
+</div>
+<div class="w-full bg-surface-muted h-1.5 rounded-full overflow-hidden flex">
+<div class="bg-tertiary-container h-full w-[94%]"></div>
+<div class="bg-primary h-full w-[6%]"></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Simple interactive toggle behavior for Live Availability controller
+  const toggleBtn = document.getElementById('toggle-availability');
+  const toggleKnob = document.getElementById('toggle-knob');
+  const availabilityLabel = document.getElementById('availability-label');
+
+  if (toggleBtn && toggleKnob && availabilityLabel) {
+    let isActive = true;
+
+    toggleBtn.addEventListener('click', () => {
+      isActive = !isActive;
+      toggleBtn.setAttribute('aria-checked', isActive.toString());
+
+      if (isActive) {
+        toggleBtn.classList.remove('bg-secondary');
+        toggleBtn.classList.add('bg-tertiary-container');
+        toggleKnob.classList.remove('translate-x-0');
+        toggleKnob.classList.add('translate-x-7');
+        availabilityLabel.textContent = 'ACTIVE';
+        availabilityLabel.classList.remove('text-secondary');
+        availabilityLabel.classList.add('text-tertiary');
+      } else {
+        toggleBtn.classList.remove('bg-tertiary-container');
+        toggleBtn.classList.add('bg-secondary');
+        toggleKnob.classList.remove('translate-x-7');
+        toggleKnob.classList.add('translate-x-0');
+        availabilityLabel.textContent = 'PAUSED';
+        availabilityLabel.classList.remove('text-tertiary');
+        availabilityLabel.classList.add('text-secondary');
+      }
+    });
+  }
+</script></main></div></body></html>

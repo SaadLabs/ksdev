@@ -1,0 +1,817 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed":"#131b2e","surface-tint":"#0053db","border-hover":"#CBD5E1","secondary-fixed-dim":"#bec6e0","secondary-container":"#dae2fd","primary-fixed-dim":"#b4c5ff","text-secondary":"#475569","surface-variant":"#d3e4fe","inverse-primary":"#b4c5ff","surface-container-low":"#eff4ff","primary":"#004ac6","tertiary":"#006242","secondary-fixed":"#dae2fd","on-background":"#0b1c30","text-primary":"#0F172A","on-secondary-container":"#5c647a","on-tertiary-fixed-variant":"#005236","on-tertiary-container":"#bdffdb","surface-bright":"#f8f9ff","on-tertiary":"#ffffff","canvas-pure":"#FFFFFF","surface-muted":"#F1F5F9","error":"#ba1a1a","on-error-container":"#93000a","inverse-surface":"#213145","on-surface":"#0b1c30","surface":"#f8f9ff","surface-container-highest":"#d3e4fe","tertiary-container":"#007d55","text-muted":"#64748B","primary-container":"#2563eb","background":"#f8f9ff","status-danger":"#DC2626","on-primary-fixed":"#00174b","surface-subtle":"#F8FAFC","on-primary-fixed-variant":"#003ea8","border-subtle":"#E2E8F0","error-container":"#ffdad6","accent-primary-hover":"#1D4ED8","on-error":"#ffffff","tertiary-fixed":"#6ffbbe","accent-tint":"#EFF6FF","on-secondary-fixed-variant":"#3f465c","outline":"#737686","surface-container-lowest":"#ffffff","secondary":"#565e74","surface-container":"#e5eeff","on-primary-container":"#eeefff","primary-fixed":"#dbe1ff","on-surface-variant":"#434655","on-secondary":"#ffffff","surface-container-high":"#dce9ff","on-primary":"#ffffff","surface-dim":"#cbdbf5","tertiary-fixed-dim":"#4edea3","outline-variant":"#c3c6d7","on-tertiary-fixed":"#002113","accent-devops":"#4F46E5","status-warning":"#D97706","inverse-on-surface":"#eaf1ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","space-lg":"1.5rem","space-md":"1rem","space-xl":"2rem","space-xs":"0.25rem","margin":"1.5rem","gutter-lg":"2rem","gutter":"1.5rem","gutter-sm":"1rem","margin-desktop":"2rem","margin-mobile":"1rem"},"fontFamily":{"body-default":["Inter"],"display-hero":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-lead":["Inter"],"display-hero-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"ui-action":["Inter"],"code-meta":["JetBrains Mono"],"code-badge":["JetBrains Mono"],"ui-caption":["Inter"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"body-default":["1rem",{"lineHeight":"1.6","letterSpacing":"0em","fontWeight":"400"}],"display-hero":["3.5rem",{"lineHeight":"1.1","letterSpacing":"-0.03em","fontWeight":"800"}],"headline-lg":["2.25rem",{"lineHeight":"1.2","letterSpacing":"-0.025em","fontWeight":"700"}],"body-lead":["1.125rem",{"lineHeight":"1.65","letterSpacing":"0em","fontWeight":"400"}],"display-hero-mobile":["2.25rem",{"lineHeight":"1.15","letterSpacing":"-0.025em","fontWeight":"700"}],"body-sm":["0.875rem",{"lineHeight":"1.55","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["1.75rem",{"lineHeight":"1.25","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["1.125rem",{"lineHeight":"1.4","letterSpacing":"-0.01em","fontWeight":"600"}],"ui-action":["0.875rem",{"lineHeight":"1.25","letterSpacing":"0.01em","fontWeight":"600"}],"code-meta":["0.8125rem",{"lineHeight":"1.4","letterSpacing":"0em","fontWeight":"400"}],"code-badge":["0.75rem",{"lineHeight":"1.2","letterSpacing":"0.04em","fontWeight":"500"}],"ui-caption":["0.75rem",{"lineHeight":"1.3","letterSpacing":"0.01em","fontWeight":"500"}],"headline-md":["1.375rem",{"lineHeight":"1.3","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface-subtle font-body-default text-body-default text-text-primary antialiased min-h-screen"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-canvas-pure z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center justify-between"><a class="flex items-center gap-space-xs no-underline" data-path="overview-dashboard" href="#"><span class="font-headline-md text-headline-md font-bold tracking-tight text-text-primary">ksdev<span class="text-primary-container">_</span></span></a><span class="font-code-badge text-code-badge px-space-xs py-0.5 rounded bg-surface-muted text-text-secondary">ADMIN CMS v2.4</span></div><div class="px-space-md py-space-sm"><nav class="flex flex-col gap-1" data-active-classes="bg-accent-tint text-primary font-bold rounded-lg"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="overview-dashboard" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span>Overview Dashboard</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="site-copy-and-settings" href="#"><span class="material-symbols-outlined text-[18px]">tune</span>Site Copy &amp; Settings</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="services-and-pricing" href="#"><span class="material-symbols-outlined text-[18px]">payments</span>Services &amp; Pricing</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="projects-directory" href="#"><span class="material-symbols-outlined text-[18px]">folder</span>Projects Directory</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="new-project" href="#"><span class="material-symbols-outlined text-[18px]">add_circle</span>New Project</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="tech-stack-catalog" href="#"><span class="material-symbols-outlined text-[18px]">terminal</span>Tech Stack Catalog</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="admin-users-and-roles" href="#"><span class="material-symbols-outlined text-[18px]">shield_person</span>Admin Users &amp; Roles</a></nav></div></div><div class="p-space-md bg-canvas-pure flex flex-col gap-space-md"><div class="p-space-sm rounded-lg bg-surface-muted flex flex-col gap-1.5"><div class="flex items-center justify-between font-code-meta text-code-meta text-text-secondary"><span class="flex items-center gap-1.5"><span class="h-2 w-2 rounded-full bg-tertiary-container animate-pulse"></span>API: Online</span><span class="text-tertiary font-medium">200 OK</span></div><div class="flex items-center justify-between font-code-meta text-code-meta text-text-secondary"><span class="flex items-center gap-1.5"><span class="h-2 w-2 rounded-full bg-primary-container"></span>DB: Supabase</span><span class="text-primary font-medium">Connected</span></div></div><a class="flex items-center justify-center gap-space-xs w-full py-2 px-space-md rounded-lg text-ui-action font-ui-action text-text-secondary hover:bg-surface-muted hover:text-status-danger transition-colors" data-path="admin-login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span>Log Out</a></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-canvas-pure/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-lg"><div class="flex items-center gap-space-sm font-code-meta text-code-meta text-text-muted"><span class="text-text-secondary">ksdev</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-text-primary font-medium font-ui-action text-ui-action">Console</span></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-1 px-3 py-1.5 rounded-lg text-ui-action font-ui-action text-text-primary bg-canvas-pure hover:bg-surface-muted hover:text-primary transition-colors" href="/" target="_blank"><span class="material-symbols-outlined text-[16px]">north_east</span>View Live Site</a><div class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge"><span class="h-1.5 w-1.5 rounded-full bg-status-warning"></span>ENV: PROD</div><div class="flex items-center gap-space-sm pl-space-xs"><div class="hidden sm:flex flex-col text-right"><span class="text-ui-action font-ui-action text-text-primary leading-tight">Admin Principal</span><span class="font-code-badge text-code-badge text-text-muted">admin@ksdev.studio</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface-subtle px-gutter-lg py-space-xl"><div class="flex flex-col w-full">
+<!-- Dynamic shell context synchronizer (Breadcrumb & Sidebar highlight) -->
+<script>
+    (function syncShellNav() {
+      // Update breadcrumbs in shell header
+      const headerBreadcrumbs = document.querySelector('header .font-code-meta');
+      if (headerBreadcrumbs) {
+        headerBreadcrumbs.innerHTML = `
+          <span class="text-text-secondary">ksdev</span>
+          <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+          <span class="text-text-secondary">Console</span>
+          <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+          <span class="text-text-primary font-medium font-ui-action text-ui-action">Tech Stack Catalog</span>
+        `;
+      }
+      // Set active link in sidebar
+      const navLinks = document.querySelectorAll('aside nav a');
+      navLinks.forEach(link => {
+        if (link.getAttribute('data-path') === 'tech-stack-catalog') {
+          link.classList.remove('text-text-secondary', 'hover:bg-surface-muted', 'hover:text-text-primary');
+          link.classList.add('bg-accent-tint', 'text-primary', 'font-bold', 'rounded-lg');
+          const icon = link.querySelector('.material-symbols-outlined');
+          if (icon) icon.style.fontVariationSettings = "'FILL' 1";
+        } else {
+          link.classList.remove('bg-accent-tint', 'text-primary', 'font-bold');
+        }
+      });
+    })();
+  </script>
+<!-- Top Hero & Context Header -->
+<div class="flex flex-col gap-space-md mb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md pb-space-md">
+<div class="flex flex-col gap-1.5 max-w-3xl">
+<div class="flex items-center gap-2">
+<span class="font-code-badge text-code-badge text-primary uppercase tracking-wider font-semibold">
+            SYSTEM REGISTRY /// TAXONOMY &amp; CAPABILITY ENGINE
+          </span>
+<span class="h-1.5 w-1.5 rounded-full bg-border-hover"></span>
+<span class="font-code-badge text-code-badge text-text-muted">SCHEMA v2.14</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-text-primary tracking-tight">
+          Tech Stack Catalog
+        </h1>
+<p class="font-body-default text-body-default text-text-secondary">
+          Manage institutional capability badges, runtime taxonomies, official ecosystem documentation references, and public client-facing showcase filters.
+        </p>
+</div>
+<!-- Action Cluster -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-1.5 px-3.5 py-2.5 rounded-lg bg-canvas-pure text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action shadow-sm" id="quickExportBtn" title="Export JSON definitions">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Dump JSON</span>
+</button>
+<button class="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary-container hover:bg-accent-primary-hover text-on-primary transition-all text-ui-action font-ui-action shadow-sm shadow-blue-500/20 active:scale-[0.98]" id="openNewTechBtn">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Register Technology</span>
+</button>
+</div>
+</div>
+<!-- Audit Stats Row (4 Architectural Metric Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Metric 1 -->
+<div class="p-space-md rounded-xl bg-canvas-pure shadow-sm flex flex-col justify-between relative overflow-hidden group hover:-translate-y-0.5 transition-transform duration-150">
+<div class="flex items-center justify-between mb-2">
+<span class="font-code-badge text-code-badge uppercase text-text-muted">Total Registered</span>
+<span class="material-symbols-outlined text-text-secondary text-[20px]">layers</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-text-primary font-bold">24</span>
+<span class="font-code-meta text-code-meta text-text-secondary">Active Assets</span>
+</div>
+<div class="mt-2.5 pt-2 flex items-center justify-between text-ui-caption font-ui-caption">
+<span class="text-text-secondary">Portfolio In-Use</span>
+<span class="font-code-meta text-code-meta text-tertiary-container font-semibold">18 linked (75%)</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="p-space-md rounded-xl bg-canvas-pure shadow-sm flex flex-col justify-between relative overflow-hidden group hover:-translate-y-0.5 transition-transform duration-150">
+<div class="flex items-center justify-between mb-2">
+<span class="font-code-badge text-code-badge uppercase text-text-muted">Taxonomy Breadth</span>
+<span class="material-symbols-outlined text-text-secondary text-[20px]">category</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-text-primary font-bold">5</span>
+<span class="font-code-meta text-code-meta text-text-secondary">Core Domains</span>
+</div>
+<div class="mt-2.5 pt-2 flex items-center justify-between text-ui-caption font-ui-caption">
+<span class="text-text-secondary">Primary Discipline</span>
+<span class="font-code-meta text-code-meta text-primary font-semibold">Backend (38%)</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="p-space-md rounded-xl bg-canvas-pure shadow-sm flex flex-col justify-between relative overflow-hidden group hover:-translate-y-0.5 transition-transform duration-150">
+<div class="flex items-center justify-between mb-2">
+<span class="font-code-badge text-code-badge uppercase text-text-muted">Public Filter Rails</span>
+<span class="material-symbols-outlined text-status-warning text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-text-primary font-bold">8</span>
+<span class="font-code-meta text-code-meta text-text-secondary">Pinned Badges</span>
+</div>
+<div class="mt-2.5 pt-2 flex items-center justify-between text-ui-caption font-ui-caption">
+<span class="text-text-secondary">Live Hero Switcher</span>
+<span class="font-code-meta text-code-meta text-status-warning font-semibold">Quota 8/10 filled</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="p-space-md rounded-xl bg-canvas-pure shadow-sm flex flex-col justify-between relative overflow-hidden group hover:-translate-y-0.5 transition-transform duration-150">
+<div class="flex items-center justify-between mb-2">
+<span class="font-code-badge text-code-badge uppercase text-text-muted">Ecosystem Health</span>
+<span class="material-symbols-outlined text-tertiary-container text-[20px]">verified</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-tertiary-container font-bold">100%</span>
+<span class="font-code-meta text-code-meta text-text-secondary">Monogram Sync</span>
+</div>
+<div class="mt-2.5 pt-2 flex items-center justify-between text-ui-caption font-ui-caption">
+<span class="text-text-secondary">LTS Up-To-Date</span>
+<span class="font-code-meta text-code-meta text-tertiary font-semibold">All Docs 200 OK</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Filter Toolbar -->
+<div class="bg-canvas-pure p-space-sm rounded-xl shadow-sm mb-space-lg flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-sm">
+<div class="flex flex-1 items-center gap-2 px-space-sm py-1.5 rounded-lg bg-surface-subtle">
+<span class="material-symbols-outlined text-text-muted text-[18px]">search</span>
+<input class="w-full bg-transparent text-body-sm font-body-sm text-text-primary placeholder:text-text-muted focus:outline-none" id="techSearchInput" placeholder="Filter technologies by name, slug, tag, or version... (CMD+K)" type="text">
+<span class="hidden sm:inline-block font-code-badge text-code-badge px-1.5 py-0.5 rounded bg-surface-muted text-text-muted">⌘K</span>
+</div>
+<!-- Segmented Filter and Sort Controls -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<div class="flex p-0.5 bg-surface-subtle rounded-lg">
+<button class="category-pill active-cat px-3 py-1.5 rounded-md text-ui-action font-ui-action text-text-primary bg-canvas-pure shadow-sm transition-colors" data-cat="all">
+          All (24)
+        </button>
+<button class="category-pill px-3 py-1.5 rounded-md text-ui-action font-ui-action text-text-secondary hover:text-text-primary transition-colors" data-cat="backend">
+          Backend
+        </button>
+<button class="category-pill px-3 py-1.5 rounded-md text-ui-action font-ui-action text-text-secondary hover:text-text-primary transition-colors" data-cat="frontend">
+          Frontend
+        </button>
+<button class="category-pill px-3 py-1.5 rounded-md text-ui-action font-ui-action text-text-secondary hover:text-text-primary transition-colors" data-cat="devops">
+          DevOps &amp; Cloud
+        </button>
+<button class="category-pill px-3 py-1.5 rounded-md text-ui-action font-ui-action text-text-secondary hover:text-text-primary transition-colors" data-cat="database">
+          Databases
+        </button>
+</div>
+<div class="h-6 w-px bg-surface-muted mx-1 hidden lg:block"></div>
+<select class="px-3 py-1.5 rounded-lg bg-surface-subtle text-ui-action font-ui-action text-text-secondary hover:text-text-primary focus:outline-none cursor-pointer" id="sortSelector">
+<option value="linked">Sort: Linked Case Studies (High to Low)</option>
+<option value="alpha">Sort: Alphabetical (A-Z)</option>
+<option value="pinned">Sort: Filter Bar Priority</option>
+<option value="recent">Sort: Recently Staged</option>
+</select>
+</div>
+</div>
+<!-- Two-Column Master-Detail Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN (65% width = 8 cols out of 12) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Visual Banner / Technical Architecture Ribbon -->
+<div class="bg-canvas-pure p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-accent-tint flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">account_tree</span>
+</div>
+<div class="flex flex-col">
+<span class="text-ui-action font-ui-action text-text-primary">Master Technology Taxonomy Index</span>
+<span class="font-code-meta text-code-meta text-text-muted">Displaying canonical runtime components mapped to public deliverables.</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="flex items-center gap-1 font-code-badge text-code-badge text-tertiary-container bg-surface-container-low px-2 py-1 rounded">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary-container animate-pulse"></span>LIVE ON SITE
+          </span>
+</div>
+</div>
+<!-- High-Density Catalog List Container -->
+<div class="flex flex-col gap-2.5" id="techListContainer">
+<!-- Tech Row: Golang -->
+<div class="tech-item-row group bg-canvas-pure hover:bg-surface-subtle p-space-md rounded-xl shadow-sm transition-all duration-150 flex flex-col sm:flex-row sm:items-center justify-between gap-space-md cursor-pointer ring-2 ring-primary-container ring-offset-2" data-cat="backend" data-pinned="true" data-tech-id="go">
+<div class="flex items-start sm:items-center gap-space-md min-w-0">
+<!-- Monogram / Icon Box -->
+<div class="w-12 h-12 rounded-lg bg-surface-muted flex items-center justify-center font-code-meta font-bold text-text-primary shrink-0 relative">
+<svg class="w-7 h-7 text-[#00ADD8]" fill="currentColor" viewBox="0 0 24 24">
+<path d="M1.811 10.231c-.047-.323-.075-.654-.075-.99 0-3.618 2.766-6.551 6.178-6.551 2.378 0 4.437 1.43 5.467 3.513l-1.92.888c-.689-1.408-2.062-2.37-3.547-2.37-2.274 0-4.12 1.954-4.12 4.364 0 .338.037.667.106.982l-2.089.164zm15.11 3.538c-.017.307-.026.619-.026.936 0 3.618 2.766 6.551 6.178 6.551 2.378 0 4.437-1.43 5.467-3.513l-1.92-.888c-.689 1.408-2.062 2.37-3.547 2.37-2.274 0-4.12-1.954-4.12-4.364 0-.338.037-.667.106-.982l-2.089.164zM22.094 6.784h-4.04v2.031h4.04V6.784zm0 4.062h-4.04v2.031h4.04v-2.031zm0 4.062h-4.04v2.031h4.04V14.908z"></path>
+</svg>
+<span class="absolute -top-1 -right-1 flex h-3 w-3">
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary-container"></span>
+</span>
+</div>
+<!-- Identity Info -->
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-text-primary font-bold truncate">Golang</span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-surface-muted text-text-secondary">v1.22 LTS</span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-accent-tint text-primary font-semibold">Backend &amp; Runtimes</span>
+</div>
+<div class="flex items-center gap-2 mt-1 font-code-meta text-code-meta text-text-muted">
+<span class="text-text-secondary font-medium">slug: go</span>
+<span>•</span>
+<span class="text-tertiary-container flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">verified</span>Staff-Level Expertise
+                </span>
+<span>•</span>
+<span class="hidden sm:inline">Concurrency, gRPC microservices, eBPF tooling</span>
+</div>
+</div>
+</div>
+<!-- Right Indicators & Actions -->
+<div class="flex items-center gap-space-md shrink-0 self-end sm:self-center">
+<div class="flex flex-col items-end">
+<span class="font-code-meta text-code-meta text-text-primary font-bold">6 Linked Studies</span>
+<span class="font-code-badge text-code-badge text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-status-warning" style="font-variation-settings: 'FILL' 1;">star</span>Pinned in Filter Bar
+                </span>
+</div>
+<div class="flex items-center gap-1">
+<a class="p-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-canvas-pure transition-colors" href="https://go.dev/doc" target="_blank" title="Official Docs">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+<button class="select-tech-btn p-2 rounded-lg text-primary hover:bg-accent-tint transition-colors" title="Inspect &amp; Edit details">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Tech Row: TypeScript -->
+<div class="tech-item-row group bg-canvas-pure hover:bg-surface-subtle p-space-md rounded-xl shadow-sm transition-all duration-150 flex flex-col sm:flex-row sm:items-center justify-between gap-space-md cursor-pointer" data-cat="frontend" data-pinned="true" data-tech-id="typescript">
+<div class="flex items-start sm:items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-muted flex items-center justify-center font-code-meta font-bold text-[#3178C6] shrink-0">
+<span class="font-headline-sm font-black">TS</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-text-primary font-bold truncate">TypeScript</span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-surface-muted text-text-secondary">v5.4 Strict</span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-surface-variant text-primary font-semibold">Frontend &amp; Fullstack</span>
+</div>
+<div class="flex items-center gap-2 mt-1 font-code-meta text-code-meta text-text-muted">
+<span class="text-text-secondary font-medium">slug: typescript</span>
+<span>•</span>
+<span class="text-tertiary-container flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">verified</span>Staff-Level Expertise
+                </span>
+<span>•</span>
+<span class="hidden sm:inline">Type-safe APIs, Next.js App Router, Zod validation</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0 self-end sm:self-center">
+<div class="flex flex-col items-end">
+<span class="font-code-meta text-code-meta text-text-primary font-bold">11 Linked Studies</span>
+<span class="font-code-badge text-code-badge text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-status-warning" style="font-variation-settings: 'FILL' 1;">star</span>Pinned in Filter Bar
+              </span>
+</div>
+<div class="flex items-center gap-1">
+<a class="p-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-colors" href="https://www.typescriptlang.org/docs/" target="_blank">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+<button class="select-tech-btn p-2 rounded-lg text-text-secondary hover:text-primary hover:bg-surface-muted transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Tech Row: Docker & Containers -->
+<div class="tech-item-row group bg-canvas-pure hover:bg-surface-subtle p-space-md rounded-xl shadow-sm transition-all duration-150 flex flex-col sm:flex-row sm:items-center justify-between gap-space-md cursor-pointer" data-cat="devops" data-pinned="true" data-tech-id="docker">
+<div class="flex items-start sm:items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-muted flex items-center justify-center font-code-meta font-bold text-[#2496ED] shrink-0">
+<span class="material-symbols-outlined text-[26px]">view_in_ar</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-text-primary font-bold truncate">Docker &amp; OCI Containers</span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-surface-muted text-text-secondary">v26.0 Engine</span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-semibold">DevOps &amp; Cloud</span>
+</div>
+<div class="flex items-center gap-2 mt-1 font-code-meta text-code-meta text-text-muted">
+<span class="text-text-secondary font-medium">slug: docker</span>
+<span>•</span>
+<span class="text-tertiary-container flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">verified</span>Staff-Level Expertise
+                </span>
+<span>•</span>
+<span class="hidden sm:inline">Multi-stage builds, rootless containers, alpine distroless</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0 self-end sm:self-center">
+<div class="flex flex-col items-end">
+<span class="font-code-meta text-code-meta text-text-primary font-bold">9 Linked Studies</span>
+<span class="font-code-badge text-code-badge text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-status-warning" style="font-variation-settings: 'FILL' 1;">star</span>Pinned in Filter Bar
+              </span>
+</div>
+<div class="flex items-center gap-1">
+<a class="p-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-colors" href="https://docs.docker.com/" target="_blank">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+<button class="select-tech-btn p-2 rounded-lg text-text-secondary hover:text-primary hover:bg-surface-muted transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Tech Row: PostgreSQL -->
+<div class="tech-item-row group bg-canvas-pure hover:bg-surface-subtle p-space-md rounded-xl shadow-sm transition-all duration-150 flex flex-col sm:flex-row sm:items-center justify-between gap-space-md cursor-pointer" data-cat="database" data-pinned="true" data-tech-id="postgres">
+<div class="flex items-start sm:items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-muted flex items-center justify-center font-code-meta font-bold text-[#336791] shrink-0">
+<span class="material-symbols-outlined text-[26px]">database</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-text-primary font-bold truncate">PostgreSQL &amp; pgvector</span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-surface-muted text-text-secondary">v16.2</span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-accent-tint text-primary font-semibold">Databases &amp; Storage</span>
+</div>
+<div class="flex items-center gap-2 mt-1 font-code-meta text-code-meta text-text-muted">
+<span class="text-text-secondary font-medium">slug: postgresql</span>
+<span>•</span>
+<span class="text-tertiary-container flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">verified</span>Staff-Level Expertise
+                </span>
+<span>•</span>
+<span class="hidden sm:inline">Partitioning, HNSW vector embeddings, Supabase RLS</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0 self-end sm:self-center">
+<div class="flex flex-col items-end">
+<span class="font-code-meta text-code-meta text-text-primary font-bold">8 Linked Studies</span>
+<span class="font-code-badge text-code-badge text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-status-warning" style="font-variation-settings: 'FILL' 1;">star</span>Pinned in Filter Bar
+              </span>
+</div>
+<div class="flex items-center gap-1">
+<a class="p-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-colors" href="https://www.postgresql.org/docs/" target="_blank">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+<button class="select-tech-btn p-2 rounded-lg text-text-secondary hover:text-primary hover:bg-surface-muted transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Tech Row: Kubernetes -->
+<div class="tech-item-row group bg-canvas-pure hover:bg-surface-subtle p-space-md rounded-xl shadow-sm transition-all duration-150 flex flex-col sm:flex-row sm:items-center justify-between gap-space-md cursor-pointer" data-cat="devops" data-pinned="true" data-tech-id="k8s">
+<div class="flex items-start sm:items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-muted flex items-center justify-center font-code-meta font-bold text-[#326CE5] shrink-0">
+<span class="material-symbols-outlined text-[26px]">hub</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-text-primary font-bold truncate">Kubernetes (K8s)</span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-surface-muted text-text-secondary">v1.29</span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-semibold">DevOps &amp; Cloud</span>
+</div>
+<div class="flex items-center gap-2 mt-1 font-code-meta text-code-meta text-text-muted">
+<span class="text-text-secondary font-medium">slug: kubernetes</span>
+<span>•</span>
+<span class="text-tertiary-container flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">verified</span>Staff-Level Expertise
+                </span>
+<span>•</span>
+<span class="hidden sm:inline">Helm, Cilium CNI, ArgoCD GitOps pipelines</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0 self-end sm:self-center">
+<div class="flex flex-col items-end">
+<span class="font-code-meta text-code-meta text-text-primary font-bold">5 Linked Studies</span>
+<span class="font-code-badge text-code-badge text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-status-warning" style="font-variation-settings: 'FILL' 1;">star</span>Pinned in Filter Bar
+              </span>
+</div>
+<div class="flex items-center gap-1">
+<a class="p-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-colors" href="https://kubernetes.io/docs/" target="_blank">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+<button class="select-tech-btn p-2 rounded-lg text-text-secondary hover:text-primary hover:bg-surface-muted transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Tech Row: Redis & Dragonfly -->
+<div class="tech-item-row group bg-canvas-pure hover:bg-surface-subtle p-space-md rounded-xl shadow-sm transition-all duration-150 flex flex-col sm:flex-row sm:items-center justify-between gap-space-md cursor-pointer" data-cat="database" data-pinned="false" data-tech-id="redis">
+<div class="flex items-start sm:items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-muted flex items-center justify-center font-code-meta font-bold text-[#DC382D] shrink-0">
+<span class="material-symbols-outlined text-[26px]">memory</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-text-primary font-bold truncate">Redis &amp; Key-Value Cache</span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-surface-muted text-text-secondary">v7.2</span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-accent-tint text-primary font-semibold">Databases &amp; Storage</span>
+</div>
+<div class="flex items-center gap-2 mt-1 font-code-meta text-code-meta text-text-muted">
+<span class="text-text-secondary font-medium">slug: redis</span>
+<span>•</span>
+<span class="text-tertiary-container flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">verified</span>Staff-Level Expertise
+                </span>
+<span>•</span>
+<span class="hidden sm:inline">Pub/Sub event busses, rate limiting, distributed lock</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0 self-end sm:self-center">
+<div class="flex flex-col items-end">
+<span class="font-code-meta text-code-meta text-text-primary font-bold">7 Linked Studies</span>
+<span class="font-code-badge text-code-badge text-text-muted">Standard Filter</span>
+</div>
+<div class="flex items-center gap-1">
+<a class="p-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-colors" href="https://redis.io/docs/" target="_blank">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+<button class="select-tech-btn p-2 rounded-lg text-text-secondary hover:text-primary hover:bg-surface-muted transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Tech Row: Next.js -->
+<div class="tech-item-row group bg-canvas-pure hover:bg-surface-subtle p-space-md rounded-xl shadow-sm transition-all duration-150 flex flex-col sm:flex-row sm:items-center justify-between gap-space-md cursor-pointer" data-cat="frontend" data-pinned="true" data-tech-id="nextjs">
+<div class="flex items-start sm:items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-muted flex items-center justify-center font-code-meta font-bold text-text-primary shrink-0">
+<span class="font-headline-sm font-black">N</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-text-primary font-bold truncate">Next.js Framework</span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-surface-muted text-text-secondary">v14.2 App Router</span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-surface-variant text-primary font-semibold">Frontend &amp; Fullstack</span>
+</div>
+<div class="flex items-center gap-2 mt-1 font-code-meta text-code-meta text-text-muted">
+<span class="text-text-secondary font-medium">slug: nextjs</span>
+<span>•</span>
+<span class="text-tertiary-container flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">verified</span>Staff-Level Expertise
+                </span>
+<span>•</span>
+<span class="hidden sm:inline">RSC, Edge Middleware, ISR caching, Turbopack</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0 self-end sm:self-center">
+<div class="flex flex-col items-end">
+<span class="font-code-meta text-code-meta text-text-primary font-bold">10 Linked Studies</span>
+<span class="font-code-badge text-code-badge text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-status-warning" style="font-variation-settings: 'FILL' 1;">star</span>Pinned in Filter Bar
+              </span>
+</div>
+<div class="flex items-center gap-1">
+<a class="p-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-colors" href="https://nextjs.org/docs" target="_blank">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+<button class="select-tech-btn p-2 rounded-lg text-text-secondary hover:text-primary hover:bg-surface-muted transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Tech Row: Terraform (IaC) -->
+<div class="tech-item-row group bg-canvas-pure hover:bg-surface-subtle p-space-md rounded-xl shadow-sm transition-all duration-150 flex flex-col sm:flex-row sm:items-center justify-between gap-space-md cursor-pointer" data-cat="devops" data-pinned="false" data-tech-id="terraform">
+<div class="flex items-start sm:items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-muted flex items-center justify-center font-code-meta font-bold text-[#7B42BC] shrink-0">
+<span class="material-symbols-outlined text-[26px]">terminal</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-text-primary font-bold truncate">Terraform &amp; OpenTofu</span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-surface-muted text-text-secondary">v1.7 IaC</span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-semibold">DevOps &amp; Cloud</span>
+</div>
+<div class="flex items-center gap-2 mt-1 font-code-meta text-code-meta text-text-muted">
+<span class="text-text-secondary font-medium">slug: terraform</span>
+<span>•</span>
+<span class="text-tertiary-container flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">verified</span>Staff-Level Expertise
+                </span>
+<span>•</span>
+<span class="hidden sm:inline">AWS VPC, ECS Fargate modules, state locking</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0 self-end sm:self-center">
+<div class="flex flex-col items-end">
+<span class="font-code-meta text-code-meta text-text-primary font-bold">4 Linked Studies</span>
+<span class="font-code-badge text-code-badge text-text-muted">Standard Filter</span>
+</div>
+<div class="flex items-center gap-1">
+<a class="p-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-colors" href="https://developer.hashicorp.com/terraform/docs" target="_blank">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+<button class="select-tech-btn p-2 rounded-lg text-text-secondary hover:text-primary hover:bg-surface-muted transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Tech Row: ClickHouse -->
+<div class="tech-item-row group bg-canvas-pure hover:bg-surface-subtle p-space-md rounded-xl shadow-sm transition-all duration-150 flex flex-col sm:flex-row sm:items-center justify-between gap-space-md cursor-pointer" data-cat="database" data-pinned="false" data-tech-id="clickhouse">
+<div class="flex items-start sm:items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-muted flex items-center justify-center font-code-meta font-bold text-[#FFCC00] shrink-0">
+<span class="material-symbols-outlined text-[26px] text-text-primary">bar_chart</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-text-primary font-bold truncate">ClickHouse Columnar OLAP</span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-surface-muted text-text-secondary">v24.3</span>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-accent-tint text-primary font-semibold">Databases &amp; Storage</span>
+</div>
+<div class="flex items-center gap-2 mt-1 font-code-meta text-code-meta text-text-muted">
+<span class="text-text-secondary font-medium">slug: clickhouse</span>
+<span>•</span>
+<span class="text-tertiary-container flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">verified</span>Staff-Level Expertise
+                </span>
+<span>•</span>
+<span class="hidden sm:inline">Telemetry aggregates, billions rows/sec, IoT telemetry</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0 self-end sm:self-center">
+<div class="flex flex-col items-end">
+<span class="font-code-meta text-code-meta text-text-primary font-bold">3 Linked Studies</span>
+<span class="font-code-badge text-code-badge text-text-muted">Standard Filter</span>
+</div>
+<div class="flex items-center gap-1">
+<a class="p-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-colors" href="https://clickhouse.com/docs" target="_blank">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+<button class="select-tech-btn p-2 rounded-lg text-text-secondary hover:text-primary hover:bg-surface-muted transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination / Catalog Status Info -->
+<div class="p-space-md bg-canvas-pure rounded-xl shadow-sm flex items-center justify-between text-ui-caption font-ui-caption text-text-secondary">
+<span>Showing 8 of 24 configured technologies</span>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-muted text-text-muted cursor-not-allowed">Previous</button>
+<span class="px-2 font-code-meta text-text-primary font-bold">Page 1 of 3</span>
+<button class="px-2.5 py-1 rounded bg-surface-muted hover:bg-surface-variant text-text-primary transition-colors">Next</button>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN (35% width = 4 cols out of 12): Inspector / Registry Drawer -->
+<div class="lg:col-span-4 sticky top-20 flex flex-col gap-space-md">
+<!-- Tech Inspector Container Card -->
+<div class="bg-canvas-pure rounded-2xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<!-- Inspector Header -->
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-muted">
+<div class="flex flex-col">
+<span class="font-code-badge text-code-badge text-primary uppercase font-bold tracking-wider">CAPABILITY INSPECTOR</span>
+<h2 class="font-headline-md text-headline-md text-text-primary font-bold" id="inspectorTitle">Golang (v1.22)</h2>
+</div>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-tertiary-container/10 text-tertiary font-semibold flex items-center gap-1" id="inspectorStatePill">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary-container"></span>PERSISTED
+          </span>
+</div>
+<!-- Inspector Edit Form -->
+<form class="flex flex-col gap-space-md" id="techEditForm" onsubmit="event.preventDefault(); window.saveTechEntry();">
+<!-- Name & Slug Row -->
+<div class="flex flex-col gap-1.5">
+<label class="text-ui-action font-ui-action text-text-secondary text-xs uppercase tracking-wide">
+              Official Technology Name
+            </label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-subtle text-text-primary font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="inputTechName" required="" type="text" value="Go (Golang)">
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1.5">
+<label class="text-ui-action font-ui-action text-text-secondary text-xs uppercase tracking-wide">
+                Identifier Slug
+              </label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-subtle text-text-primary font-code-meta text-code-meta focus:outline-none focus:ring-2 focus:ring-primary-container" id="inputTechSlug" required="" type="text" value="go">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-ui-action font-ui-action text-text-secondary text-xs uppercase tracking-wide">
+                LTS Release Version
+              </label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-subtle text-text-primary font-code-meta text-code-meta focus:outline-none focus:ring-2 focus:ring-primary-container" id="inputTechVersion" type="text" value="1.22 LTS">
+</div>
+</div>
+<!-- Category Select -->
+<div class="flex flex-col gap-1.5">
+<label class="text-ui-action font-ui-action text-text-secondary text-xs uppercase tracking-wide">
+              Ecosystem Discipline / Category
+            </label>
+<select class="w-full px-3 py-2 rounded-lg bg-surface-subtle text-text-primary font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container cursor-pointer" id="inputTechCategory">
+<option selected="" value="backend">Backend &amp; Distributed Systems</option>
+<option value="frontend">Frontend &amp; Modern Web Client</option>
+<option value="devops">Cloud Infrastructure &amp; DevOps</option>
+<option value="database">Databases &amp; Columnar Storage</option>
+<option value="mobile">Mobile &amp; Embedded Cross-Platform</option>
+</select>
+</div>
+<!-- Official Docs URL -->
+<div class="flex flex-col gap-1.5">
+<label class="text-ui-action font-ui-action text-text-secondary text-xs uppercase tracking-wide">
+              Canonical Documentation URL
+            </label>
+<div class="flex items-center px-3 py-2 rounded-lg bg-surface-subtle focus-within:ring-2 focus-within:ring-primary-container">
+<span class="material-symbols-outlined text-text-muted text-[16px] mr-2">link</span>
+<input class="w-full bg-transparent text-text-primary font-code-meta text-code-meta focus:outline-none" id="inputTechDocs" type="url" value="https://go.dev/doc">
+</div>
+</div>
+<!-- Institutional Proficiency Level -->
+<div class="flex flex-col gap-2">
+<label class="text-ui-action font-ui-action text-text-secondary text-xs uppercase tracking-wide">
+              Institutional Studio Competency
+            </label>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-2.5 p-2 rounded-lg bg-surface-subtle hover:bg-surface-muted cursor-pointer transition-colors">
+<input checked="" class="text-primary-container focus:ring-primary-container" name="proficiency" type="radio" value="staff">
+<div class="flex flex-col">
+<span class="font-ui-action text-ui-action text-text-primary">Staff-Level Production Hardened</span>
+<span class="font-code-meta text-code-meta text-text-muted">Direct architecture &amp; scaling experience</span>
+</div>
+</label>
+<label class="flex items-center gap-2.5 p-2 rounded-lg bg-surface-subtle hover:bg-surface-muted cursor-pointer transition-colors">
+<input class="text-primary-container focus:ring-primary-container" name="proficiency" type="radio" value="advanced">
+<div class="flex flex-col">
+<span class="font-ui-action text-ui-action text-text-primary">Advanced Production</span>
+<span class="font-code-meta text-code-meta text-text-muted">Standard microservices &amp; integrations</span>
+</div>
+</label>
+<label class="flex items-center gap-2.5 p-2 rounded-lg bg-surface-subtle hover:bg-surface-muted cursor-pointer transition-colors">
+<input class="text-primary-container focus:ring-primary-container" name="proficiency" type="radio" value="staged">
+<div class="flex flex-col">
+<span class="font-ui-action text-ui-action text-text-primary">Emerging / Lab Staged</span>
+<span class="font-code-meta text-code-meta text-text-muted">Under internal R&amp;D evaluation</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Public Surface Visibility Flags -->
+<div class="flex flex-col gap-2 pt-2 border-t border-surface-muted">
+<span class="text-ui-action font-ui-action text-text-secondary text-xs uppercase tracking-wide">
+              Public Portfolio Exposure Rules
+            </span>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-2.5 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary-container focus:ring-primary-container" id="flagFeatureFilter" type="checkbox">
+<span class="text-body-sm font-body-sm text-text-primary">Feature in Public Portfolio Filter Bar</span>
+</label>
+<label class="flex items-center gap-2.5 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary-container focus:ring-primary-container" id="flagBentoGrid" type="checkbox">
+<span class="text-body-sm font-body-sm text-text-primary">Display in Studio Advantages Bento Grid</span>
+</label>
+<label class="flex items-center gap-2.5 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary-container focus:ring-primary-container" id="flagFiverr" type="checkbox">
+<span class="text-body-sm font-body-sm text-text-primary">Eligible for Fiverr Gig Scoping Checklists</span>
+</label>
+</div>
+</div>
+<!-- Linked Portfolio Projects Summary Card -->
+<div class="p-space-sm rounded-lg bg-surface-subtle flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-code-badge text-code-badge uppercase text-text-secondary">Linked Case Studies (3)</span>
+<a class="font-code-meta text-code-meta text-primary hover:underline" href="#">Manage Links</a>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-canvas-pure font-code-meta text-code-meta text-text-primary shadow-xs">GearGo Telematics</span>
+<span class="px-2 py-1 rounded bg-canvas-pure font-code-meta text-code-meta text-text-primary shadow-xs">NexusStream</span>
+<span class="px-2 py-1 rounded bg-canvas-pure font-code-meta text-code-meta text-text-primary shadow-xs">PulseGrid APM</span>
+</div>
+</div>
+<!-- Inspector Action Buttons -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-2.5 px-4 rounded-lg bg-primary-container hover:bg-accent-primary-hover text-on-primary transition-colors text-ui-action font-ui-action text-center shadow-sm" type="submit">
+              Save Technology
+            </button>
+<button class="py-2.5 px-3 rounded-lg bg-surface-muted hover:bg-error-container hover:text-error text-text-secondary transition-colors text-ui-action font-ui-action" id="archiveTagBtn" title="Archive or unlist tag" type="button">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Quick Context Info Widget -->
+<div class="p-space-md rounded-xl bg-accent-tint/60 flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">info</span>
+<div class="flex flex-col text-ui-caption font-ui-caption text-text-secondary leading-relaxed">
+<span class="font-bold text-text-primary">Filter Priority Constraint:</span>
+          The live website header filter displays a maximum of 10 pinned technologies. 8 slots are currently occupied. Changes propagate instantaneously to edge cache.
+        </div>
+</div>
+</div>
+</div>
+<!-- Persistence Status Footer -->
+<div class="mt-space-xl pt-space-md border-t border-surface-muted flex flex-col sm:flex-row items-center justify-between text-ui-caption font-ui-caption text-text-muted gap-2">
+<div class="flex items-center gap-2 font-code-meta text-code-meta">
+<span class="flex h-2 w-2 rounded-full bg-tertiary-container"></span>
+<span>Taxonomy Registry v2.14 • Last synchronized 18m ago by Admin Principal</span>
+</div>
+<div class="flex items-center gap-space-md font-code-badge text-code-badge">
+<span>SCHEMA: STRICT_TYPED</span>
+<span>CACHE: CLOUDFLARE_EDGE</span>
+</div>
+</div>
+<!-- Interactive Logic for Filtering & Inspector -->
+<script>
+    (function initCatalogInteractions() {
+      const searchInput = document.getElementById('techSearchInput');
+      const rows = document.querySelectorAll('.tech-item-row');
+      const categoryPills = document.querySelectorAll('.category-pill');
+      const inspectorTitle = document.getElementById('inspectorTitle');
+      const inputTechName = document.getElementById('inputTechName');
+      const inputTechSlug = document.getElementById('inputTechSlug');
+      const inputTechVersion = document.getElementById('inputTechVersion');
+      const inputTechCategory = document.getElementById('inputTechCategory');
+      const inputTechDocs = document.getElementById('inputTechDocs');
+
+      // Category Switching
+      categoryPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          categoryPills.forEach(p => {
+            p.classList.remove('bg-canvas-pure', 'shadow-sm', 'text-text-primary');
+            p.classList.add('text-text-secondary');
+          });
+          pill.classList.remove('text-text-secondary');
+          pill.classList.add('bg-canvas-pure', 'shadow-sm', 'text-text-primary');
+
+          const cat = pill.getAttribute('data-cat');
+          filterRows(searchInput.value.toLowerCase(), cat);
+        });
+      });
+
+      // Search Filtering
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const activePill = document.querySelector('.category-pill.bg-canvas-pure');
+          const cat = activePill ? activePill.getAttribute('data-cat') : 'all';
+          filterRows(e.target.value.toLowerCase(), cat);
+        });
+      }
+
+      function filterRows(query, cat) {
+        rows.forEach(row => {
+          const rowText = row.innerText.toLowerCase();
+          const rowCat = row.getAttribute('data-cat');
+          const matchesQuery = query === '' || rowText.includes(query);
+          const matchesCat = cat === 'all' || rowCat === cat;
+
+          if (matchesQuery && matchesCat) {
+            row.style.display = 'flex';
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      }
+
+      // Tech Inspector Row Selection
+      rows.forEach(row => {
+        row.addEventListener('click', () => {
+          rows.forEach(r => r.classList.remove('ring-2', 'ring-primary-container', 'ring-offset-2'));
+          row.classList.add('ring-2', 'ring-primary-container', 'ring-offset-2');
+
+          const techId = row.getAttribute('data-tech-id');
+          const titleEl = row.querySelector('.font-headline-sm');
+          const versionEl = row.querySelector('.font-code-badge');
+          const name = titleEl ? titleEl.textContent.trim() : 'Technology';
+          const version = versionEl ? versionEl.textContent.trim() : 'v1.0';
+
+          if (inspectorTitle) inspectorTitle.textContent = `${name} (${version})`;
+          if (inputTechName) inputTechName.value = name;
+          if (inputTechSlug) inputTechSlug.value = techId;
+          if (inputTechVersion) inputTechVersion.value = version;
+
+          const cat = row.getAttribute('data-cat');
+          if (inputTechCategory) inputTechCategory.value = cat;
+        });
+      });
+
+      // Quick Add Mode Trigger
+      const openNewTechBtn = document.getElementById('openNewTechBtn');
+      if (openNewTechBtn) {
+        openNewTechBtn.addEventListener('click', () => {
+          rows.forEach(r => r.classList.remove('ring-2', 'ring-primary-container', 'ring-offset-2'));
+          if (inspectorTitle) inspectorTitle.textContent = "Register New Technology";
+          if (inputTechName) {
+            inputTechName.value = "";
+            inputTechName.focus();
+          }
+          if (inputTechSlug) inputTechSlug.value = "";
+          if (inputTechVersion) inputTechVersion.value = "1.0.0";
+          if (inputTechDocs) inputTechDocs.value = "https://";
+        });
+      }
+
+      // Save notification simulation
+      window.saveTechEntry = function() {
+        const title = inspectorTitle.textContent;
+        const pill = document.getElementById('inspectorStatePill');
+        if (pill) {
+          pill.innerHTML = `<span class="material-symbols-outlined text-[14px]">check</span>SAVED`;
+          pill.className = "font-code-badge text-code-badge px-2 py-0.5 rounded bg-tertiary-container text-on-primary font-semibold flex items-center gap-1";
+          setTimeout(() => {
+            pill.innerHTML = `<span class="h-1.5 w-1.5 rounded-full bg-tertiary-container"></span>PERSISTED`;
+            pill.className = "font-code-badge text-code-badge px-2 py-0.5 rounded bg-tertiary-container/10 text-tertiary font-semibold flex items-center gap-1";
+          }, 1800);
+        }
+      };
+    })();
+  </script>
+</div></main></div></body></html>

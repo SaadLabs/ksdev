@@ -1,0 +1,583 @@
+<!DOCTYPE html><html class="h-full bg-white" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>ksdev_ | Elite Software Engineering &amp; Cloud Infrastructure Studio</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"surface-subtle":"#F8FAFC","on-primary-fixed":"#00174b","text-primary":"#0F172A","on-tertiary":"#ffffff","surface-container-low":"#eff4ff","inverse-surface":"#213145","secondary-container":"#dae2fd","surface-container-highest":"#d3e4fe","surface-container":"#e5eeff","on-background":"#0b1c30","border-subtle":"#E2E8F0","inverse-primary":"#b4c5ff","secondary-fixed":"#dae2fd","primary-fixed-dim":"#b4c5ff","text-secondary":"#475569","surface-dim":"#cbdbf5","background":"#f8f9ff","secondary":"#565e74","surface-container-high":"#dce9ff","accent-devops":"#4F46E5","status-warning":"#D97706","surface-muted":"#F1F5F9","border-hover":"#CBD5E1","surface-variant":"#d3e4fe","on-error":"#ffffff","on-primary":"#ffffff","error":"#ba1a1a","surface-container-lowest":"#ffffff","accent-tint":"#EFF6FF","on-secondary":"#ffffff","tertiary-fixed":"#6ffbbe","surface-bright":"#f8f9ff","on-surface":"#0b1c30","on-surface-variant":"#434655","outline-variant":"#c3c6d7","status-danger":"#DC2626","on-secondary-fixed":"#131b2e","canvas-pure":"#FFFFFF","surface-tint":"#0053db","tertiary-container":"#007d55","accent-primary-hover":"#1D4ED8","primary":"#004ac6","on-secondary-fixed-variant":"#3f465c","secondary-fixed-dim":"#bec6e0","on-error-container":"#93000a","outline":"#737686","on-tertiary-container":"#bdffdb","on-secondary-container":"#5c647a","on-primary-container":"#eeefff","tertiary-fixed-dim":"#4edea3","on-tertiary-fixed":"#002113","text-muted":"#64748B","inverse-on-surface":"#eaf1ff","primary-fixed":"#dbe1ff","on-tertiary-fixed-variant":"#005236","surface":"#f8f9ff","primary-container":"#2563eb","tertiary":"#006242","error-container":"#ffdad6","on-primary-fixed-variant":"#003ea8"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","space-xl":"2rem","gutter":"1.5rem","margin":"1.5rem","gutter-sm":"1rem","margin-desktop":"2rem","space-sm":"0.5rem","space-md":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","gutter-lg":"2rem"},"fontFamily":{"headline-lg-mobile":["Plus Jakarta Sans"],"code-badge":["JetBrains Mono"],"headline-md":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"code-meta":["JetBrains Mono"],"body-default":["Inter"],"body-lead":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"ui-action":["Inter"],"body-sm":["Inter"],"ui-caption":["Inter"]},"fontSize":{"headline-lg-mobile":["1.75rem",{"lineHeight":"1.25","letterSpacing":"-0.02em","fontWeight":"700"}],"code-badge":["0.75rem",{"lineHeight":"1.2","letterSpacing":"0.04em","fontWeight":"500"}],"headline-md":["1.375rem",{"lineHeight":"1.3","letterSpacing":"-0.015em","fontWeight":"600"}],"display-hero":["3.5rem",{"lineHeight":"1.1","letterSpacing":"-0.03em","fontWeight":"800"}],"display-hero-mobile":["2.25rem",{"lineHeight":"1.15","letterSpacing":"-0.025em","fontWeight":"700"}],"code-meta":["0.8125rem",{"lineHeight":"1.4","letterSpacing":"0em","fontWeight":"400"}],"body-default":["1rem",{"lineHeight":"1.6","letterSpacing":"0em","fontWeight":"400"}],"body-lead":["1.125rem",{"lineHeight":"1.65","letterSpacing":"0em","fontWeight":"400"}],"headline-lg":["2.25rem",{"lineHeight":"1.2","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-sm":["1.125rem",{"lineHeight":"1.4","letterSpacing":"-0.01em","fontWeight":"600"}],"ui-action":["0.875rem",{"lineHeight":"1.25","letterSpacing":"0.01em","fontWeight":"600"}],"body-sm":["0.875rem",{"lineHeight":"1.55","letterSpacing":"0em","fontWeight":"400"}],"ui-caption":["0.75rem",{"lineHeight":"1.3","letterSpacing":"0.01em","fontWeight":"500"}]}}}};</script></head><body class="min-h-full bg-canvas-pure font-body-default text-text-primary antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 z-50 bg-canvas-pure/85 backdrop-blur-md border-b border-border-subtle"><div class="h-[68px] max-w-7xl mx-auto px-6 flex items-center justify-between border-x border-transparent xl:border-border-subtle"><div class="flex items-center gap-3"><a class="flex items-center gap-2.5 transition-opacity hover:opacity-85" data-path="studio" href="#"><img alt="ksdev Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X8nRNbi9asniG_JLrLm5ge4CdRjq9W7Y5IT_y1kgE5-MSdaSAjL0rVXKhyB9iZ7_11Bxgkt-YAnOKknF_Q5mVZQA4Xxh7kf3064ZIHFi_mTIPd2bpyQ48BV8HJB9tyyypCCCJXxRB_noSnwkXsPGR06ho8uw41WVsdNg8DEuAS9lPryjBqky76X8S2ve4zkET-p6ynTEaxjDnKOhqf-mZQjeg0U7qknQIUVs_5qp_GbZBCDV_qnpKcl-I"><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">ksdev<span class="text-primary-container font-mono">_</span></span></a></div><nav class="hidden md:flex items-center gap-8" data-active-classes="text-text-primary font-semibold"><a class="font-ui-action text-ui-action text-text-secondary hover:text-text-primary transition-colors" data-path="studio" href="#">Studio</a><a class="font-ui-action text-ui-action text-text-secondary hover:text-text-primary transition-colors" data-path="featured-work" href="#">Featured Work</a><a class="font-ui-action text-ui-action text-text-secondary hover:text-text-primary transition-colors" data-path="services-pricing" href="#">Services &amp; Pricing</a><a class="font-ui-action text-ui-action text-text-secondary hover:text-text-primary transition-colors" data-path="tech-stack" href="#">Tech Stack</a><a class="font-ui-action text-ui-action text-text-secondary hover:text-text-primary transition-colors" data-path="custom-scope" href="#">Custom Scope</a></nav><div class="flex items-center gap-3.5"><div class="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span></span><span class="font-ui-caption text-ui-caption tracking-tight font-medium">Available for New Projects</span></div><a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-text-primary hover:bg-primary-container text-on-primary font-ui-action text-ui-action transition-all shadow-sm" href="https://www.fiverr.com" rel="noreferrer" target="_blank"><span class="font-medium">Order on Fiverr</span><span class="material-symbols-outlined text-[16px] leading-none">arrow_outward</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><div class="w-full bg-canvas-pure"><div class="max-w-7xl mx-auto border-x border-transparent xl:border-border-subtle min-h-screen flex flex-col"><main class="flex-1 w-full pt-[68px] bg-canvas-pure" id="content"><div class="flex flex-col w-full">
+<div class="w-full bg-surface-subtle px-6 py-12 md:py-16">
+<div class="max-w-7xl mx-auto flex flex-col gap-8">
+<div class="flex flex-wrap items-center gap-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-muted text-text-secondary">
+<span class="inline-block w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-code-badge text-code-badge uppercase tracking-wider text-text-primary">ENGINEERING ARCHIVE • PRODUCTION BUILDS</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-canvas-pure text-text-muted shadow-sm">
+<span class="font-code-meta text-code-meta">INDEX: 0x8F04..PROD</span>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+<div class="max-w-3xl space-y-4">
+<h1 class="font-headline-lg text-headline-lg text-text-primary tracking-tight">
+            Shipped Systems &amp; Technical Case Studies
+          </h1>
+<p class="font-body-lead text-body-lead text-text-secondary leading-relaxed">
+            Browse our complete catalog of enterprise web applications, real-time distributed pipelines, and cloud infrastructure engineered for global scale and mission-critical uptime.
+          </p>
+</div>
+<div class="flex flex-wrap items-center gap-3 self-start lg:self-end">
+<div class="flex flex-col px-4 py-2.5 rounded-lg bg-canvas-pure shadow-sm">
+<span class="font-code-badge text-code-badge text-text-muted uppercase">Inventory</span>
+<span class="font-headline-sm text-headline-sm text-text-primary font-bold">12 Total Systems</span>
+</div>
+<div class="flex flex-col px-4 py-2.5 rounded-lg bg-canvas-pure shadow-sm">
+<span class="font-code-badge text-code-badge text-text-muted uppercase">Classification</span>
+<span class="font-headline-sm text-headline-sm text-text-primary font-bold">4 Enterprise Logged</span>
+</div>
+<div class="flex flex-col px-4 py-2.5 rounded-lg bg-canvas-pure shadow-sm">
+<span class="font-code-badge text-code-badge text-tertiary uppercase">Performance</span>
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">100% On-Time</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full bg-canvas-pure px-6 py-6 shadow-sm sticky top-[68px] z-30">
+<div class="max-w-7xl mx-auto flex flex-col gap-5">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-text-muted text-[20px]">search</span>
+<input class="w-full pl-11 pr-4 py-2.5 bg-surface-subtle focus:bg-canvas-pure rounded-lg font-body-default text-body-default text-text-primary placeholder:text-text-muted focus:outline-none shadow-sm transition-all" id="project-search" placeholder="Search by system name, architecture keyword, or stack (e.g. TimescaleDB, Docker, Kafka)..." type="text">
+<div class="absolute right-3.5 top-1/2 -translate-y-1/2 hidden sm:flex items-center gap-1 text-text-muted font-code-badge text-code-badge">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-muted text-text-secondary">CMD</kbd>
+<span>+</span>
+<kbd class="px-1.5 py-0.5 rounded bg-surface-muted text-text-secondary">K</kbd>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none" id="category-pills">
+<button class="category-btn px-4 py-1.5 rounded-lg bg-text-primary text-on-primary font-ui-action text-ui-action whitespace-nowrap shadow-sm transition-all" data-cat="all">
+            All Systems (12)
+          </button>
+<button class="category-btn px-4 py-1.5 rounded-lg bg-surface-subtle text-text-secondary hover:text-text-primary font-ui-action text-ui-action whitespace-nowrap transition-all" data-cat="web">
+            Full-Stack Web (6)
+          </button>
+<button class="category-btn px-4 py-1.5 rounded-lg bg-surface-subtle text-text-secondary hover:text-text-primary font-ui-action text-ui-action whitespace-nowrap transition-all" data-cat="devops">
+            Cloud &amp; DevOps (4)
+          </button>
+<button class="category-btn px-4 py-1.5 rounded-lg bg-surface-subtle text-text-secondary hover:text-text-primary font-ui-action text-ui-action whitespace-nowrap transition-all" data-cat="edge">
+            Mobile &amp; Edge (2)
+          </button>
+</div>
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none" id="tech-filters">
+<span class="font-code-badge text-code-badge uppercase text-text-muted mr-1.5 shrink-0">Stack Filter:</span>
+<button class="tech-tag active px-2.5 py-1 rounded bg-text-primary text-on-primary font-code-badge text-code-badge whitespace-nowrap">All Tech</button>
+<button class="tech-tag px-2.5 py-1 rounded bg-surface-muted text-text-secondary hover:text-text-primary font-code-badge text-code-badge whitespace-nowrap">Go (Golang)</button>
+<button class="tech-tag px-2.5 py-1 rounded bg-surface-muted text-text-secondary hover:text-text-primary font-code-badge text-code-badge whitespace-nowrap">Next.js</button>
+<button class="tech-tag px-2.5 py-1 rounded bg-surface-muted text-text-secondary hover:text-text-primary font-code-badge text-code-badge whitespace-nowrap">Kubernetes</button>
+<button class="tech-tag px-2.5 py-1 rounded bg-surface-muted text-text-secondary hover:text-text-primary font-code-badge text-code-badge whitespace-nowrap">TimescaleDB</button>
+<button class="tech-tag px-2.5 py-1 rounded bg-surface-muted text-text-secondary hover:text-text-primary font-code-badge text-code-badge whitespace-nowrap">Redis</button>
+<button class="tech-tag px-2.5 py-1 rounded bg-surface-muted text-text-secondary hover:text-text-primary font-code-badge text-code-badge whitespace-nowrap">TypeScript</button>
+<button class="tech-tag px-2.5 py-1 rounded bg-surface-muted text-text-secondary hover:text-text-primary font-code-badge text-code-badge whitespace-nowrap">ClickHouse</button>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full bg-canvas-pure px-6 py-12">
+<div class="max-w-7xl mx-auto">
+<div class="flex items-center justify-between pb-6 mb-8 text-text-muted font-code-badge text-code-badge">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span id="results-count">SHOWING 6 VERIFIED PRODUCTION ARCHITECTURES</span>
+</div>
+<div class="hidden sm:flex items-center gap-4">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+            Public Case Studies
+          </span>
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-text-muted"></span>
+            Internal Infra (Restricted Demos)
+          </span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8" id="projects-grid">
+<article class="project-card flex flex-col rounded-2xl bg-canvas-pure shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden" data-category="web iot" data-stack="go golang timescaledb next.js redis mapbox tailwind">
+<div class="relative w-full h-64 bg-surface-subtle overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Modern high-contrast fleet telematics dashboard interface on a light daylight background. Clean maps with real-time neon routing vectors, micro latency graphs, and telemetry statistics in blue and slate monochrome." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFQVA9j5YELXMpiFDeUFfIacYBsl8jrteNhI55Oj06Mjnx3ptBOeQUwW4XPKcaY7tB8Jkl_ExrbnnBLO6JCHELZMRB5KppRPxrKQXaBqDVQ3BDGex6X7r4ZEhoamg6pwVuQ6pA5sMEK_sUihqW24rIEqrpy5WBTwWx68YJFk8wLxszLk8NiV9mH9o1erkyTLGbIK9SJFZmX8CVrAQ97UM8k07A2kvbv2L0UT8Nraney5NaHnvd3iLB">
+<div class="absolute top-4 left-4 flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-canvas-pure/95 backdrop-blur-sm font-code-badge text-code-badge text-text-primary shadow-sm">
+                IoT &amp; Logistics • Real-Time
+              </span>
+<span class="px-2.5 py-1 rounded bg-emerald-50 text-emerald-800 font-code-badge text-code-badge shadow-sm">
+                45k pkt/sec • &lt;180ms p99
+              </span>
+</div>
+<div class="absolute bottom-4 right-4">
+<span class="px-2.5 py-1 rounded bg-text-primary text-on-primary font-code-badge text-code-badge flex items-center gap-1.5 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                v2.4.0 Live
+              </span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-1 justify-between gap-6">
+<div class="space-y-4">
+<div class="flex items-center justify-between gap-2">
+<h2 class="font-headline-md text-headline-md text-text-primary font-bold">
+                  GearGo Fleet Telematics
+                </h2>
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">
+<span class="material-symbols-outlined text-[14px] text-primary-container">verified</span>
+<span>Verified Build</span>
+</div>
+</div>
+<p class="font-body-default text-body-default text-text-secondary">
+                High-throughput real-time telemetry ingestion pipeline and interactive mission control dashboard handling 45,000 active concurrent vehicle feeds with sub-180ms dispatch latency.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Go (Golang)</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">TimescaleDB</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Next.js</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Redis</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Mapbox GL</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Tailwind CSS</span>
+</div>
+</div>
+<div class="pt-6 flex flex-wrap items-center justify-between gap-3 bg-surface-subtle/50 -mx-8 -mb-8 p-8">
+<a class="inline-flex items-center gap-1.5 font-ui-action text-ui-action text-primary-container hover:text-accent-primary-hover font-semibold transition-colors" data-path="featured-work" href="#">
+<span>Read Case Study</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<div class="flex items-center gap-2">
+<a class="p-2 rounded-lg bg-canvas-pure text-text-secondary hover:text-text-primary shadow-sm transition-all" href="https://github.com" rel="noreferrer" target="_blank" title="Source Architecture">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-accent-tint text-primary-container hover:bg-primary-container hover:text-on-primary font-ui-action text-ui-action shadow-sm transition-all" href="#">
+<span class="font-medium">Live Demo</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<article class="project-card flex flex-col rounded-2xl bg-canvas-pure shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden" data-category="devops" data-stack="python terraform docker redis clickhouse aws ecs">
+<div class="relative w-full h-64 bg-surface-subtle overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Cloud FinOps optimization architecture diagram on white surface with crisp blueprints, showing multi-cloud AWS and GCP resource graphs, cost breakdown bars, and automated node scaling visualizations." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-afQs6IAqh_0DnYtaPcQ2pRmishVKezUvsy92kSPvIwaulPinmG13zsBgJ7fQo_b-46evWcigjBmuR5gPdv-9WKjKzZFmG48pMsV9WGBS2f4ZlIrD7Lv_MTa0kkbv5QcKX7nUSqGR0cwIrXQo0TIjkUlTupRwKVSGRQszY1k6geAW_Jo2hDLlHsgIIlNjdv7Ycaptn74jehzfumkQREzsiUbEDl-P7T2gC6e_yMoyslHE8HFOqcB0">
+<div class="absolute top-4 left-4 flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-canvas-pure/95 backdrop-blur-sm font-code-badge text-code-badge text-text-primary shadow-sm">
+                FinOps &amp; Cloud • Analytics
+              </span>
+<span class="px-2.5 py-1 rounded bg-emerald-50 text-emerald-800 font-code-badge text-code-badge shadow-sm">
+                $420k/yr Cost Reduction
+              </span>
+</div>
+<div class="absolute bottom-4 right-4">
+<span class="px-2.5 py-1 rounded bg-text-primary text-on-primary font-code-badge text-code-badge flex items-center gap-1.5 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                v1.8.2 Live
+              </span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-1 justify-between gap-6">
+<div class="space-y-4">
+<div class="flex items-center justify-between gap-2">
+<h2 class="font-headline-md text-headline-md text-text-primary font-bold">
+                  CloudVanguard FinOps Engine
+                </h2>
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">
+<span class="material-symbols-outlined text-[14px] text-primary-container">verified</span>
+<span>Verified Build</span>
+</div>
+</div>
+<p class="font-body-default text-body-default text-text-secondary">
+                Multi-cloud AWS &amp; GCP cost anomaly detection and automated resource rightsizing daemon that reduced corporate cloud expenditure by 34% across 80+ microservice clusters.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Python</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Terraform</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Docker</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Redis</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">ClickHouse</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">AWS ECS</span>
+</div>
+</div>
+<div class="pt-6 flex flex-wrap items-center justify-between gap-3 bg-surface-subtle/50 -mx-8 -mb-8 p-8">
+<a class="inline-flex items-center gap-1.5 font-ui-action text-ui-action text-primary-container hover:text-accent-primary-hover font-semibold transition-colors" data-path="featured-work" href="#">
+<span>Read Case Study</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-muted text-text-muted font-code-badge text-code-badge">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span>Internal Daemon</span>
+</span>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-canvas-pure text-text-primary hover:bg-surface-subtle font-ui-action text-ui-action shadow-sm transition-all" href="https://github.com" rel="noreferrer" target="_blank">
+<span>GitHub</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<article class="project-card flex flex-col rounded-2xl bg-canvas-pure shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden" data-category="web" data-stack="react webrtc node.js tailwind supabase postgresql">
+<div class="relative w-full h-64 bg-surface-subtle overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Telehealth clinical consultation interface mockup on desktop screen with clear light UI aesthetic, encrypted audio waveform visualization, doctor schedule grid, and clean diagnostic panels." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy8Rl1MTRMJNXGOOwAALKlJ1XyI5nIq4f1V3GsKCiXyNlGxh_r1OL_YplBurzAl4aMKmgX3-NLrX6bRvXetK7RVlaNiYdjne1jdh2DOMNG8ZtcT70WbIbNRJpHZCsdoyFqHbxCzu2poXBRJaut4gB2dl88YMnwMcRLX5iGuxOu60hntcbPSvEE7IdirfUXUHca3OlgZkPyFU0kvjHM8bp_iyBg9K1EV7vfWBKyvlvj2IHHzdMKaqQq">
+<div class="absolute top-4 left-4 flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-canvas-pure/95 backdrop-blur-sm font-code-badge text-code-badge text-text-primary shadow-sm">
+                HealthTech • Real-Time WebRTC
+              </span>
+<span class="px-2.5 py-1 rounded bg-emerald-50 text-emerald-800 font-code-badge text-code-badge shadow-sm">
+                HIPAA Verified • Zero-Leak WebRTC
+              </span>
+</div>
+<div class="absolute bottom-4 right-4">
+<span class="px-2.5 py-1 rounded bg-text-primary text-on-primary font-code-badge text-code-badge flex items-center gap-1.5 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                v3.1.0 Live
+              </span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-1 justify-between gap-6">
+<div class="space-y-4">
+<div class="flex items-center justify-between gap-2">
+<h2 class="font-headline-md text-headline-md text-text-primary font-bold">
+                  AuraHealth Telemedicine Core
+                </h2>
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">
+<span class="material-symbols-outlined text-[14px] text-primary-container">verified</span>
+<span>Verified Build</span>
+</div>
+</div>
+<p class="font-body-default text-body-default text-text-secondary">
+                HIPAA-compliant appointment dispatching engine and end-to-end encrypted WebRTC video consultation suite serving 120+ clinical healthcare practitioners nationwide.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">React</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">WebRTC</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Node.js</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Tailwind CSS</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Supabase</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">PostgreSQL</span>
+</div>
+</div>
+<div class="pt-6 flex flex-wrap items-center justify-between gap-3 bg-surface-subtle/50 -mx-8 -mb-8 p-8">
+<a class="inline-flex items-center gap-1.5 font-ui-action text-ui-action text-primary-container hover:text-accent-primary-hover font-semibold transition-colors" data-path="featured-work" href="#">
+<span>Read Case Study</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<div class="flex items-center gap-2">
+<a class="p-2 rounded-lg bg-canvas-pure text-text-secondary hover:text-text-primary shadow-sm transition-all" href="https://github.com" rel="noreferrer" target="_blank" title="Source Architecture">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-accent-tint text-primary-container hover:bg-primary-container hover:text-on-primary font-ui-action text-ui-action shadow-sm transition-all" href="#">
+<span class="font-medium">Live Demo</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<article class="project-card flex flex-col rounded-2xl bg-canvas-pure shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden" data-category="devops" data-stack="go golang kubernetes aws s3 ffmpeg rabbitmq grafana">
+<div class="relative w-full h-64 bg-surface-subtle overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Distributed server computing pipeline and data flow topology schematic on clean white canvas. Showing video worker pods, message queue buffers, and Prometheus throughput graphs with bright slate styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB77c1fRWPTKOpb8Q3f4jzhC3wVoi5NM3fBHYjmT3g8DXwzCQ3qnl-ObSMowIGydsrXk4GemzJGcT5oNuVGJkJoHWGEtuazTL0bbBpgWyDhRexrxTs3MH7MJ91evHOfjxFDuMnisUg0T8kg3yV70exK0OpGOrHIVU4EXqaq8rmFSNl3-FUbRRJTFRJUw6x5ytvfPbMaakxCUchou9JxHzQJUOTprXZq2J3LNasNNEa5wBVVljdLHhOz">
+<div class="absolute top-4 left-4 flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-canvas-pure/95 backdrop-blur-sm font-code-badge text-code-badge text-text-primary shadow-sm">
+                Distributed Systems • Video Transcoding
+              </span>
+<span class="px-2.5 py-1 rounded bg-emerald-50 text-emerald-800 font-code-badge text-code-badge shadow-sm">
+                10k Chunks/min • Auto-Scale HPA
+              </span>
+</div>
+<div class="absolute bottom-4 right-4">
+<span class="px-2.5 py-1 rounded bg-text-primary text-on-primary font-code-badge text-code-badge flex items-center gap-1.5 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                v1.2.4 Live
+              </span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-1 justify-between gap-6">
+<div class="space-y-4">
+<div class="flex items-center justify-between gap-2">
+<h2 class="font-headline-md text-headline-md text-text-primary font-bold">
+                  NexusStream Asset Pipeline
+                </h2>
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">
+<span class="material-symbols-outlined text-[14px] text-primary-container">verified</span>
+<span>Verified Build</span>
+</div>
+</div>
+<p class="font-body-default text-body-default text-text-secondary">
+                High-throughput distributed media transcoding pipeline processing 10,000 video chunks per minute with automated FFmpeg worker scaling and zero queue blockage.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Go (Golang)</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Kubernetes</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">AWS S3</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">FFmpeg</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">RabbitMQ</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Grafana</span>
+</div>
+</div>
+<div class="pt-6 flex flex-wrap items-center justify-between gap-3 bg-surface-subtle/50 -mx-8 -mb-8 p-8">
+<a class="inline-flex items-center gap-1.5 font-ui-action text-ui-action text-primary-container hover:text-accent-primary-hover font-semibold transition-colors" data-path="featured-work" href="#">
+<span>Read Case Study</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-muted text-text-muted font-code-badge text-code-badge">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span>Backend Infra</span>
+</span>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-canvas-pure text-text-primary hover:bg-surface-subtle font-ui-action text-ui-action shadow-sm transition-all" href="https://github.com" rel="noreferrer" target="_blank">
+<span>GitHub</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<article class="project-card flex flex-col rounded-2xl bg-canvas-pure shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden" data-category="edge devops" data-stack="rust opentelemetry next.js clickhouse docker">
+<div class="relative w-full h-64 bg-surface-subtle overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Technical observability monitoring interface with distributed trace waterfall charts, sub-millisecond eBPF probe flamegraphs, and edge server health cards rendered in sleek daylight tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6MRp8GWq3L20eg4I9VaGCcXnn0oZ1Y7KX__quZqJUocRQCFfLb1v_CiZf8qg0BOframGaqKErJQ39lF2KslJLQ8BPRixgggZivDZTpVq3h6_opebyRmvWtWSlft-H1gT4X91fjb6EtuxyB1HsUnZC6ri7tRQzpZxoVlhSPXpy7a67COHosNuU0Bwm5RsyGvid2V-7R7ZqdIaaF2ED6kaRdfTGRVUS57Dbf4RWcs0bzii-JdeGPH51">
+<div class="absolute top-4 left-4 flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-canvas-pure/95 backdrop-blur-sm font-code-badge text-code-badge text-text-primary shadow-sm">
+                Observability • Edge Metrics
+              </span>
+<span class="px-2.5 py-1 rounded bg-emerald-50 text-emerald-800 font-code-badge text-code-badge shadow-sm">
+                0.4ms Overhead • eBPF Probes
+              </span>
+</div>
+<div class="absolute bottom-4 right-4">
+<span class="px-2.5 py-1 rounded bg-text-primary text-on-primary font-code-badge text-code-badge flex items-center gap-1.5 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                v2.0.1 Live
+              </span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-1 justify-between gap-6">
+<div class="space-y-4">
+<div class="flex items-center justify-between gap-2">
+<h2 class="font-headline-md text-headline-md text-text-primary font-bold">
+                  PulseGrid Distributed APM
+                </h2>
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">
+<span class="material-symbols-outlined text-[14px] text-primary-container">verified</span>
+<span>Verified Build</span>
+</div>
+</div>
+<p class="font-body-default text-body-default text-text-secondary">
+                Lightweight edge observability daemon collecting OpenTelemetry traces and memory metrics across distributed edge worker nodes with sub-millisecond serialization overhead.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Rust</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">OpenTelemetry</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Next.js 14</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">ClickHouse</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Docker</span>
+</div>
+</div>
+<div class="pt-6 flex flex-wrap items-center justify-between gap-3 bg-surface-subtle/50 -mx-8 -mb-8 p-8">
+<a class="inline-flex items-center gap-1.5 font-ui-action text-ui-action text-primary-container hover:text-accent-primary-hover font-semibold transition-colors" data-path="featured-work" href="#">
+<span>Read Case Study</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<div class="flex items-center gap-2">
+<a class="p-2 rounded-lg bg-canvas-pure text-text-secondary hover:text-text-primary shadow-sm transition-all" href="https://github.com" rel="noreferrer" target="_blank" title="Source Architecture">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-accent-tint text-primary-container hover:bg-primary-container hover:text-on-primary font-ui-action text-ui-action shadow-sm transition-all" href="#">
+<span class="font-medium">Live Demo</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<article class="project-card flex flex-col rounded-2xl bg-canvas-pure shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden" data-category="web edge" data-stack="typescript node.js web3 redis postgresql aws lambda">
+<div class="relative w-full h-64 bg-surface-subtle overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Smart contract sentinel security dashboard with smart contract bytecode analysis, real-time Ethereum mempool transaction tracker, and risk score graphs in crisp daylight design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfDNd3kW6IpMDovWU4ZD2ymRPdLcMPRxOnKTtGKVZk1vcUGighdV5jtb6VVJX7ch0YUpV1ISdZ0ibTQRIIkwyrv8IkZiszvO4L541fGfTO_Dp79ag0j41ZTUfuj34xKRNT9tZRL9KlLxOgEQUuU8lCIa0A558lzRhUGD0OOUOrdg07ouEAE5cW7_WMlCl1IgF07KL9ZuDRO_inUWnoC9kF--EW8rmqVNDE3Srlw833GYbGV0gYajFu">
+<div class="absolute top-4 left-4 flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-canvas-pure/95 backdrop-blur-sm font-code-badge text-code-badge text-text-primary shadow-sm">
+                FinTech &amp; Security • Web3
+              </span>
+<span class="px-2.5 py-1 rounded bg-emerald-50 text-emerald-800 font-code-badge text-code-badge shadow-sm">
+                $14M Protected • Real-time Mempool
+              </span>
+</div>
+<div class="absolute bottom-4 right-4">
+<span class="px-2.5 py-1 rounded bg-text-primary text-on-primary font-code-badge text-code-badge flex items-center gap-1.5 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                v1.5.0 Live
+              </span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-1 justify-between gap-6">
+<div class="space-y-4">
+<div class="flex items-center justify-between gap-2">
+<h2 class="font-headline-md text-headline-md text-text-primary font-bold">
+                  ChainGuard Smart Contract Sentinel
+                </h2>
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">
+<span class="material-symbols-outlined text-[14px] text-primary-container">verified</span>
+<span>Verified Build</span>
+</div>
+</div>
+<p class="font-body-default text-body-default text-text-secondary">
+                Real-time EVM blockchain transaction monitor and automated vulnerability interception sentinel preventing unauthorized liquidity drainage.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">TypeScript</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Node.js</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Web3.js</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">Redis</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">PostgreSQL</span>
+<span class="px-2 py-0.5 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge">AWS Lambda</span>
+</div>
+</div>
+<div class="pt-6 flex flex-wrap items-center justify-between gap-3 bg-surface-subtle/50 -mx-8 -mb-8 p-8">
+<a class="inline-flex items-center gap-1.5 font-ui-action text-ui-action text-primary-container hover:text-accent-primary-hover font-semibold transition-colors" data-path="featured-work" href="#">
+<span>Read Case Study</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-muted text-text-muted font-code-badge text-code-badge">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span>Sentinel Bot</span>
+</span>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-canvas-pure text-text-primary hover:bg-surface-subtle font-ui-action text-ui-action shadow-sm transition-all" href="https://github.com" rel="noreferrer" target="_blank">
+<span>GitHub</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+</div>
+<div class="hidden py-16 text-center space-y-4" id="no-results">
+<div class="w-12 h-12 rounded-full bg-surface-muted mx-auto flex items-center justify-center text-text-muted">
+<span class="material-symbols-outlined">filter_list_off</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-text-primary font-bold">No Matching Systems Found</p>
+<p class="font-body-default text-body-default text-text-secondary max-w-sm mx-auto">
+          Try loosening your filter constraints or reset keyword search to view our full architecture catalog.
+        </p>
+<button class="px-4 py-2 rounded-lg bg-text-primary text-on-primary font-ui-action text-ui-action" id="reset-filters">
+          Reset All Filters
+        </button>
+</div>
+</div>
+</div>
+<div class="w-full bg-surface-subtle px-6 py-16">
+<div class="max-w-7xl mx-auto rounded-3xl bg-canvas-pure p-8 md:p-14 shadow-sm flex flex-col lg:flex-row items-center justify-between gap-10">
+<div class="space-y-4 max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-primary-container">
+<span class="font-code-badge text-code-badge uppercase tracking-wider font-semibold">DIRECT CONSULTATION &amp; SCOPING</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary tracking-tight font-bold">
+          Need a Custom Architecture or Ready to Build?
+        </h2>
+<p class="font-body-lead text-body-lead text-text-secondary leading-relaxed">
+          Choose a turnkey milestone on Fiverr with escrow protection or schedule a direct enterprise consultation with our engineering studio for bespoke infrastructure.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full lg:w-auto shrink-0">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-primary-container hover:bg-accent-primary-hover text-on-primary font-ui-action text-ui-action shadow-md transition-all font-semibold" href="https://www.fiverr.com" rel="noreferrer" target="_blank">
+<span>Explore Fiverr Tiers ($350 - $2,800)</span>
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-canvas-pure hover:bg-surface-subtle text-text-primary font-ui-action text-ui-action shadow-sm transition-all font-semibold" data-path="custom-scope" href="#">
+<span>Request Custom Scope SOW</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initPortfolioFilters() {
+    const searchInput = document.getElementById('project-search');
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    const techBtns = document.querySelectorAll('.tech-tag');
+    const projectCards = document.querySelectorAll('.project-card');
+    const resultsCount = document.getElementById('results-count');
+    const noResults = document.getElementById('no-results');
+    const resetBtn = document.getElementById('reset-filters');
+
+    let activeCategory = 'all';
+    let activeTech = 'all';
+    let searchQuery = '';
+
+    function filterProjects() {
+      let visibleCount = 0;
+
+      projectCards.forEach(card => {
+        const catData = card.getAttribute('data-category') || '';
+        const stackData = card.getAttribute('data-stack') || '';
+        const cardText = card.textContent.toLowerCase();
+
+        const matchesCat = activeCategory === 'all' || catData.includes(activeCategory);
+        const matchesTech = activeTech === 'all' || stackData.includes(activeTech.toLowerCase());
+        const matchesSearch = !searchQuery || cardText.includes(searchQuery.toLowerCase());
+
+        if (matchesCat && matchesTech && matchesSearch) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      resultsCount.textContent = `SHOWING ${visibleCount} VERIFIED PRODUCTION ARCHITECTURES`;
+      if (visibleCount === 0) {
+        noResults.classList.remove('hidden');
+      } else {
+        noResults.classList.add('hidden');
+      }
+    }
+
+    categoryBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        categoryBtns.forEach(b => {
+          b.classList.remove('bg-text-primary', 'text-on-primary', 'shadow-sm');
+          b.classList.add('bg-surface-subtle', 'text-text-secondary');
+        });
+        btn.classList.add('bg-text-primary', 'text-on-primary', 'shadow-sm');
+        btn.classList.remove('bg-surface-subtle', 'text-text-secondary');
+        activeCategory = btn.getAttribute('data-cat');
+        filterProjects();
+      });
+    });
+
+    techBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        techBtns.forEach(b => {
+          b.classList.remove('bg-text-primary', 'text-on-primary');
+          b.classList.add('bg-surface-muted', 'text-text-secondary');
+        });
+        btn.classList.add('bg-text-primary', 'text-on-primary');
+        btn.classList.remove('bg-surface-muted', 'text-text-secondary');
+        const text = btn.textContent.trim();
+        activeTech = text === 'All Tech' ? 'all' : text;
+        filterProjects();
+      });
+    });
+
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value.trim();
+      filterProjects();
+    });
+
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        searchQuery = '';
+        searchInput.value = '';
+        activeCategory = 'all';
+        activeTech = 'all';
+        categoryBtns[0].click();
+        techBtns[0].click();
+      });
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        searchInput.focus();
+      }
+    });
+  })();
+</script></main></div></div><footer class="w-full bg-surface-subtle border-t border-border-subtle"><div class="max-w-7xl mx-auto px-6 py-16 border-x border-transparent xl:border-border-subtle"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-border-subtle"><div class="md:col-span-5 space-y-4"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-text-primary font-bold">ksdev<span class="text-primary-container font-mono">_</span></span></div><p class="font-body-default text-body-default text-text-secondary max-w-sm">Elite Software Engineering &amp; Cloud Infrastructure Studio. Architectural clarity, micro-latency architectures, and daylight reliability.</p><div class="pt-2 flex items-center gap-3"><div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-surface-muted border border-border-subtle"><span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span><span class="font-code-badge text-code-badge text-text-secondary uppercase tracking-wider">Build 4.18 • Production • 99.98% Uptime</span></div></div></div><div class="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8"><div class="space-y-3"><h4 class="font-code-badge text-code-badge uppercase tracking-wider text-text-muted">Engineering</h4><ul class="space-y-2.5 font-body-sm text-body-sm"><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="featured-work" href="#">Architecture Portfolio</a></li><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="tech-stack" href="#">Production Stack</a></li><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="services-pricing" href="#">Cloud DevOps</a></li><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="services-pricing" href="#">Microservices</a></li></ul></div><div class="space-y-3"><h4 class="font-code-badge text-code-badge uppercase tracking-wider text-text-muted">Engagements</h4><ul class="space-y-2.5 font-body-sm text-body-sm"><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="services-pricing" href="#">Services &amp; Pricing</a></li><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="custom-scope" href="#">Custom Scope SOW</a></li><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors inline-flex items-center gap-1" href="https://www.fiverr.com" rel="noreferrer" target="_blank">Fiverr Studio Gig <span class="material-symbols-outlined text-[14px]">north_east</span></a></li><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="security-compliance" href="#">Security &amp; SLA</a></li></ul></div><div class="space-y-3"><h4 class="font-code-badge text-code-badge uppercase tracking-wider text-text-muted">Infrastructure</h4><ul class="space-y-2.5 font-body-sm text-body-sm"><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="system-status" href="#">System Status</a></li><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="security-compliance" href="#">Compliance Matrix</a></li><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors inline-flex items-center gap-1" href="https://github.com" rel="noreferrer" target="_blank">GitHub Core <span class="material-symbols-outlined text-[14px]">north_east</span></a></li><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="studio" href="#">Observability Docs</a></li></ul></div></div></div><div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4"><p class="font-ui-caption text-ui-caption text-text-muted">© 2025 KSDev Studio. All rights reserved. Precision software engineering.</p><div class="flex items-center gap-6 font-ui-caption text-ui-caption text-text-muted"><a class="hover:text-text-primary transition-colors" data-path="security-compliance" href="#">Terms of Service</a><a class="hover:text-text-primary transition-colors" data-path="security-compliance" href="#">Privacy Architecture</a><a class="hover:text-text-primary transition-colors" data-path="system-status" href="#">Telemetry Status</a></div></div></div></footer></body></html>

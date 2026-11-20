@@ -1,0 +1,1024 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed":"#131b2e","surface-tint":"#0053db","border-hover":"#CBD5E1","secondary-fixed-dim":"#bec6e0","secondary-container":"#dae2fd","primary-fixed-dim":"#b4c5ff","text-secondary":"#475569","surface-variant":"#d3e4fe","inverse-primary":"#b4c5ff","surface-container-low":"#eff4ff","primary":"#004ac6","tertiary":"#006242","secondary-fixed":"#dae2fd","on-background":"#0b1c30","text-primary":"#0F172A","on-secondary-container":"#5c647a","on-tertiary-fixed-variant":"#005236","on-tertiary-container":"#bdffdb","surface-bright":"#f8f9ff","on-tertiary":"#ffffff","canvas-pure":"#FFFFFF","surface-muted":"#F1F5F9","error":"#ba1a1a","on-error-container":"#93000a","inverse-surface":"#213145","on-surface":"#0b1c30","surface":"#f8f9ff","surface-container-highest":"#d3e4fe","tertiary-container":"#007d55","text-muted":"#64748B","primary-container":"#2563eb","background":"#f8f9ff","status-danger":"#DC2626","on-primary-fixed":"#00174b","surface-subtle":"#F8FAFC","on-primary-fixed-variant":"#003ea8","border-subtle":"#E2E8F0","error-container":"#ffdad6","accent-primary-hover":"#1D4ED8","on-error":"#ffffff","tertiary-fixed":"#6ffbbe","accent-tint":"#EFF6FF","on-secondary-fixed-variant":"#3f465c","outline":"#737686","surface-container-lowest":"#ffffff","secondary":"#565e74","surface-container":"#e5eeff","on-primary-container":"#eeefff","primary-fixed":"#dbe1ff","on-surface-variant":"#434655","on-secondary":"#ffffff","surface-container-high":"#dce9ff","on-primary":"#ffffff","surface-dim":"#cbdbf5","tertiary-fixed-dim":"#4edea3","outline-variant":"#c3c6d7","on-tertiary-fixed":"#002113","accent-devops":"#4F46E5","status-warning":"#D97706","inverse-on-surface":"#eaf1ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","space-lg":"1.5rem","space-md":"1rem","space-xl":"2rem","space-xs":"0.25rem","margin":"1.5rem","gutter-lg":"2rem","gutter":"1.5rem","gutter-sm":"1rem","margin-desktop":"2rem","margin-mobile":"1rem"},"fontFamily":{"body-default":["Inter"],"display-hero":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-lead":["Inter"],"display-hero-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"ui-action":["Inter"],"code-meta":["JetBrains Mono"],"code-badge":["JetBrains Mono"],"ui-caption":["Inter"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"body-default":["1rem",{"lineHeight":"1.6","letterSpacing":"0em","fontWeight":"400"}],"display-hero":["3.5rem",{"lineHeight":"1.1","letterSpacing":"-0.03em","fontWeight":"800"}],"headline-lg":["2.25rem",{"lineHeight":"1.2","letterSpacing":"-0.025em","fontWeight":"700"}],"body-lead":["1.125rem",{"lineHeight":"1.65","letterSpacing":"0em","fontWeight":"400"}],"display-hero-mobile":["2.25rem",{"lineHeight":"1.15","letterSpacing":"-0.025em","fontWeight":"700"}],"body-sm":["0.875rem",{"lineHeight":"1.55","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["1.75rem",{"lineHeight":"1.25","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["1.125rem",{"lineHeight":"1.4","letterSpacing":"-0.01em","fontWeight":"600"}],"ui-action":["0.875rem",{"lineHeight":"1.25","letterSpacing":"0.01em","fontWeight":"600"}],"code-meta":["0.8125rem",{"lineHeight":"1.4","letterSpacing":"0em","fontWeight":"400"}],"code-badge":["0.75rem",{"lineHeight":"1.2","letterSpacing":"0.04em","fontWeight":"500"}],"ui-caption":["0.75rem",{"lineHeight":"1.3","letterSpacing":"0.01em","fontWeight":"500"}],"headline-md":["1.375rem",{"lineHeight":"1.3","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface-subtle font-body-default text-body-default text-text-primary antialiased min-h-screen"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-canvas-pure z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center justify-between"><a class="flex items-center gap-space-xs no-underline" data-path="overview-dashboard" href="#"><span class="font-headline-md text-headline-md font-bold tracking-tight text-text-primary">ksdev<span class="text-primary-container">_</span></span></a><span class="font-code-badge text-code-badge px-space-xs py-0.5 rounded bg-surface-muted text-text-secondary">ADMIN CMS v2.4</span></div><div class="px-space-md py-space-sm"><nav class="flex flex-col gap-1" data-active-classes="bg-accent-tint text-primary font-bold rounded-lg"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="overview-dashboard" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span>Overview Dashboard</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="site-copy-and-settings" href="#"><span class="material-symbols-outlined text-[18px]">tune</span>Site Copy &amp; Settings</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="services-and-pricing" href="#"><span class="material-symbols-outlined text-[18px]">payments</span>Services &amp; Pricing</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="projects-directory" href="#"><span class="material-symbols-outlined text-[18px]">folder</span>Projects Directory</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="new-project" href="#"><span class="material-symbols-outlined text-[18px]">add_circle</span>New Project</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="tech-stack-catalog" href="#"><span class="material-symbols-outlined text-[18px]">terminal</span>Tech Stack Catalog</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="admin-users-and-roles" href="#"><span class="material-symbols-outlined text-[18px]">shield_person</span>Admin Users &amp; Roles</a></nav></div></div><div class="p-space-md bg-canvas-pure flex flex-col gap-space-md"><div class="p-space-sm rounded-lg bg-surface-muted flex flex-col gap-1.5"><div class="flex items-center justify-between font-code-meta text-code-meta text-text-secondary"><span class="flex items-center gap-1.5"><span class="h-2 w-2 rounded-full bg-tertiary-container animate-pulse"></span>API: Online</span><span class="text-tertiary font-medium">200 OK</span></div><div class="flex items-center justify-between font-code-meta text-code-meta text-text-secondary"><span class="flex items-center gap-1.5"><span class="h-2 w-2 rounded-full bg-primary-container"></span>DB: Supabase</span><span class="text-primary font-medium">Connected</span></div></div><a class="flex items-center justify-center gap-space-xs w-full py-2 px-space-md rounded-lg text-ui-action font-ui-action text-text-secondary hover:bg-surface-muted hover:text-status-danger transition-colors" data-path="admin-login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span>Log Out</a></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-canvas-pure/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-lg"><div class="flex items-center gap-space-sm font-code-meta text-code-meta text-text-muted"><span class="text-text-secondary">ksdev</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-text-primary font-medium font-ui-action text-ui-action">Console</span></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-1 px-3 py-1.5 rounded-lg text-ui-action font-ui-action text-text-primary bg-canvas-pure hover:bg-surface-muted hover:text-primary transition-colors" href="/" target="_blank"><span class="material-symbols-outlined text-[16px]">north_east</span>View Live Site</a><div class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge"><span class="h-1.5 w-1.5 rounded-full bg-status-warning"></span>ENV: PROD</div><div class="flex items-center gap-space-sm pl-space-xs"><div class="hidden sm:flex flex-col text-right"><span class="text-ui-action font-ui-action text-text-primary leading-tight">Admin Principal</span><span class="font-code-badge text-code-badge text-text-muted">admin@ksdev.studio</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface-subtle px-gutter-lg py-space-xl"><div class="flex flex-col w-full">
+<!-- Inline Dynamic Navigation Highlight for Active State -->
+<script>
+    (function highlightActiveNav() {
+      try {
+        const links = document.querySelectorAll('aside nav a');
+        links.forEach(link => {
+          const path = link.getAttribute('data-path');
+          if (path === 'admin-users-and-roles') {
+            link.className = 'flex items-center gap-space-sm px-space-md py-2.5 rounded-lg bg-accent-tint text-primary font-bold transition-colors text-ui-action font-ui-action shadow-sm';
+            const icon = link.querySelector('.material-symbols-outlined');
+            if (icon) icon.style.fontVariationSettings = "'FILL' 1";
+          }
+        });
+      } catch (e) {
+        console.error(e);
+      }
+    })();
+  </script>
+<!-- Breadcrumb Context & System Clock Bar -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md gap-space-sm">
+<div class="flex items-center gap-space-xs font-code-meta text-code-meta text-text-muted">
+<span class="text-text-secondary hover:text-text-primary transition-colors cursor-pointer">ksdev</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-text-secondary">Console</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-medium">Admin Users &amp; Roles</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-canvas-pure text-text-secondary font-code-badge text-code-badge shadow-sm">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary-container animate-pulse"></span>
+<span>RBAC ENFORCED: STRICT-v2.8</span>
+</div>
+<div class="hidden md:flex items-center gap-1 font-code-badge text-code-badge text-text-muted">
+<span class="material-symbols-outlined text-[14px]">search_off</span>
+<span id="utc-clock">UTC 14:42:09</span>
+</div>
+</div>
+</div>
+<!-- Header Section with High Architectural Contrast -->
+<header class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg pb-space-lg">
+<div class="flex flex-col max-w-3xl">
+<div class="flex items-center gap-2 mb-1.5">
+<span class="font-code-badge text-code-badge tracking-wider text-primary font-semibold uppercase">
+          SECURITY ARCHITECTURE /// ACCESS CONTROL &amp; RBAC POLICY
+        </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-accent-tint text-primary font-code-badge text-[10px] font-semibold">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+          ZERO-TRUST ENFORCED • MFA REQUIRED
+        </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-text-primary tracking-tight font-bold">
+        Admin Users &amp; Role Access
+      </h1>
+<p class="font-body-default text-body-default text-text-secondary mt-1">
+        Configure engineering console credentials, multi-factor hardware key policies, session lifetimes, and granular role-based permissions across core Studio environments.
+      </p>
+</div>
+<!-- Header CTA Controls -->
+<div class="flex items-center gap-space-sm flex-wrap self-start lg:self-end">
+<button class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-lg bg-canvas-pure text-text-primary font-ui-action text-ui-action shadow-sm hover:bg-surface-muted transition-all active:scale-[0.98]" onclick="toggleAuditDrawer()">
+<span class="material-symbols-outlined text-[18px] text-text-muted">terminal</span>
+<span>Audit Access Logs</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-lg bg-primary-container text-on-primary font-ui-action text-ui-action shadow-sm hover:bg-accent-primary-hover transition-all active:scale-[0.98]" onclick="openInviteModal()">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>+ Invite Engineering User</span>
+</button>
+</div>
+</header>
+<!-- Security & IAM Metric Cards (4 Tiles) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-xl">
+<!-- Metric 1 -->
+<div class="bg-canvas-pure rounded-xl p-space-md shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-code-badge text-code-badge text-text-muted uppercase tracking-wider">Console Principals</span>
+<span class="w-8 h-8 rounded-lg bg-accent-tint text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</span>
+</div>
+<div class="mt-3">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md font-bold text-text-primary tracking-tight">3 Users</span>
+<span class="font-code-badge text-code-badge text-tertiary font-medium">Synced</span>
+</div>
+<p class="font-ui-caption text-ui-caption text-text-secondary mt-1">2 Admin Principals, 1 Technical Editor</p>
+</div>
+<div class="mt-3 pt-2 bg-surface-muted/60 rounded px-2 py-1 flex items-center justify-between text-code-badge font-code-badge text-text-muted">
+<span>Service Accounts</span>
+<span class="text-text-primary font-semibold">2 Daemon Bots</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-canvas-pure rounded-xl p-space-md shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-code-badge text-code-badge text-text-muted uppercase tracking-wider">MFA Hardware Key</span>
+<span class="w-8 h-8 rounded-lg bg-emerald-50 text-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">key</span>
+</span>
+</div>
+<div class="mt-3">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md font-bold text-text-primary tracking-tight">100%</span>
+<span class="font-code-badge text-code-badge text-tertiary font-medium">Compliant</span>
+</div>
+<p class="font-ui-caption text-ui-caption text-text-secondary mt-1">FIDO2 / WebAuthn token verified</p>
+</div>
+<div class="mt-3 pt-2 bg-surface-muted/60 rounded px-2 py-1 flex items-center justify-between text-code-badge font-code-badge text-text-muted">
+<span>Hardware Passkeys</span>
+<span class="text-tertiary font-semibold">3 Active Keys</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-canvas-pure rounded-xl p-space-md shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-code-badge text-code-badge text-text-muted uppercase tracking-wider">Active Sessions</span>
+<span class="w-8 h-8 rounded-lg bg-accent-tint text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">devices</span>
+</span>
+</div>
+<div class="mt-3">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md font-bold text-text-primary tracking-tight">1 Live</span>
+<span class="inline-flex items-center gap-1 font-code-badge text-code-badge text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-ping"></span> Live Now
+          </span>
+</div>
+<p class="font-ui-caption text-ui-caption text-text-secondary mt-1">IP: 198.51.100.24 (Virginia, US)</p>
+</div>
+<div class="mt-3 pt-2 bg-surface-muted/60 rounded px-2 py-1 flex items-center justify-between text-code-badge font-code-badge text-text-muted">
+<span>Geo-Fencing</span>
+<span class="text-text-primary font-semibold">US / EU Strict</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-canvas-pure rounded-xl p-space-md shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-code-badge text-code-badge text-text-muted uppercase tracking-wider">Failed Auth (7d)</span>
+<span class="w-8 h-8 rounded-lg bg-surface-muted text-text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">security</span>
+</span>
+</div>
+<div class="mt-3">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md font-bold text-text-primary tracking-tight">0 Breaches</span>
+<span class="font-code-badge text-code-badge text-tertiary font-medium">Nominal</span>
+</div>
+<p class="font-ui-caption text-ui-caption text-text-secondary mt-1">Adaptive IP rate-limiting active</p>
+</div>
+<div class="mt-3 pt-2 bg-surface-muted/60 rounded px-2 py-1 flex items-center justify-between text-code-badge font-code-badge text-text-muted">
+<span>Threat Mitigation</span>
+<span class="text-tertiary font-semibold">Cloudflare Strict</span>
+</div>
+</div>
+</section>
+<!-- SECTION A: Console Users & Service Accounts Table -->
+<section class="bg-canvas-pure rounded-2xl shadow-sm mb-space-xl overflow-hidden flex flex-col">
+<!-- Filter and Search Action Header -->
+<div class="p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md bg-canvas-pure">
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-sm flex-1">
+<!-- Search Input -->
+<div class="relative w-full sm:w-80">
+<span class="material-symbols-outlined text-[18px] text-text-muted absolute left-3 top-1/2 -translate-y-1/2">search</span>
+<input class="w-full bg-surface-subtle text-text-primary font-body-sm text-body-sm pl-9 pr-3 py-2 rounded-lg focus:outline-none focus:bg-canvas-pure focus:ring-2 focus:ring-primary-container/20 transition-all placeholder:text-text-muted" id="user-search" oninput="filterUserRows()" placeholder="Search principal, IAM ID, or key..." type="text">
+</div>
+<!-- Segmented Filter Pills -->
+<div class="flex items-center gap-1 bg-surface-muted p-1 rounded-lg overflow-x-auto">
+<button class="role-pill-btn px-3 py-1 rounded-md text-code-badge font-code-badge bg-canvas-pure text-text-primary shadow-sm font-semibold transition-all" onclick="setFilterRole('all', this)">
+            All Principals (4)
+          </button>
+<button class="role-pill-btn px-3 py-1 rounded-md text-code-badge font-code-badge text-text-secondary hover:text-text-primary transition-all" onclick="setFilterRole('admin', this)">
+            Super Admins (2)
+          </button>
+<button class="role-pill-btn px-3 py-1 rounded-md text-code-badge font-code-badge text-text-secondary hover:text-text-primary transition-all" onclick="setFilterRole('editor', this)">
+            Technical Editors (1)
+          </button>
+<button class="role-pill-btn px-3 py-1 rounded-md text-code-badge font-code-badge text-text-secondary hover:text-text-primary transition-all" onclick="setFilterRole('service', this)">
+            API Daemons (1)
+          </button>
+</div>
+</div>
+<!-- Quick Operations -->
+<div class="flex items-center gap-space-xs self-end md:self-auto font-code-badge text-code-badge text-text-muted">
+<span class="inline-flex items-center gap-1 bg-accent-tint text-primary px-2.5 py-1 rounded-md font-medium">
+<span class="material-symbols-outlined text-[14px]">encrypted</span>
+          SESSION ENCRYPTION: TLS 1.3
+        </span>
+</div>
+</div>
+<!-- Data Table Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse" id="principals-table">
+<thead>
+<tr class="bg-surface-subtle text-text-secondary font-code-badge text-code-badge uppercase tracking-wider">
+<th class="py-3 px-space-lg font-medium">User / Principal</th>
+<th class="py-3 px-space-md font-medium">Role &amp; Scope</th>
+<th class="py-3 px-space-md font-medium">Auth Hardware / Method</th>
+<th class="py-3 px-space-md font-medium">Access Status</th>
+<th class="py-3 px-space-md font-medium">Last Active &amp; Node IP</th>
+<th class="py-3 px-space-lg text-right font-medium">Operations</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-text-primary divide-y divide-surface-muted">
+<!-- Row 1: Admin Principal (Primary) -->
+<tr class="user-row hover:bg-surface-subtle/70 transition-colors group" data-role="admin" data-search="admin principal master account admin@ksdev.studio iam_usr_902f">
+<td class="py-4 px-space-lg">
+<div class="flex items-center gap-3">
+<div class="relative w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-sm shadow-sm flex-shrink-0">
+                  AP
+                  <span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-tertiary-container ring-2 ring-canvas-pure" title="Active Key Session"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold truncate">Admin Principal (Primary)</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-muted text-text-secondary font-code-badge text-[10px]">OWNER</span>
+</div>
+<span class="text-text-secondary text-body-sm truncate">admin@ksdev.studio</span>
+<span class="font-code-meta text-code-meta text-text-muted">IAM: iam_usr_902f81e0</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-accent-tint text-primary font-code-badge text-code-badge font-semibold">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+                Super Admin
+              </span>
+<p class="text-ui-caption font-ui-caption text-text-muted mt-1">Full Studio Cluster Read/Write</p>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="inline-flex items-center gap-1.5 font-code-badge text-code-badge text-text-primary font-medium">
+<span class="material-symbols-outlined text-[16px] text-tertiary">passkey</span>
+                  FIDO2 Hardware Key
+                </span>
+<span class="font-code-meta text-code-meta text-text-muted">YubiKey 5C NFC (Serial: 8192-A)</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-2">
+<span class="h-2 w-2 rounded-full bg-tertiary-container"></span>
+<span class="font-code-badge text-code-badge font-semibold text-tertiary uppercase">ACTIVE</span>
+</div>
+<span class="font-ui-caption text-ui-caption text-text-muted">Master Lock Enabled</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-code-badge text-code-badge text-text-primary font-medium flex items-center gap-1">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary-container animate-pulse"></span>
+                  Active Now
+                </span>
+<span class="font-code-meta text-code-meta text-text-muted">198.51.100.24 (Ashburn, VA)</span>
+</div>
+</td>
+<td class="py-4 px-space-lg text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-muted hover:bg-surface-container text-text-primary font-ui-action text-ui-action transition-colors" onclick="openPermissionsModal('Admin Principal', 'Super Admin')">
+                  Configure
+                </button>
+<button class="p-1.5 rounded-lg hover:bg-surface-muted text-text-muted hover:text-text-primary transition-colors" onclick="triggerToast('Root master account session cannot be remotely killed.')" title="Protected Master Account">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Lead Systems Architect -->
+<tr class="user-row hover:bg-surface-subtle/70 transition-colors group" data-role="admin" data-search="lead systems architect architect@ksdev.studio iam_usr_441c">
+<td class="py-4 px-space-lg">
+<div class="flex items-center gap-3">
+<div class="relative w-10 h-10 rounded-full bg-surface-muted text-text-primary flex items-center justify-center font-bold text-sm shadow-sm flex-shrink-0">
+                  LA
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold truncate">Lead Systems Architect</span>
+</div>
+<span class="text-text-secondary text-body-sm truncate">architect@ksdev.studio</span>
+<span class="font-code-meta text-code-meta text-text-muted">IAM: iam_usr_441c8802</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-accent-tint text-primary font-code-badge text-code-badge font-semibold">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+                Super Admin
+              </span>
+<p class="text-ui-caption font-ui-caption text-text-muted mt-1">Full Infrastructure &amp; CMS</p>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="inline-flex items-center gap-1.5 font-code-badge text-code-badge text-text-primary font-medium">
+<span class="material-symbols-outlined text-[16px] text-tertiary">passkey</span>
+                  FIDO2 Hardware Key
+                </span>
+<span class="font-code-meta text-code-meta text-text-muted">Titan Security Key (BLE/NFC)</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" onchange="toggleUserStatus('architect', this)" type="checkbox">
+<div class="w-9 h-5 bg-surface-muted peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-canvas-pure after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-canvas-pure after:border-slate-300 after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-tertiary-container"></div>
+</label>
+<span class="font-code-badge text-code-badge font-semibold text-tertiary">ACTIVE</span>
+</div>
+<span class="font-ui-caption font-ui-caption text-text-muted">SSO Auto-Renewal</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-code-badge text-code-badge text-text-secondary font-medium">3 hours ago</span>
+<span class="font-code-meta text-code-meta text-text-muted">142.250.190.46 (Frankfurt, DE)</span>
+</div>
+</td>
+<td class="py-4 px-space-lg text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-muted hover:bg-surface-container text-text-primary font-ui-action text-ui-action transition-colors" onclick="openPermissionsModal('Lead Systems Architect', 'Super Admin')">
+                  Configure
+                </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-muted hover:bg-error-container hover:text-status-danger text-text-secondary font-ui-action text-ui-action transition-colors" onclick="revokeSession('architect@ksdev.studio')" title="Revoke all active web tokens">
+                  Revoke
+                </button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Portfolio Content Editor -->
+<tr class="user-row hover:bg-surface-subtle/70 transition-colors group" data-role="editor" data-search="portfolio content editor content.editor@ksdev.studio iam_usr_77b3">
+<td class="py-4 px-space-lg">
+<div class="flex items-center gap-3">
+<div class="relative w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-sm shadow-sm flex-shrink-0">
+                  CE
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold truncate">Portfolio Content Editor</span>
+</div>
+<span class="text-text-secondary text-body-sm truncate">content.editor@ksdev.studio</span>
+<span class="font-code-meta text-code-meta text-text-muted">IAM: iam_usr_77b319aa</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-muted text-text-primary font-code-badge text-code-badge font-semibold">
+<span class="material-symbols-outlined text-[14px]">edit_note</span>
+                Technical Editor
+              </span>
+<p class="text-ui-caption font-ui-caption text-text-muted mt-1">Read/Write Projects, Read-only Settings</p>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="inline-flex items-center gap-1.5 font-code-badge text-code-badge text-text-primary font-medium">
+<span class="material-symbols-outlined text-[16px] text-primary">fingerprint</span>
+                  WebAuthn Biometric
+                </span>
+<span class="font-code-meta text-code-meta text-text-muted">Apple TouchID / MacBook M3</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" onchange="toggleUserStatus('editor', this)" type="checkbox">
+<div class="w-9 h-5 bg-surface-muted peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-canvas-pure after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-canvas-pure after:border-slate-300 after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-tertiary-container"></div>
+</label>
+<span class="font-code-badge text-code-badge font-semibold text-tertiary">ACTIVE</span>
+</div>
+<span class="font-ui-caption font-ui-caption text-text-muted">Session: Valid (3d)</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-code-badge text-code-badge text-text-secondary font-medium">2 days ago</span>
+<span class="font-code-meta text-code-meta text-text-muted">82.165.197.1 (London, UK)</span>
+</div>
+</td>
+<td class="py-4 px-space-lg text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-muted hover:bg-surface-container text-text-primary font-ui-action text-ui-action transition-colors" onclick="openPermissionsModal('Portfolio Content Editor', 'Technical Editor')">
+                  Configure
+                </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-muted hover:bg-error-container hover:text-status-danger text-text-secondary font-ui-action text-ui-action transition-colors" onclick="revokeSession('content.editor@ksdev.studio')" title="Revoke all active web tokens">
+                  Revoke
+                </button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Supabase Deploy Webhook Service -->
+<tr class="user-row hover:bg-surface-subtle/70 transition-colors group" data-role="service" data-search="supabase deploy webhook service daemon svc_supabase_sync@ksdev.internal iam_svc_090b">
+<td class="py-4 px-space-lg">
+<div class="flex items-center gap-3">
+<div class="relative w-10 h-10 rounded-full bg-accent-tint text-primary flex items-center justify-center font-bold text-sm shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold truncate">Supabase Deploy Sync Service</span>
+<span class="px-1.5 py-0.2 rounded bg-accent-tint text-primary font-code-badge text-[10px]">BOT</span>
+</div>
+<span class="text-text-secondary text-body-sm truncate font-code-meta">svc_supabase_sync@ksdev.internal</span>
+<span class="font-code-meta text-code-meta text-text-muted">IAM: iam_svc_090b01f4</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-muted text-text-secondary font-code-badge text-code-badge font-semibold">
+<span class="material-symbols-outlined text-[14px]">terminal</span>
+                API Daemon
+              </span>
+<p class="text-ui-caption font-ui-caption text-text-muted mt-1">Webhook Dispatch &amp; CDN Cache Wipe</p>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="inline-flex items-center gap-1.5 font-code-badge text-code-badge text-text-primary font-medium">
+<span class="material-symbols-outlined text-[16px] text-text-secondary">token</span>
+                  HMAC Sha-256 Token
+                </span>
+<span class="font-code-meta text-code-meta text-text-muted">Rotated 4 days ago</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" onchange="toggleUserStatus('bot', this)" type="checkbox">
+<div class="w-9 h-5 bg-surface-muted peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-canvas-pure after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-canvas-pure after:border-slate-300 after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-tertiary-container"></div>
+</label>
+<span class="font-code-badge text-code-badge font-semibold text-tertiary">ACTIVE</span>
+</div>
+<span class="font-ui-caption font-ui-caption text-text-muted">Rate: 120 req/min max</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-code-badge text-code-badge text-text-secondary font-medium">18 min ago</span>
+<span class="font-code-meta text-code-meta text-text-muted">34.201.224.11 (AWS us-east-1)</span>
+</div>
+</td>
+<td class="py-4 px-space-lg text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-muted hover:bg-surface-container text-text-primary font-ui-action text-ui-action transition-colors" onclick="rotateSecretKey('svc_supabase_sync')">
+                  Rotate Key
+                </button>
+<button class="p-1.5 rounded-lg hover:bg-surface-muted text-text-muted hover:text-text-primary transition-colors" onclick="triggerToast('Viewing automated audit trail for svc_supabase_sync')" title="View Bot Telemetry">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination / Status Bar -->
+<div class="p-space-md bg-canvas-pure flex flex-col sm:flex-row items-center justify-between text-text-secondary text-ui-caption font-ui-caption gap-2">
+<div class="flex items-center gap-2">
+<span>Showing <strong class="text-text-primary">4 of 4</strong> registered credentials</span>
+<span class="text-text-muted">•</span>
+<span class="text-text-muted">Zero suspended accounts</span>
+</div>
+<div class="flex items-center gap-space-xs font-code-meta text-code-meta">
+<span class="text-text-muted">Hardware Keys Managed via FIDO2 WebAuthn API</span>
+</div>
+</div>
+</section>
+<!-- SECTION B: Granular Role-Based Permissions (RBAC) Matrix -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- Matrix Table Left 8 Cols -->
+<div class="lg:col-span-8 bg-canvas-pure rounded-2xl shadow-sm p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md gap-2">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">policy</span>
+<h2 class="font-headline-md text-headline-md font-bold text-text-primary tracking-tight">
+                RBAC Permission Matrix by Role
+              </h2>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">
+              Deterministic authorization bounds strictly defined at the Edge Gateway and Supabase RLS tier.
+            </p>
+</div>
+<span class="font-code-badge text-code-badge px-2 py-1 bg-surface-muted text-text-secondary rounded self-start">
+            v3.2_POLICY
+          </span>
+</div>
+<div class="overflow-x-auto w-full mt-space-sm">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-subtle text-text-secondary font-code-badge text-code-badge uppercase tracking-wider">
+<th class="py-2.5 px-4 font-medium">Studio Capability / Route Scope</th>
+<th class="py-2.5 px-4 font-medium text-center">Super Admin</th>
+<th class="py-2.5 px-4 font-medium text-center">Technical Editor</th>
+<th class="py-2.5 px-4 font-medium text-center">API Daemon Bot</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-text-primary divide-y divide-surface-muted">
+<!-- Item 1 -->
+<tr class="hover:bg-surface-subtle/50 transition-colors">
+<td class="py-3 px-4">
+<div class="font-medium text-text-primary">Global Site Copy &amp; Motto</div>
+<div class="font-code-meta text-code-meta text-text-muted">/admin/settings (Hero text, meta SEO)</div>
+</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-accent-tint text-primary font-code-badge text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[13px]">done_all</span> Full Write
+                  </span>
+</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-muted text-text-secondary font-code-badge text-[11px] font-medium">
+<span class="material-symbols-outlined text-[13px]">visibility</span> Read Only
+                  </span>
+</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container/40 text-status-danger font-code-badge text-[11px] font-medium">
+<span class="material-symbols-outlined text-[13px]">block</span> Denied
+                  </span>
+</td>
+</tr>
+<!-- Item 2 -->
+<tr class="hover:bg-surface-subtle/50 transition-colors">
+<td class="py-3 px-4">
+<div class="font-medium text-text-primary">Fiverr Pricing Tiers &amp; Packages</div>
+<div class="font-code-meta text-code-meta text-text-muted">/admin/services (SOW, Stripe webhooks)</div>
+</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-accent-tint text-primary font-code-badge text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[13px]">done_all</span> Full Write
+                  </span>
+</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-muted text-text-secondary font-code-badge text-[11px] font-medium">
+<span class="material-symbols-outlined text-[13px]">visibility</span> Read Only
+                  </span>
+</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container/40 text-status-danger font-code-badge text-[11px] font-medium">
+<span class="material-symbols-outlined text-[13px]">block</span> Denied
+                  </span>
+</td>
+</tr>
+<!-- Item 3 -->
+<tr class="hover:bg-surface-subtle/50 transition-colors">
+<td class="py-3 px-4">
+<div class="font-medium text-text-primary">Case Study &amp; Media Publishing</div>
+<div class="font-code-meta text-code-meta text-text-muted">/admin/projects (Markdown, Cloudinary CDN)</div>
+</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-accent-tint text-primary font-code-badge text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[13px]">done_all</span> Full Write
+                  </span>
+</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-accent-tint text-primary font-code-badge text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[13px]">done_all</span> Full Write
+                  </span>
+</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-muted text-text-secondary font-code-badge text-[11px] font-medium">
+<span class="material-symbols-outlined text-[13px]">sync</span> Webhook Ingest
+                  </span>
+</td>
+</tr>
+<!-- Item 4 -->
+<tr class="hover:bg-surface-subtle/50 transition-colors">
+<td class="py-3 px-4">
+<div class="font-medium text-text-primary">Availability Pulse Status</div>
+<div class="font-code-meta text-code-meta text-text-muted">Homepage hero availability pill toggle</div>
+</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-accent-tint text-primary font-code-badge text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[13px]">done_all</span> Full Write
+                  </span>
+</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-muted text-text-secondary font-code-badge text-[11px] font-medium">
+<span class="material-symbols-outlined text-[13px]">visibility</span> Read Only
+                  </span>
+</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container/40 text-status-danger font-code-badge text-[11px] font-medium">
+<span class="material-symbols-outlined text-[13px]">block</span> Denied
+                  </span>
+</td>
+</tr>
+<!-- Item 5 -->
+<tr class="hover:bg-surface-subtle/50 transition-colors">
+<td class="py-3 px-4">
+<div class="font-medium text-text-primary">IAM &amp; Hardware Key Registry</div>
+<div class="font-code-meta text-code-meta text-text-muted">/admin/users (Invite, FIDO2 enrollment)</div>
+</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-accent-tint text-primary font-code-badge text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[13px]">done_all</span> Full Write
+                  </span>
+</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container/40 text-status-danger font-code-badge text-[11px] font-medium">
+<span class="material-symbols-outlined text-[13px]">block</span> No Access
+                  </span>
+</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container/40 text-status-danger font-code-badge text-[11px] font-medium">
+<span class="material-symbols-outlined text-[13px]">block</span> Denied
+                  </span>
+</td>
+</tr>
+<!-- Item 6 -->
+<tr class="hover:bg-surface-subtle/50 transition-colors">
+<td class="py-3 px-4">
+<div class="font-medium text-text-primary">API Secrets &amp; Production Webhooks</div>
+<div class="font-code-meta text-code-meta text-text-muted">Supabase service_role &amp; Vercel Deploy hooks</div>
+</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-accent-tint text-primary font-code-badge text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[13px]">done_all</span> Full Write
+                  </span>
+</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container/40 text-status-danger font-code-badge text-[11px] font-medium">
+<span class="material-symbols-outlined text-[13px]">block</span> No Access
+                  </span>
+</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-accent-tint text-primary font-code-badge text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[13px]">sync</span> Scoped Token
+                  </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="mt-space-md pt-space-md flex flex-col sm:flex-row items-center justify-between text-ui-caption font-ui-caption text-text-muted gap-2">
+<span class="flex items-center gap-1.5 font-code-meta text-code-meta">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+          Row-Level Security (RLS) active on all 14 Postgres tables
+        </span>
+<button class="hover:text-text-primary transition-colors font-medium" onclick="triggerToast('Matrix exported to audit log as SHA-256 JSON schema.')">
+          Export Matrix JSON Schema ↓
+        </button>
+</div>
+</div>
+<!-- Security Policy Settings Card Right 4 Cols -->
+<div class="lg:col-span-4 bg-canvas-pure rounded-2xl shadow-sm p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 pb-space-md">
+<span class="w-8 h-8 rounded-lg bg-surface-muted flex items-center justify-center text-text-primary">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-text-primary tracking-tight">
+              Console Policy Engine
+            </h3>
+<p class="font-ui-caption text-ui-caption text-text-muted">Edge enforcement rules</p>
+</div>
+</div>
+<form class="space-y-space-md" id="policy-form" onsubmit="handlePolicySave(event)">
+<!-- Policy Item 1 -->
+<div>
+<label class="block font-ui-action text-ui-action text-text-primary mb-1">
+              Global Inactivity Timeout
+            </label>
+<select class="w-full bg-surface-subtle text-text-primary font-body-sm text-body-sm p-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-container/20">
+<option value="1h">1 Hour (Strict Financial)</option>
+<option selected="" value="4h">4 Hours (Studio Recommended)</option>
+<option value="8h">8 Hours (Engineering Shift)</option>
+<option value="24h">24 Hours (Low Security Dev)</option>
+</select>
+<span class="font-ui-caption text-ui-caption text-text-muted mt-1 block">Forces passkey re-auth upon idle expiration.</span>
+</div>
+<!-- Policy Item 2 -->
+<div class="pt-space-xs">
+<label class="flex items-start gap-3 cursor-pointer group">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary-container focus:ring-primary-container/20" type="checkbox">
+<div class="flex flex-col">
+<span class="font-ui-action text-ui-action text-text-primary group-hover:text-primary transition-colors">
+                  Enforce Strict IP Subnet Pinning
+                </span>
+<span class="font-ui-caption text-ui-caption text-text-muted">
+                  Invalidates authenticated bearer tokens if incoming ASN or CIDR block changes mid-session.
+                </span>
+</div>
+</label>
+</div>
+<!-- Policy Item 3 -->
+<div class="pt-space-xs">
+<label class="flex items-start gap-3 cursor-pointer group">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary-container focus:ring-primary-container/20" type="checkbox">
+<div class="flex flex-col">
+<span class="font-ui-action text-ui-action text-text-primary group-hover:text-primary transition-colors">
+                  Hardware FIDO2 for Prod Deploys
+                </span>
+<span class="font-ui-caption text-ui-caption text-text-muted">
+                  Requires physical NFC/USB key touch verification before triggering live Cloudflare cache purge.
+                </span>
+</div>
+</label>
+</div>
+<!-- Policy Item 4 -->
+<div class="pt-space-xs">
+<label class="flex items-start gap-3 cursor-pointer group">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary-container focus:ring-primary-container/20" type="checkbox">
+<div class="flex flex-col">
+<span class="font-ui-action text-ui-action text-text-primary group-hover:text-primary transition-colors">
+                  Audit Telemetry Streaming
+                </span>
+<span class="font-ui-caption text-ui-caption text-text-muted">
+                  Forward all auth handshakes to central SIEM log via encrypted webhook payload.
+                </span>
+</div>
+</label>
+</div>
+<div class="pt-space-sm">
+<button class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg bg-text-primary text-canvas-pure font-ui-action text-ui-action shadow-sm hover:bg-slate-800 transition-all active:scale-[0.98]" type="submit">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Update Security Policy</span>
+</button>
+</div>
+</form>
+</div>
+<div class="mt-space-lg pt-space-sm bg-surface-muted p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">lock_reset</span>
+<span class="font-code-badge text-code-badge text-text-secondary">POLICY REVISION #44</span>
+</div>
+<span class="font-code-meta text-code-meta text-text-muted">SIGNED: 2h ago</span>
+</div>
+</div>
+</section>
+<!-- Interactive Modal 1: Invite Principal Modal (Hidden by default) -->
+<div class="fixed inset-0 z-50 bg-text-primary/40 backdrop-blur-sm hidden items-center justify-center p-4" id="invite-modal">
+<div class="bg-canvas-pure rounded-2xl shadow-xl max-w-lg w-full p-space-lg relative animate-in fade-in zoom-in-95 duration-150">
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-accent-tint text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-text-primary tracking-tight">Invite Engineering Principal</h3>
+<p class="font-ui-caption text-ui-caption text-text-muted">Issue hardware key activation link</p>
+</div>
+</div>
+<button class="text-text-muted hover:text-text-primary p-1 rounded-lg" onclick="closeInviteModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="space-y-space-md" onsubmit="handleSendInvite(event)">
+<div>
+<label class="block font-ui-action text-ui-action text-text-primary mb-1">Corporate Email Address</label>
+<input class="w-full bg-surface-subtle text-text-primary font-body-sm text-body-sm p-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-container/20" placeholder="developer@ksdev.studio" required="" type="email">
+<span class="font-ui-caption text-ui-caption text-text-muted mt-1 block">Only verified @ksdev.studio or authorized client domains.</span>
+</div>
+<div>
+<label class="block font-ui-action text-ui-action text-text-primary mb-1">Assigned RBAC Role</label>
+<select class="w-full bg-surface-subtle text-text-primary font-body-sm text-body-sm p-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-container/20">
+<option value="editor">Technical Editor (Case Studies &amp; Projects)</option>
+<option value="admin">Super Admin (Full Platform Control)</option>
+<option value="auditor">Security Auditor (Read-Only Access Logs)</option>
+</select>
+</div>
+<div>
+<label class="block font-ui-action text-ui-action text-text-primary mb-1">Required Authentication Factor</label>
+<div class="grid grid-cols-2 gap-2">
+<label class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-muted cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="text-primary-container" name="mfa_type" type="radio" value="fido2">
+<span class="font-ui-action text-ui-action text-text-primary">FIDO2 Hardware Key</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-muted cursor-pointer hover:bg-surface-container transition-colors">
+<input class="text-primary-container" name="mfa_type" type="radio" value="webauthn">
+<span class="font-ui-action text-ui-action text-text-primary">Biometric TouchID</span>
+</label>
+</div>
+</div>
+<div class="p-space-sm bg-accent-tint/60 rounded-lg flex items-start gap-2 text-primary font-ui-caption text-ui-caption">
+<span class="material-symbols-outlined text-[16px] mt-0.5">info</span>
+<span>An invitation token valid for 24 hours will be cryptographically signed by the Master Principal key.</span>
+</div>
+<div class="flex items-center justify-end gap-2 pt-space-sm">
+<button class="px-4 py-2.5 rounded-lg text-text-secondary hover:text-text-primary font-ui-action text-ui-action" onclick="closeInviteModal()" type="button">
+            Cancel
+          </button>
+<button class="px-4 py-2.5 rounded-lg bg-primary-container hover:bg-accent-primary-hover text-on-primary font-ui-action text-ui-action shadow-sm" type="submit">
+            Dispatch Invitation
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Interactive Modal 2: Configure Permissions Modal -->
+<div class="fixed inset-0 z-50 bg-text-primary/40 backdrop-blur-sm hidden items-center justify-center p-4" id="permissions-modal">
+<div class="bg-canvas-pure rounded-2xl shadow-xl max-w-md w-full p-space-lg relative animate-in fade-in zoom-in-95 duration-150">
+<div class="flex items-center justify-between pb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-text-primary tracking-tight" id="modal-user-title">Configure Permissions</h3>
+<p class="font-ui-caption text-ui-caption text-text-muted" id="modal-user-subtitle">Modifying principal scope</p>
+</div>
+<button class="text-text-muted hover:text-text-primary p-1 rounded-lg" onclick="closePermissionsModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="space-y-space-sm">
+<div class="p-space-sm bg-surface-muted rounded-lg flex items-center justify-between">
+<span class="font-ui-action text-ui-action text-text-primary">Edit Site Settings</span>
+<input checked="" class="w-4 h-4 text-primary-container" id="perm-1" type="checkbox">
+</div>
+<div class="p-space-sm bg-surface-muted rounded-lg flex items-center justify-between">
+<span class="font-ui-action text-ui-action text-text-primary">Publish Project Case Studies</span>
+<input checked="" class="w-4 h-4 text-primary-container" id="perm-2" type="checkbox">
+</div>
+<div class="p-space-sm bg-surface-muted rounded-lg flex items-center justify-between">
+<span class="font-ui-action text-ui-action text-text-primary">Modify Pricing &amp; Packages</span>
+<input checked="" class="w-4 h-4 text-primary-container" id="perm-3" type="checkbox">
+</div>
+<div class="p-space-sm bg-surface-muted rounded-lg flex items-center justify-between">
+<span class="font-ui-action text-ui-action text-text-primary">Manage IAM &amp; Hardware Tokens</span>
+<input class="w-4 h-4 text-primary-container" id="perm-4" type="checkbox">
+</div>
+</div>
+<div class="flex items-center justify-end gap-2 pt-space-lg">
+<button class="px-4 py-2.5 rounded-lg text-text-secondary hover:text-text-primary font-ui-action text-ui-action" onclick="closePermissionsModal()" type="button">
+          Cancel
+        </button>
+<button class="px-4 py-2.5 rounded-lg bg-primary-container hover:bg-accent-primary-hover text-on-primary font-ui-action text-ui-action shadow-sm" onclick="savePermissionsConfig()" type="button">
+          Save Configuration
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Slide-over: Audit Logs Drawer -->
+<div class="fixed inset-0 z-50 bg-text-primary/40 backdrop-blur-sm hidden justify-end" id="audit-drawer">
+<div class="bg-canvas-pure w-full max-w-lg h-full shadow-2xl flex flex-col justify-between p-space-lg animate-in slide-in-from-right duration-200">
+<div class="flex flex-col h-full overflow-hidden">
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">receipt_long</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-text-primary">Audit Access Logs</h3>
+<p class="font-code-meta text-code-meta text-text-muted">Real-time edge authorization telemetry</p>
+</div>
+</div>
+<button class="text-text-muted hover:text-text-primary p-1.5 rounded-lg" onclick="toggleAuditDrawer()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="space-y-2 overflow-y-auto flex-1 pr-1 font-code-meta text-code-meta">
+<div class="p-2.5 rounded-lg bg-surface-muted flex flex-col gap-1">
+<div class="flex items-center justify-between text-text-secondary">
+<span class="text-tertiary font-semibold flex items-center gap-1">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary-container"></span> AUTH_SUCCESS
+              </span>
+<span class="text-text-muted">14:42:01 UTC</span>
+</div>
+<div class="text-text-primary">admin@ksdev.studio verified via YubiKey 5C</div>
+<div class="text-text-muted text-[11px]">IP: 198.51.100.24 • TLS 1.3 ChaCha20</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-muted flex flex-col gap-1">
+<div class="flex items-center justify-between text-text-secondary">
+<span class="text-primary font-semibold flex items-center gap-1">
+<span class="h-1.5 w-1.5 rounded-full bg-primary-container"></span> RBAC_CHECK
+              </span>
+<span class="text-text-muted">14:38:12 UTC</span>
+</div>
+<div class="text-text-primary">Scope validated for /admin/users (Role: Super Admin)</div>
+<div class="text-text-muted text-[11px]">Node: aws-us-east-edge-9 • Supabase RLS 200 OK</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-muted flex flex-col gap-1">
+<div class="flex items-center justify-between text-text-secondary">
+<span class="text-text-secondary font-semibold flex items-center gap-1">
+<span class="h-1.5 w-1.5 rounded-full bg-text-secondary"></span> DAEMON_HEARTBEAT
+              </span>
+<span class="text-text-muted">14:24:00 UTC</span>
+</div>
+<div class="text-text-primary">svc_supabase_sync pinged cache webhook</div>
+<div class="text-text-muted text-[11px]">HMAC Signature: valid • Status 200</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-muted flex flex-col gap-1">
+<div class="flex items-center justify-between text-text-secondary">
+<span class="text-tertiary font-semibold flex items-center gap-1">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary-container"></span> TOKEN_ROTATION
+              </span>
+<span class="text-text-muted">11:15:33 UTC</span>
+</div>
+<div class="text-text-primary">architect@ksdev.studio renewed session passkey</div>
+<div class="text-text-muted text-[11px]">Session TTL reset to 4h • IP: 142.250.190.46</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-2.5 rounded-lg bg-surface-muted hover:bg-surface-container text-text-primary font-ui-action text-ui-action transition-colors text-center" onclick="triggerToast('Streaming raw JSON to console terminal...')">
+          Download Encrypted Audit Bundle (.csv)
+        </button>
+</div>
+</div>
+</div>
+<!-- Dynamic Feedback Toast Notification -->
+<div class="fixed bottom-6 right-6 z-50 bg-text-primary text-canvas-pure px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 transition-all transform translate-y-24 opacity-0 pointer-events-none" id="toast-notification">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed" id="toast-icon">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium" id="toast-text">Security policy updated successfully.</span>
+</div>
+<!-- Embedded Client Logic for Swiss-Precision Micro-Interactions -->
+<script>
+    function triggerToast(message, icon = 'check_circle') {
+      const toast = document.getElementById('toast-notification');
+      const text = document.getElementById('toast-text');
+      const iconEl = document.getElementById('toast-icon');
+      if (!toast || !text) return;
+      
+      text.textContent = message;
+      if (iconEl) iconEl.textContent = icon;
+      toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3400);
+    }
+
+    function setFilterRole(role, btn) {
+      document.querySelectorAll('.role-pill-btn').forEach(b => {
+        b.className = 'role-pill-btn px-3 py-1 rounded-md text-code-badge font-code-badge text-text-secondary hover:text-text-primary transition-all';
+      });
+      btn.className = 'role-pill-btn px-3 py-1 rounded-md text-code-badge font-code-badge bg-canvas-pure text-text-primary shadow-sm font-semibold transition-all';
+      
+      const rows = document.querySelectorAll('.user-row');
+      rows.forEach(row => {
+        if (role === 'all' || row.getAttribute('data-role') === role) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    function filterUserRows() {
+      const query = (document.getElementById('user-search').value || '').toLowerCase();
+      const rows = document.querySelectorAll('.user-row');
+      rows.forEach(row => {
+        const text = (row.getAttribute('data-search') || '').toLowerCase();
+        if (text.includes(query)) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    function toggleUserStatus(userKey, checkbox) {
+      const state = checkbox.checked ? 'ACTIVATED' : 'DEACTIVATED';
+      triggerToast(`Principal account status shifted to: ${state}`, checkbox.checked ? 'check_circle' : 'warning');
+    }
+
+    function revokeSession(email) {
+      if (confirm(`Revoke all active cryptographic bearer sessions for ${email}? Principal will require hardware re-authentication.`)) {
+        triggerToast(`Active sessions successfully revoked for ${email}`, 'lock_reset');
+      }
+    }
+
+    function rotateSecretKey(serviceName) {
+      if (confirm(`Rotate HMAC secret key for daemon [${serviceName}]? Downstream deployment webhooks will need the updated key.`)) {
+        triggerToast(`HMAC token regenerated & distributed for ${serviceName}`, 'autorenew');
+      }
+    }
+
+    function handlePolicySave(e) {
+      e.preventDefault();
+      triggerToast('Security Policy updated. Edge cache sync dispatched to Cloudflare.');
+    }
+
+    function openInviteModal() {
+      const modal = document.getElementById('invite-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeInviteModal() {
+      const modal = document.getElementById('invite-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function handleSendInvite(e) {
+      e.preventDefault();
+      closeInviteModal();
+      triggerToast('FIDO2 hardware enrollment invitation signed & dispatched.');
+    }
+
+    function openPermissionsModal(userName, userRole) {
+      document.getElementById('modal-user-title').textContent = userName;
+      document.getElementById('modal-user-subtitle').textContent = `Role Scope: ${userRole}`;
+      const modal = document.getElementById('permissions-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closePermissionsModal() {
+      const modal = document.getElementById('permissions-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function savePermissionsConfig() {
+      closePermissionsModal();
+      triggerToast('RBAC permissions matrix persisted for principal.');
+    }
+
+    function toggleAuditDrawer() {
+      const drawer = document.getElementById('audit-drawer');
+      if (drawer.classList.contains('hidden')) {
+        drawer.classList.remove('hidden');
+        drawer.classList.add('flex');
+      } else {
+        drawer.classList.add('hidden');
+        drawer.classList.remove('flex');
+      }
+    }
+
+    // Live UTC Clock
+    setInterval(() => {
+      const clockEl = document.getElementById('utc-clock');
+      if (clockEl) {
+        const now = new Date();
+        clockEl.textContent = 'UTC ' + now.toUTCString().split(' ')[4];
+      }
+    }, 1000);
+  </script>
+</div></main></div></body></html>

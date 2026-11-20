@@ -1,0 +1,17 @@
+export const blankProject = {
+  title: "",
+  slug: "",
+  category: "Web App",
+  description: "",
+  challenge: "",
+  solution: "",
+  results: "",
+  stack: [],
+  image: "",
+  gallery: [],
+  demoUrl: "",
+  githubUrl: "",
+  featured: false,
+  status: "draft",
+  order: 0,
+};

@@ -1,0 +1,36 @@
+{
+  "name": "KSDev Studio — Production-Grade Software Engineering & Cloud Architecture",
+  "short_name": "KSDev Studio",
+  "description": "Elite software engineering and cloud infrastructure studio specializing in high-scale web apps, distributed cloud backends, and responsive digital products.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FFFFFF",
+  "theme_color": "#2563EB",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": [
+    "business",
+    "developer",
+    "productivity"
+  ],
+  "lang": "en-US",
+  "dir": "ltr"
+}

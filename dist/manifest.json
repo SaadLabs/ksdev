@@ -1,0 +1,15 @@
+{
+  "name": "KSDev Studio",
+  "short_name": "KSDev",
+  "description": "Production-grade software engineering and cloud infrastructure studio.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FFFFFF",
+  "theme_color": "#2563EB",
+  "icons": [
+    {"src":"/favicon.png","sizes":"any","type":"image/png","purpose":"any"},
+    {"src":"/apple-touch-icon.png","sizes":"180x180","type":"image/png","purpose":"any"}
+  ],
+  "categories": ["business", "productivity"]
+}

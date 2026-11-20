@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html class="h-full bg-white" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>ksdev_ | Elite Software Engineering &amp; Cloud Infrastructure Studio</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"surface-subtle":"#F8FAFC","on-primary-fixed":"#00174b","text-primary":"#0F172A","on-tertiary":"#ffffff","surface-container-low":"#eff4ff","inverse-surface":"#213145","secondary-container":"#dae2fd","surface-container-highest":"#d3e4fe","surface-container":"#e5eeff","on-background":"#0b1c30","border-subtle":"#E2E8F0","inverse-primary":"#b4c5ff","secondary-fixed":"#dae2fd","primary-fixed-dim":"#b4c5ff","text-secondary":"#475569","surface-dim":"#cbdbf5","background":"#f8f9ff","secondary":"#565e74","surface-container-high":"#dce9ff","accent-devops":"#4F46E5","status-warning":"#D97706","surface-muted":"#F1F5F9","border-hover":"#CBD5E1","surface-variant":"#d3e4fe","on-error":"#ffffff","on-primary":"#ffffff","error":"#ba1a1a","surface-container-lowest":"#ffffff","accent-tint":"#EFF6FF","on-secondary":"#ffffff","tertiary-fixed":"#6ffbbe","surface-bright":"#f8f9ff","on-surface":"#0b1c30","on-surface-variant":"#434655","outline-variant":"#c3c6d7","status-danger":"#DC2626","on-secondary-fixed":"#131b2e","canvas-pure":"#FFFFFF","surface-tint":"#0053db","tertiary-container":"#007d55","accent-primary-hover":"#1D4ED8","primary":"#004ac6","on-secondary-fixed-variant":"#3f465c","secondary-fixed-dim":"#bec6e0","on-error-container":"#93000a","outline":"#737686","on-tertiary-container":"#bdffdb","on-secondary-container":"#5c647a","on-primary-container":"#eeefff","tertiary-fixed-dim":"#4edea3","on-tertiary-fixed":"#002113","text-muted":"#64748B","inverse-on-surface":"#eaf1ff","primary-fixed":"#dbe1ff","on-tertiary-fixed-variant":"#005236","surface":"#f8f9ff","primary-container":"#2563eb","tertiary":"#006242","error-container":"#ffdad6","on-primary-fixed-variant":"#003ea8"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","space-xl":"2rem","gutter":"1.5rem","margin":"1.5rem","gutter-sm":"1rem","margin-desktop":"2rem","space-sm":"0.5rem","space-md":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","gutter-lg":"2rem"},"fontFamily":{"headline-lg-mobile":["Plus Jakarta Sans"],"code-badge":["JetBrains Mono"],"headline-md":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"code-meta":["JetBrains Mono"],"body-default":["Inter"],"body-lead":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"ui-action":["Inter"],"body-sm":["Inter"],"ui-caption":["Inter"]},"fontSize":{"headline-lg-mobile":["1.75rem",{"lineHeight":"1.25","letterSpacing":"-0.02em","fontWeight":"700"}],"code-badge":["0.75rem",{"lineHeight":"1.2","letterSpacing":"0.04em","fontWeight":"500"}],"headline-md":["1.375rem",{"lineHeight":"1.3","letterSpacing":"-0.015em","fontWeight":"600"}],"display-hero":["3.5rem",{"lineHeight":"1.1","letterSpacing":"-0.03em","fontWeight":"800"}],"display-hero-mobile":["2.25rem",{"lineHeight":"1.15","letterSpacing":"-0.025em","fontWeight":"700"}],"code-meta":["0.8125rem",{"lineHeight":"1.4","letterSpacing":"0em","fontWeight":"400"}],"body-default":["1rem",{"lineHeight":"1.6","letterSpacing":"0em","fontWeight":"400"}],"body-lead":["1.125rem",{"lineHeight":"1.65","letterSpacing":"0em","fontWeight":"400"}],"headline-lg":["2.25rem",{"lineHeight":"1.2","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-sm":["1.125rem",{"lineHeight":"1.4","letterSpacing":"-0.01em","fontWeight":"600"}],"ui-action":["0.875rem",{"lineHeight":"1.25","letterSpacing":"0.01em","fontWeight":"600"}],"body-sm":["0.875rem",{"lineHeight":"1.55","letterSpacing":"0em","fontWeight":"400"}],"ui-caption":["0.75rem",{"lineHeight":"1.3","letterSpacing":"0.01em","fontWeight":"500"}]}}}};</script></head><body class="min-h-full bg-canvas-pure font-body-default text-text-primary antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 z-50 bg-canvas-pure/85 backdrop-blur-md border-b border-border-subtle"><div class="h-[68px] max-w-7xl mx-auto px-6 flex items-center justify-between border-x border-transparent xl:border-border-subtle"><div class="flex items-center gap-3"><a class="flex items-center gap-2.5 transition-opacity hover:opacity-85" data-path="studio" href="#"><img alt="ksdev Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X8nRNbi9asniG_JLrLm5ge4CdRjq9W7Y5IT_y1kgE5-MSdaSAjL0rVXKhyB9iZ7_11Bxgkt-YAnOKknF_Q5mVZQA4Xxh7kf3064ZIHFi_mTIPd2bpyQ48BV8HJB9tyyypCCCJXxRB_noSnwkXsPGR06ho8uw41WVsdNg8DEuAS9lPryjBqky76X8S2ve4zkET-p6ynTEaxjDnKOhqf-mZQjeg0U7qknQIUVs_5qp_GbZBCDV_qnpKcl-I"/><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">ksdev<span class="text-primary-container font-mono">_</span></span></a></div><nav class="hidden md:flex items-center gap-8" data-active-classes="text-text-primary font-semibold"><a class="font-ui-action text-ui-action text-text-secondary hover:text-text-primary transition-colors" data-path="studio" href="#">Studio</a><a class="font-ui-action text-ui-action text-text-secondary hover:text-text-primary transition-colors" data-path="featured-work" href="#">Featured Work</a><a class="font-ui-action text-ui-action text-text-secondary hover:text-text-primary transition-colors" data-path="services-pricing" href="#">Services &amp; Pricing</a><a class="font-ui-action text-ui-action text-text-secondary hover:text-text-primary transition-colors" data-path="tech-stack" href="#">Tech Stack</a><a class="font-ui-action text-ui-action text-text-secondary hover:text-text-primary transition-colors" data-path="custom-scope" href="#">Custom Scope</a></nav><div class="flex items-center gap-3.5"><div class="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span></span><span class="font-ui-caption text-ui-caption tracking-tight font-medium">Available for New Projects</span></div><a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-text-primary hover:bg-primary-container text-on-primary font-ui-action text-ui-action transition-all shadow-sm" href="https://www.fiverr.com" rel="noreferrer" target="_blank"><span class="font-medium">Order on Fiverr</span><span class="material-symbols-outlined text-[16px] leading-none">arrow_outward</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><div class="w-full bg-canvas-pure"><div class="max-w-7xl mx-auto border-x border-transparent xl:border-border-subtle min-h-screen flex flex-col"><main class="flex-1 w-full pt-[68px] bg-canvas-pure" id="content"><div class="flex flex-col w-full">
+<!-- Top Blueprint Navigation & Breadcrumbs Bar -->
+<section class="w-full bg-surface-subtle border-b border-border-subtle py-4 px-6">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 text-ui-caption font-ui-caption text-text-muted">
+<a class="hover:text-text-primary transition-colors" data-path="studio" href="#">Home</a>
+<span class="text-text-muted/60">/</span>
+<a class="hover:text-text-primary transition-colors" data-path="featured-work" href="#">Featured Work</a>
+<span class="text-text-muted/60">/</span>
+<span class="font-medium text-text-primary">GearGo Fleet Telematics</span>
+</nav>
+<a class="inline-flex items-center gap-1.5 text-ui-action font-ui-action text-primary-container hover:text-accent-primary-hover font-medium transition-colors" data-path="featured-work" href="#">
+<span class="material-symbols-outlined text-[16px] leading-none">arrow_back</span>
+        Back to Portfolio
+      </a>
+</div>
+</section>
+<!-- Editorial Hero Header -->
+<section class="w-full bg-canvas-pure border-b border-border-subtle pt-10 pb-12 px-6">
+<div class="max-w-7xl mx-auto space-y-6">
+<!-- Status Badge & Category Pill Row -->
+<div class="flex flex-wrap items-center gap-3">
+<span class="inline-flex items-center px-2.5 py-1 rounded bg-surface-muted border border-border-subtle font-code-badge text-code-badge text-text-secondary tracking-wider uppercase">
+          IOT &amp; TELEMATICS • ENTERPRISE LOGISTICS
+        </span>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-primary-container font-ui-caption text-ui-caption font-semibold">
+<span class="material-symbols-outlined text-[15px] leading-none text-primary-container">verified</span>
+          Verified KSDev Studio Build
+        </div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-slate-100 font-code-meta text-code-meta text-text-muted">
+<span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span> Production Release v2.4.0
+        </span>
+</div>
+<!-- Main Headline & Subheadline -->
+<div class="max-w-4xl space-y-4">
+<h1 class="font-headline-lg text-headline-lg text-text-primary tracking-tight leading-tight">
+          GearGo Fleet Telematics: High-Throughput Real-Time Telemetry &amp; Dispatch System
+        </h1>
+<p class="font-body-lead text-body-lead text-text-secondary max-w-3xl leading-relaxed">
+          Engineering a multi-tenant IoT ingestion pipeline and responsive telemetry command dashboard handling 45,000 active concurrent sensor feeds with sub-second mapping latency and automated geofence triggers.
+        </p>
+</div>
+<!-- Action Link Triggers -->
+<div class="pt-2 flex flex-wrap items-center gap-3.5">
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary-container hover:bg-accent-primary-hover text-on-primary font-ui-action text-ui-action transition-all shadow-sm" href="https://geargo-telematics-demo.ksdev.internal" rel="noreferrer" target="_blank">
+<span>Live Telemetry Demo</span>
+<span class="material-symbols-outlined text-[16px] leading-none">open_in_new</span>
+</a>
+<a class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-canvas-pure border border-border-subtle hover:border-border-hover hover:bg-surface-subtle text-text-primary font-ui-action text-ui-action transition-all shadow-sm" href="https://github.com/ksdev-studio/geargo-telemetry-core" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-text-secondary">terminal</span>
+<span>View Architecture Repo</span>
+<span class="material-symbols-outlined text-[15px] text-text-muted">arrow_outward</span>
+</a>
+<div class="hidden md:flex items-center gap-2 pl-4 text-ui-caption font-ui-caption text-text-muted border-l border-border-subtle">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">lock</span>
+<span>Dual-cluster failover • SOC2 Type II Certified Pipeline</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Visual Gallery & Architecture Showcase -->
+<section class="w-full bg-surface-subtle border-b border-border-subtle py-12 px-6 relative overflow-hidden">
+<div class="max-w-7xl mx-auto space-y-6">
+<!-- Perspective 3D Elevated Device Frame Wrapper -->
+<div class="w-full relative" style="perspective: 1200px;">
+<div class="w-full bg-canvas-pure border border-border-subtle rounded-2xl shadow-2xl transition-all duration-500 overflow-hidden" style="transform: rotateX(2deg); transform-origin: center bottom; box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.16), 0 0 0 1px rgba(226, 232, 240, 0.8);">
+<!-- Window Chrome / Meta Header -->
+<div class="bg-surface-muted/80 backdrop-blur-md px-5 py-3 border-b border-border-subtle flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="h-3 w-3 rounded-full bg-rose-400 border border-rose-500/30 inline-block"></span>
+<span class="h-3 w-3 rounded-full bg-amber-400 border border-amber-500/30 inline-block"></span>
+<span class="h-3 w-3 rounded-full bg-emerald-400 border border-emerald-500/30 inline-block"></span>
+<span class="ml-2 font-code-meta text-code-meta text-text-muted select-none font-mono text-xs">geargo-telemetry-console.cloud.ksdev.internal</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-1.5 font-code-badge text-code-badge text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded border border-emerald-200">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+</span>
+            WS FEED: 45,214 PKTS/SEC
+          </span>
+<span class="font-code-meta text-code-meta text-text-muted border-l border-border-subtle pl-3 text-xs">LATENCY: 142MS</span>
+</div>
+</div>
+<!-- Main Display Container: View 1 (Default) -->
+<div class="relative w-full aspect-[16/9] max-h-[640px] bg-slate-900 overflow-hidden flex items-center justify-center" id="gallery-viewport">
+<!-- View 1: Main Dashboard Map Interface -->
+<div class="w-full h-full relative" id="view-dashboard">
+<img class="w-full h-full object-cover" data-alt="Photorealistic high resolution enterprise software dashboard for GearGo Fleet Telematics. Clean, modern light-theme map console with vector topology showing tracked semi-truck freight routes across interstate corridors. Glowing emerald and cobalt node markers for active vehicles, live sidebar displaying vehicle sensor readouts, tire pressure diagnostics, engine RPM sparklines, speedometers, and instant alert notifications in deep navy slate, vibrant cobalt blue, and crisp white." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzqn7TkRhXjIo-DPukuI8mUJj8Zt7MbnSjgShT38LdL6ImeKmkYZ7qYz0lkaFQxqAW_QjHX3jBjbCkQ7-OAuY8T10oILLDIMn80U_q2d4VkvR444BDgIU3gyt4d1L8iRxNj7H1JKoCa_g-jvA0Gf0p82tiEnBRA9r1R0XL97aTJbconlwy85TPmu2PsSuF4fdqP5fAlhOIh1dHm_pM93wtbvS13oQWQkwmz4sDMAHnh5ysUjvuvx9H"/>
+<!-- Live Telemetry Overlay HUD (Architectural Simulation) -->
+<div class="absolute top-4 left-4 right-4 md:right-auto md:w-96 bg-white/95 backdrop-blur-md p-4 rounded-xl border border-border-subtle shadow-lg pointer-events-none">
+<div class="flex items-center justify-between pb-2 border-b border-border-subtle">
+<span class="font-ui-caption text-ui-caption font-semibold text-text-primary uppercase tracking-wide">Fleet Ingestion Node #04</span>
+<span class="font-code-badge text-code-badge text-primary-container font-medium">99.992% ACK</span>
+</div>
+<div class="grid grid-cols-2 gap-3 pt-3">
+<div>
+<div class="font-code-meta text-code-meta text-text-muted text-xs">Active Trucks</div>
+<div class="font-headline-sm text-headline-sm text-text-primary font-bold">14,892</div>
+</div>
+<div>
+<div class="font-code-meta text-code-meta text-text-muted text-xs">Ingestion p99</div>
+<div class="font-headline-sm text-headline-sm text-emerald-600 font-bold">142 ms</div>
+</div>
+</div>
+</div>
+<!-- Bottom Left Telemetry Alert Pill -->
+<div class="absolute bottom-4 left-4 hidden sm:flex items-center gap-2.5 bg-slate-900/90 text-white backdrop-blur-sm px-4 py-2.5 rounded-lg border border-slate-700 shadow-lg text-ui-caption font-ui-caption">
+<span class="material-symbols-outlined text-amber-400 text-[18px]">warning</span>
+<span>Geofence deviation resolved: Unit <span class="font-mono text-emerald-400 font-bold">#TRK-8812</span> re-routed via I-80 corridor</span>
+</div>
+</div>
+<!-- View 2: Pipeline Architecture Diagram (Hidden by default) -->
+<div class="w-full h-full relative hidden" id="view-architecture">
+<img class="w-full h-full object-cover" data-alt="Technical architectural diagram schematic for a high throughput Go and Apache Kafka data pipeline. Crisp vector flow showing millions of IoT sensor payloads flowing into AWS IoT Core MQTT broker, Go ingestion microservices, partitioned Kafka message bus, TimescaleDB for persistent telemetry storage, Redis Pub/Sub memory cache, and client browser WebSocket multiplexers. Minimal Swiss technical drawing style with sharp blueprint lines on clean alabaster background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCW8Uh2_Nq7NhsKwvhe-ciUAL8DJk0CXhAUZawu_Hhr8YTTJPd7scbVQ6PS1QIYjkaNQppVXK-3C9zeMVscm-r7DktboKWj80uvfYuzFjHQvXMvyQ7aPqk78Oj9bW8bV62dfxtmy-tUCjpQLZ6-7gBC86UhnpE0UIHD9aLY9e-QIG_Aeb2OWlx3_KuF7TQUAhMCcf0NjOoCglrHBGHGQ4zQ2z1E14hT2Rl9r-x86p1OdxMhU-uQjLV"/>
+<div class="absolute bottom-4 left-4 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-lg border border-border-subtle text-ui-caption font-ui-caption text-text-secondary shadow-sm">
+            High-Throughput Go Ingestion Core • Distributed Consumer Groups • TimescaleDB Hypertables
+          </div>
+</div>
+<!-- View 3: Driver Telematics & Geofence Engine (Hidden by default) -->
+<div class="w-full h-full relative hidden" id="view-geofence">
+<img class="w-full h-full object-cover" data-alt="User interface screenshot of driver performance analytics and polygonal geofencing tool. Displays high precision spatial polygon boundary mapped over logistics distribution hubs with color coded arrival timestamps, driver deceleration heatmaps, fuel consumption metrics, and turn by turn speed telemetry graphs in a clean daylight enterprise interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6-MTWBKlrxC9BnHvFjps5BXnS_h7VUQoNg5YtYu7so6iidAUMRSoF7zOD_MkvDZccB6MAzLFPBLqbzvCNOnwSV20PPZlVxaCaChC2bGd9Dv6iDMfz_SamDWNQnV6kgeXieuLXsaESpLnH6rVtVuYSBS1mIgWDFnDtDHkciVjSA7vZiuYeVVLJVokGGVoo0DGqzxf6PKydhXM6FVpLMN4XljmDp4HorRGUy8M8zpXHCLbBqaOJkxTS"/>
+<div class="absolute bottom-4 left-4 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-lg border border-border-subtle text-ui-caption font-ui-caption text-text-secondary shadow-sm">
+            Sub-millisecond Point-in-Polygon Geofence Validation Engine via PostGIS &amp; Memory R-Trees
+          </div>
+</div>
+</div>
+<!-- Thumbnails Switcher Carousel Controls -->
+<div class="bg-surface-subtle p-3.5 border-t border-border-subtle grid grid-cols-1 sm:grid-cols-3 gap-3">
+<button class="text-left p-3.5 rounded-xl bg-canvas-pure border-2 border-primary-container shadow-xs transition-all flex items-start gap-3" id="btn-view-dashboard" onclick="switchView('dashboard')">
+<span class="material-symbols-outlined text-primary-container text-[20px] shrink-0 mt-0.5">monitoring</span>
+<div class="min-w-0">
+<div class="font-ui-action text-ui-action font-semibold text-text-primary">1. Fleet Command Center</div>
+<div class="font-code-meta text-code-meta text-text-secondary truncate">Live Mapbox GL WebGL Map</div>
+</div>
+</button>
+<button class="text-left p-3.5 rounded-xl bg-surface-muted/60 border border-border-subtle hover:bg-canvas-pure hover:border-border-hover transition-all flex items-start gap-3" id="btn-view-architecture" onclick="switchView('architecture')">
+<span class="material-symbols-outlined text-text-secondary text-[20px] shrink-0 mt-0.5">schema</span>
+<div class="min-w-0">
+<div class="font-ui-action text-ui-action font-semibold text-text-secondary">2. Kafka &amp; Go Ingestion</div>
+<div class="font-code-meta text-code-meta text-text-muted truncate">Event-Driven Pipe Schematics</div>
+</div>
+</button>
+<button class="text-left p-3.5 rounded-xl bg-surface-muted/60 border border-border-subtle hover:bg-canvas-pure hover:border-border-hover transition-all flex items-start gap-3" id="btn-view-geofence" onclick="switchView('geofence')">
+<span class="material-symbols-outlined text-text-secondary text-[20px] shrink-0 mt-0.5">polyline</span>
+<div class="min-w-0">
+<div class="font-ui-action text-ui-action font-semibold text-text-secondary">3. Geofencing &amp; Diagnostics</div>
+<div class="font-code-meta text-code-meta text-text-muted truncate">Spatial R-Tree In-Memory Engine</div>
+</div>
+</button>
+</div>
+</div>
+</div>
+<!-- Caption Technical Achievement -->
+<p class="font-body-sm text-body-sm text-text-muted text-center max-w-4xl mx-auto pt-2">
+    Figure 1.0: Real-time mission control orchestrating 45,000 active telemetry streams across North American transit corridors. Rendered utilizing high-performance WebGL overlays on vector tile backbones.
+  </p>
+</div>
+</section>
+<!-- Main 70/30 Split Layout Section -->
+<section class="w-full bg-canvas-pure py-14 px-6">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
+<!-- LEFT COLUMN: 70% Deep Technical Architectural Prose (col-span-8) -->
+<article class="lg:col-span-8 space-y-12 max-w-3xl">
+<!-- Key Metrics Strip: 4 High-Impact Grid Cells -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-6 rounded-xl bg-surface-subtle border border-border-subtle">
+<div class="space-y-1 border-r border-border-subtle/70 pr-3">
+<span class="font-code-badge text-code-badge uppercase text-text-muted block">Connected Sensors</span>
+<span class="font-headline-lg text-headline-lg text-text-primary font-bold">45,000+</span>
+<span class="font-ui-caption text-ui-caption text-emerald-600 block flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> Concurrently online
+            </span>
+</div>
+<div class="space-y-1 sm:border-r border-border-subtle/70 sm:pr-3">
+<span class="font-code-badge text-code-badge uppercase text-text-muted block">Global Latency</span>
+<span class="font-headline-lg text-headline-lg text-primary-container font-bold">&lt; 180ms</span>
+<span class="font-ui-caption text-ui-caption text-text-muted block">MQTT wire-to-screen</span>
+</div>
+<div class="space-y-1 border-r border-border-subtle/70 pr-3 pt-4 sm:pt-0">
+<span class="font-code-badge text-code-badge uppercase text-text-muted block">Event Reliability</span>
+<span class="font-headline-lg text-headline-lg text-text-primary font-bold">99.99%</span>
+<span class="font-ui-caption text-ui-caption text-emerald-600 block">Zero drop telemetry</span>
+</div>
+<div class="space-y-1 pt-4 sm:pt-0">
+<span class="font-code-badge text-code-badge uppercase text-text-muted block">Dispatch Speed</span>
+<span class="font-headline-lg text-headline-lg text-text-primary font-bold">3.4×</span>
+<span class="font-ui-caption text-ui-caption text-emerald-600 block">Incident response gain</span>
+</div>
+</div>
+<!-- Section 1: The Architecture Challenge -->
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="font-code-badge text-code-badge text-primary-container bg-blue-50 px-2 py-0.5 rounded border border-blue-200">01. CONTEXT &amp; CONSTRAINTS</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">The Architecture Challenge</h2>
+<div class="space-y-4 font-body-default text-body-default text-text-secondary leading-relaxed">
+<p>
+              GearGo operates heavy-duty long-haul transport across 14 freight hubs. Prior to our intervention, their legacy monolithic Ruby/Postgres stack suffered fatal connection saturation whenever fleet drivers crossed cell tower transition zones. Spurious bulk bursts of buffered sensor packets routinely triggered queue starvation, memory spikes, and 12-second dashboard freezes for enterprise dispatchers.
+            </p>
+<p>
+              The mandate for KSDev Studio was unequivocal: Architect a high-throughput, horizontally autoscaling IoT telemetry ingestion engine capable of absorbing sudden packet waves of over 50,000 payload frames per second. Furthermore, dispatch managers needed sub-200 millisecond visual latency on interactive vector maps without forcing full client-side re-renders.
+            </p>
+</div>
+<!-- Micro Callout Box -->
+<div class="p-4 rounded-lg bg-surface-muted border-l-4 border-primary-container space-y-1.5">
+<span class="font-ui-action text-ui-action font-semibold text-text-primary">Critical Engineering Constraint</span>
+<p class="font-body-sm text-body-sm text-text-secondary">
+              Hardware OBDI/CAN-bus devices transmitted telemetry frames over fragile cellular SIM tunnels using standard MQTT QoS 1. Handshakes had to complete in &lt; 35ms at the broker layer to prevent hardware buffer overruns and thermal throttling in vehicle transponders.
+            </p>
+</div>
+</div>
+<!-- Section 2: Engineering & System Implementation -->
+<div class="space-y-6">
+<div class="flex items-center gap-2">
+<span class="font-code-badge text-code-badge text-primary-container bg-blue-50 px-2 py-0.5 rounded border border-blue-200">02. SYSTEM IMPLEMENTATION</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Multi-Tenant Ingestion &amp; Time-Series Architecture</h2>
+<p class="font-body-default text-body-default text-text-secondary leading-relaxed">
+            We replaced the brittle polling architecture with an asynchronous, decoupled pipeline. The edge payload ingestion was offloaded to a clustered Go (Golang) microservice layer feeding partitioned Apache Kafka message topics. In-flight coordinates undergo instantaneous spatial evaluation inside an in-memory R-Tree index before being bulk-flushed to a TimescaleDB hypertable partition.
+          </p>
+<!-- System Component Wireframe Cards (2-Grid) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Component 1 -->
+<div class="p-4 rounded-xl bg-canvas-pure border border-border-subtle hover:border-border-hover transition-all space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold">Go Ingestion Worker</span>
+<span class="font-code-meta text-code-meta text-primary-container bg-blue-50 px-2 py-0.5 rounded">Core Pipeline</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                Zero-allocation JSON &amp; Protobuf payload unmarshalers running in parallel goroutines. Capable of processing 120,000 frames/sec per 2 vCPU node.
+              </p>
+<div class="pt-2 flex flex-wrap gap-1.5 font-code-badge text-code-badge text-text-muted">
+<span class="bg-surface-muted px-2 py-0.5 rounded">Golang 1.22</span>
+<span class="bg-surface-muted px-2 py-0.5 rounded">Fiber</span>
+<span class="bg-surface-muted px-2 py-0.5 rounded">Protobuf</span>
+</div>
+</div>
+<!-- Component 2 -->
+<div class="p-4 rounded-xl bg-canvas-pure border border-border-subtle hover:border-border-hover transition-all space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold">TimescaleDB Hypertables</span>
+<span class="font-code-meta text-code-meta text-primary-container bg-blue-50 px-2 py-0.5 rounded">Storage Tier</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                Automated 6-hour interval chunking with analytical compression policies, driving an 84% reduction in raw disk consumption for long-term historical breadcrumbs.
+              </p>
+<div class="pt-2 flex flex-wrap gap-1.5 font-code-badge text-code-badge text-text-muted">
+<span class="bg-surface-muted px-2 py-0.5 rounded">PostgreSQL 16</span>
+<span class="bg-surface-muted px-2 py-0.5 rounded">TimescaleDB</span>
+<span class="bg-surface-muted px-2 py-0.5 rounded">PostGIS</span>
+</div>
+</div>
+<!-- Component 3 -->
+<div class="p-4 rounded-xl bg-canvas-pure border border-border-subtle hover:border-border-hover transition-all space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold">Redis Spatial Cluster</span>
+<span class="font-code-meta text-code-meta text-primary-container bg-blue-50 px-2 py-0.5 rounded">Live Routing</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                Stores instant geospatial coordinates using <code class="font-mono text-text-primary">GEOADD</code> / <code class="font-mono text-text-primary">GEORADIUS</code> for zero-latency vehicle proximity queries and geofence verification.
+              </p>
+<div class="pt-2 flex flex-wrap gap-1.5 font-code-badge text-code-badge text-text-muted">
+<span class="bg-surface-muted px-2 py-0.5 rounded">Redis 7.2</span>
+<span class="bg-surface-muted px-2 py-0.5 rounded">Pub/Sub</span>
+<span class="bg-surface-muted px-2 py-0.5 rounded">GeoHash</span>
+</div>
+</div>
+<!-- Component 4 -->
+<div class="p-4 rounded-xl bg-canvas-pure border border-border-subtle hover:border-border-hover transition-all space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold">Reactive Next.js WebGL</span>
+<span class="font-code-meta text-code-meta text-primary-container bg-blue-50 px-2 py-0.5 rounded">Client Canvas</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                Hardware-accelerated Mapbox GL / deck.gl visualization pipeline keeping CPU usage under 12% even with thousands of animated fleet vectors.
+              </p>
+<div class="pt-2 flex flex-wrap gap-1.5 font-code-badge text-code-badge text-text-muted">
+<span class="bg-surface-muted px-2 py-0.5 rounded">Next.js 14</span>
+<span class="bg-surface-muted px-2 py-0.5 rounded">Deck.gl</span>
+<span class="bg-surface-muted px-2 py-0.5 rounded">Tailwind CSS</span>
+</div>
+</div>
+</div>
+<!-- Code Snippet: Real-Time Stream Processor -->
+<div class="space-y-2 pt-3">
+<div class="flex items-center justify-between px-1">
+<span class="font-code-badge text-code-badge uppercase text-text-muted">Code Artifact: Telemetry Packet Ingestion Handler (Go)</span>
+<span class="font-code-meta text-code-meta text-text-muted">worker_stream.go</span>
+</div>
+<div class="p-5 rounded-xl bg-slate-900 text-slate-100 font-mono text-xs overflow-x-auto border border-slate-800 shadow-lg leading-relaxed relative">
+<div class="flex">
+<div class="select-none pr-4 text-slate-600 text-right border-r border-slate-800 space-y-1">
+<div>01</div><div>02</div><div>03</div><div>04</div><div>05</div><div>06</div><div>07</div><div>08</div><div>09</div><div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div><div>21</div><div>22</div><div>23</div><div>24</div>
+</div>
+<pre class="pl-4 overflow-x-auto"><code><span class="text-indigo-400">package</span> ingest
+
+<span class="text-indigo-400">import</span> (
+    <span class="text-emerald-300">"context"</span>
+    <span class="text-emerald-300">"time"</span>
+    <span class="text-emerald-300">"github.com/geargo/telemetry/proto/v1"</span>
+)
+
+<span class="text-slate-400">// HandlePacket performs zero-alloc spatial validation before fan-out</span>
+<span class="text-indigo-400">func</span> (w *<span class="text-amber-300">TelemetryWorker</span>) <span class="text-blue-300">ProcessFrame</span>(ctx context.Context, raw []<span class="text-indigo-400">byte</span>) <span class="text-indigo-400">error</span> {
+    frame := w.pool.Get().(*proto.SensorPayload)
+    <span class="text-indigo-400">defer</span> w.pool.Put(frame)
+
+    <span class="text-indigo-400">if</span> err := frame.UnmarshalVT(raw); err != <span class="text-indigo-400">nil</span> {
+        w.metrics.RecordDrop(<span class="text-emerald-300">"unmarshal_err"</span>)
+        <span class="text-indigo-400">return</span> err
+    }
+
+    <span class="text-slate-400">// Fast-path spatial coordinate push to Redis Pub/Sub cluster</span>
+    pipe := w.redisClient.Pipeline()
+    pipe.GeoAdd(ctx, <span class="text-emerald-300">"fleet:active:coords"</span>, frame.Longitude, frame.Latitude, frame.TruckID)
+    pipe.Publish(ctx, <span class="text-emerald-300">"fleet:stream:"</span>+frame.TenantID, raw)
+    
+    <span class="text-slate-400">// Async batched commit to Timescale hypertable chunk</span>
+    w.batchQueue &lt;- frame.Snapshot()
+    <span class="text-indigo-400">return</span> pipe.Exec(ctx)
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 3: Measured Production Impact & Key Deliverables -->
+<div class="space-y-4 pt-2">
+<div class="flex items-center gap-2">
+<span class="font-code-badge text-code-badge text-primary-container bg-blue-50 px-2 py-0.5 rounded border border-blue-200">03. DELIVERABLES &amp; IMPACT</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Measured Production Impact</h2>
+<div class="space-y-4 font-body-default text-body-default text-text-secondary leading-relaxed">
+<p>
+              Within 72 hours of deploying the new pipeline, GearGo’s enterprise dispatch operations saw complete stabilization of map streaming telemetry. Ingestion latency dropped from peak 12-second lags down to an audited <strong class="text-text-primary font-semibold">142ms average global latency</strong>.
+            </p>
+</div>
+<!-- Turnkey Milestones Checklist -->
+<div class="space-y-3 pt-2">
+<div class="flex items-start gap-3 p-3.5 rounded-lg bg-surface-subtle border border-border-subtle">
+<span class="material-symbols-outlined text-emerald-600 text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div>
+<span class="font-ui-action text-ui-action font-semibold text-text-primary block">Turnkey Docker &amp; Kubernetes Helm Deployments</span>
+<span class="font-body-sm text-body-sm text-text-secondary">Fully containerized infrastructure recipes with autoscaling HPA metrics configured for AWS EKS.</span>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-lg bg-surface-subtle border border-border-subtle">
+<span class="material-symbols-outlined text-emerald-600 text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div>
+<span class="font-ui-action text-ui-action font-semibold text-text-primary block">Audited CI/CD Pipeline &amp; Automated Testing (k6 + Vitest)</span>
+<span class="font-body-sm text-body-sm text-text-secondary">Simulated load tests running 75,000 synthetic devices with zero connection drops across multi-region staging environments.</span>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-lg bg-surface-subtle border border-border-subtle">
+<span class="material-symbols-outlined text-emerald-600 text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div>
+<span class="font-ui-action text-ui-action font-semibold text-text-primary block">Complete Operational Runbook &amp; Video Walkthrough</span>
+<span class="font-body-sm text-body-sm text-text-secondary">In-depth architectural documentation, Prometheus alert thresholds, and clean engineering handoff documentation.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Client Testimonial Endorsement Box -->
+<div class="p-6 rounded-xl bg-surface-subtle border border-border-subtle relative">
+<span class="material-symbols-outlined text-primary-container/20 text-[48px] absolute top-4 right-4">format_quote</span>
+<p class="font-body-lead text-body-lead text-text-primary italic mb-4">
+            “KSDev Studio approached our high-volume telematics bottleneck with institutional engineering rigor. They diagnosed our database locks in two hours and had a live Go microservice benchmark outperforming our entire legacy cluster within the first week.”
+          </p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-200 border border-border-subtle flex items-center justify-center font-headline-sm text-headline-sm text-text-primary font-bold">
+              GL
+            </div>
+<div>
+<div class="font-ui-action text-ui-action font-bold text-text-primary">VP of Engineering</div>
+<div class="font-code-meta text-code-meta text-text-muted">GearGo Global Logistics Corp</div>
+</div>
+</div>
+</div>
+</article>
+<!-- RIGHT COLUMN: 30% Sticky Architectural Sidebar (col-span-4) -->
+<aside class="lg:col-span-4 space-y-6">
+<div class="sticky top-24 space-y-6">
+<!-- Card 1: Project Specifications Card -->
+<div class="bg-canvas-pure rounded-xl border border-border-subtle p-6 shadow-xs space-y-5">
+<div class="flex items-center justify-between pb-3 border-b border-border-subtle">
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold">Specifications</h3>
+<span class="font-code-badge text-code-badge text-text-muted">BUILD #842</span>
+</div>
+<dl class="space-y-4 font-body-sm text-body-sm">
+<div>
+<dt class="font-code-meta text-code-meta text-text-muted uppercase">Client Industry</dt>
+<dd class="font-medium text-text-primary mt-0.5">Enterprise Fleet &amp; Freight Logistics</dd>
+</div>
+<div>
+<dt class="font-code-meta text-code-meta text-text-muted uppercase">Engagement Model</dt>
+<dd class="font-medium text-text-primary mt-0.5">Turnkey Fixed-Scope Gig</dd>
+</div>
+<div>
+<dt class="font-code-meta text-code-meta text-text-muted uppercase">Delivery Timeline</dt>
+<dd class="font-medium text-text-primary mt-0.5 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">calendar_today</span>
+                  18 Calendar Days (Milestone Delivered)
+                </dd>
+</div>
+<div>
+<dt class="font-code-meta text-code-meta text-text-muted uppercase mb-2">Deployed Tech Stack</dt>
+<dd class="flex flex-wrap gap-1.5 font-code-badge text-code-badge">
+<span class="px-2.5 py-1 rounded bg-surface-muted text-text-secondary border border-border-subtle">Next.js 14</span>
+<span class="px-2.5 py-1 rounded bg-surface-muted text-text-secondary border border-border-subtle">TypeScript</span>
+<span class="px-2.5 py-1 rounded bg-surface-muted text-text-secondary border border-border-subtle">Go (Golang)</span>
+<span class="px-2.5 py-1 rounded bg-surface-muted text-text-secondary border border-border-subtle">TimescaleDB</span>
+<span class="px-2.5 py-1 rounded bg-surface-muted text-text-secondary border border-border-subtle">Redis Cluster</span>
+<span class="px-2.5 py-1 rounded bg-surface-muted text-text-secondary border border-border-subtle">AWS IoT Core</span>
+<span class="px-2.5 py-1 rounded bg-surface-muted text-text-secondary border border-border-subtle">Docker / EKS</span>
+<span class="px-2.5 py-1 rounded bg-surface-muted text-text-secondary border border-border-subtle">Tailwind CSS</span>
+</dd>
+</div>
+</dl>
+</div>
+<!-- Card 2: High-Conversion Fiverr CTA Card -->
+<div class="bg-gradient-to-br from-blue-50/70 via-canvas-pure to-canvas-pure rounded-2xl border-2 border-primary-container p-6 space-y-4 relative overflow-hidden transition-all duration-300" style="box-shadow: 0 20px 35px -8px rgba(37, 99, 235, 0.18), 0 8px 16px -4px rgba(15, 23, 42, 0.08);">
+<div class="absolute -right-8 -top-8 w-28 h-28 bg-primary-container/15 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center px-2.5 py-1 rounded text-code-badge font-code-badge bg-primary-container text-on-primary font-bold shadow-xs tracking-wider">
+      COMMISSION STUDIO
+    </span>
+<span class="inline-flex items-center gap-1 font-ui-caption text-ui-caption text-emerald-600 font-semibold">
+<span class="h-2 w-2 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Active Capacity
+    </span>
+</div>
+<div class="space-y-1.5">
+<h4 class="font-headline-sm text-headline-sm text-text-primary font-bold tracking-tight">
+      Need High-Velocity Engineering Like This?
+    </h4>
+<p class="font-body-sm text-body-sm text-text-secondary leading-normal">
+      We engineer production-grade enterprise web applications, real-time backends, and cloud infrastructure with guaranteed milestone delivery.
+    </p>
+</div>
+<div class="p-3.5 bg-canvas-pure/90 backdrop-blur-sm rounded-xl border border-border-subtle flex items-center justify-between shadow-xs">
+<div>
+<span class="font-code-meta text-code-meta text-text-muted block text-xs uppercase tracking-wide">Recommended Tier</span>
+<span class="font-ui-action text-ui-action font-bold text-text-primary">Enterprise Scale</span>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-primary font-bold block">$2,800</span>
+<span class="font-ui-caption text-ui-caption text-text-muted text-xs">Fixed-Scope Gig</span>
+</div>
+</div>
+<a class="w-full py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-ui-action text-ui-action font-semibold flex items-center justify-center gap-2 transition-all shadow-md hover:shadow-lg active:scale-[0.99]" href="https://www.fiverr.com" rel="noreferrer" target="_blank">
+<span>Order Similar System on Fiverr</span>
+<span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</a>
+<div class="text-center pt-1">
+<a class="font-ui-caption text-ui-caption text-text-muted hover:text-text-primary transition-colors inline-flex items-center gap-1" data-path="custom-scope" href="#">
+<span>Or submit a Custom Scope Brief</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 3: Agency Guarantee Box -->
+<div class="bg-surface-subtle rounded-xl border border-border-subtle p-5 space-y-3">
+<h4 class="font-ui-action text-ui-action font-bold text-text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">shield</span>
+              KSDev Studio Guarantee
+            </h4>
+<ul class="space-y-2.5 font-body-sm text-body-sm text-text-secondary">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-600 text-[18px]">check</span>
+<span>100% On-Time Delivery Guarantee</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-600 text-[18px]">check</span>
+<span>Complete IP &amp; Repository Ownership Transfer</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-600 text-[18px]">check</span>
+<span>30-Day Post-Deployment SLA Support Included</span>
+</li>
+</ul>
+</div>
+</div>
+</aside>
+</div>
+</section>
+<!-- Interactive JavaScript for Carousel / Mode Switcher -->
+<script>
+    function switchView(mode) {
+      const vDash = document.getElementById('view-dashboard');
+      const vArch = document.getElementById('view-architecture');
+      const vGeo = document.getElementById('view-geofence');
+
+      const bDash = document.getElementById('btn-view-dashboard');
+      const bArch = document.getElementById('btn-view-architecture');
+      const bGeo = document.getElementById('btn-view-geofence');
+
+      // Hide all views
+      vdash.classList.add('hidden');
+      vArch.classList.add('hidden');
+      vGeo.classList.add('hidden');
+
+      // Reset button styles
+      [bDash, bArch, bGeo].forEach(btn => {
+        btn.className = "text-left p-3 rounded-lg bg-surface-muted/60 border border-border-subtle hover:bg-canvas-pure hover:border-border-hover transition-all flex items-start gap-3";
+        const title = btn.querySelector('.font-ui-action');
+        if (title) {
+          title.className = "font-ui-action text-ui-action font-semibold text-text-secondary";
+        }
+      });
+
+      // Show selected view & highlight button
+      if (mode === 'dashboard') {
+        vdash.classList.remove('hidden');
+        bDash.className = "text-left p-3 rounded-lg bg-canvas-pure border-2 border-primary-container shadow-xs transition-all flex items-start gap-3";
+        bDash.querySelector('.font-ui-action').className = "font-ui-action text-ui-action font-semibold text-text-primary";
+      } else if (mode === 'architecture') {
+        vArch.classList.remove('hidden');
+        bArch.className = "text-left p-3 rounded-lg bg-canvas-pure border-2 border-primary-container shadow-xs transition-all flex items-start gap-3";
+        bArch.querySelector('.font-ui-action').className = "font-ui-action text-ui-action font-semibold text-text-primary";
+      } else if (mode === 'geofence') {
+        vGeo.classList.remove('hidden');
+        bGeo.className = "text-left p-3 rounded-lg bg-canvas-pure border-2 border-primary-container shadow-xs transition-all flex items-start gap-3";
+        bGeo.querySelector('.font-ui-action').className = "font-ui-action text-ui-action font-semibold text-text-primary";
+      }
+    }
+  </script>
+</div></main></div></div><footer class="w-full bg-surface-subtle border-t border-border-subtle"><div class="max-w-7xl mx-auto px-6 py-16 border-x border-transparent xl:border-border-subtle"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-border-subtle"><div class="md:col-span-5 space-y-4"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-text-primary font-bold">ksdev<span class="text-primary-container font-mono">_</span></span></div><p class="font-body-default text-body-default text-text-secondary max-w-sm">Elite Software Engineering &amp; Cloud Infrastructure Studio. Architectural clarity, micro-latency architectures, and daylight reliability.</p><div class="pt-2 flex items-center gap-3"><div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-surface-muted border border-border-subtle"><span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span><span class="font-code-badge text-code-badge text-text-secondary uppercase tracking-wider">Build 4.18 • Production • 99.98% Uptime</span></div></div></div><div class="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8"><div class="space-y-3"><h4 class="font-code-badge text-code-badge uppercase tracking-wider text-text-muted">Engineering</h4><ul class="space-y-2.5 font-body-sm text-body-sm"><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="featured-work" href="#">Architecture Portfolio</a></li><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="tech-stack" href="#">Production Stack</a></li><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="services-pricing" href="#">Cloud DevOps</a></li><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="services-pricing" href="#">Microservices</a></li></ul></div><div class="space-y-3"><h4 class="font-code-badge text-code-badge uppercase tracking-wider text-text-muted">Engagements</h4><ul class="space-y-2.5 font-body-sm text-body-sm"><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="services-pricing" href="#">Services &amp; Pricing</a></li><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="custom-scope" href="#">Custom Scope SOW</a></li><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors inline-flex items-center gap-1" href="https://www.fiverr.com" rel="noreferrer" target="_blank">Fiverr Studio Gig <span class="material-symbols-outlined text-[14px]">north_east</span></a></li><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="security-compliance" href="#">Security &amp; SLA</a></li></ul></div><div class="space-y-3"><h4 class="font-code-badge text-code-badge uppercase tracking-wider text-text-muted">Infrastructure</h4><ul class="space-y-2.5 font-body-sm text-body-sm"><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="system-status" href="#">System Status</a></li><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="security-compliance" href="#">Compliance Matrix</a></li><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors inline-flex items-center gap-1" href="https://github.com" rel="noreferrer" target="_blank">GitHub Core <span class="material-symbols-outlined text-[14px]">north_east</span></a></li><li class="leading-none"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="studio" href="#">Observability Docs</a></li></ul></div></div></div><div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4"><p class="font-ui-caption text-ui-caption text-text-muted">© 2025 KSDev Studio. All rights reserved. Precision software engineering.</p><div class="flex items-center gap-6 font-ui-caption text-ui-caption text-text-muted"><a class="hover:text-text-primary transition-colors" data-path="security-compliance" href="#">Terms of Service</a><a class="hover:text-text-primary transition-colors" data-path="security-compliance" href="#">Privacy Architecture</a><a class="hover:text-text-primary transition-colors" data-path="system-status" href="#">Telemetry Status</a></div></div></div></footer></body></html>

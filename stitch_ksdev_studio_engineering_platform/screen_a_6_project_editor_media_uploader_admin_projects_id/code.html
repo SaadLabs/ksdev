@@ -1,0 +1,636 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed":"#131b2e","surface-tint":"#0053db","border-hover":"#CBD5E1","secondary-fixed-dim":"#bec6e0","secondary-container":"#dae2fd","primary-fixed-dim":"#b4c5ff","text-secondary":"#475569","surface-variant":"#d3e4fe","inverse-primary":"#b4c5ff","surface-container-low":"#eff4ff","primary":"#004ac6","tertiary":"#006242","secondary-fixed":"#dae2fd","on-background":"#0b1c30","text-primary":"#0F172A","on-secondary-container":"#5c647a","on-tertiary-fixed-variant":"#005236","on-tertiary-container":"#bdffdb","surface-bright":"#f8f9ff","on-tertiary":"#ffffff","canvas-pure":"#FFFFFF","surface-muted":"#F1F5F9","error":"#ba1a1a","on-error-container":"#93000a","inverse-surface":"#213145","on-surface":"#0b1c30","surface":"#f8f9ff","surface-container-highest":"#d3e4fe","tertiary-container":"#007d55","text-muted":"#64748B","primary-container":"#2563eb","background":"#f8f9ff","status-danger":"#DC2626","on-primary-fixed":"#00174b","surface-subtle":"#F8FAFC","on-primary-fixed-variant":"#003ea8","border-subtle":"#E2E8F0","error-container":"#ffdad6","accent-primary-hover":"#1D4ED8","on-error":"#ffffff","tertiary-fixed":"#6ffbbe","accent-tint":"#EFF6FF","on-secondary-fixed-variant":"#3f465c","outline":"#737686","surface-container-lowest":"#ffffff","secondary":"#565e74","surface-container":"#e5eeff","on-primary-container":"#eeefff","primary-fixed":"#dbe1ff","on-surface-variant":"#434655","on-secondary":"#ffffff","surface-container-high":"#dce9ff","on-primary":"#ffffff","surface-dim":"#cbdbf5","tertiary-fixed-dim":"#4edea3","outline-variant":"#c3c6d7","on-tertiary-fixed":"#002113","accent-devops":"#4F46E5","status-warning":"#D97706","inverse-on-surface":"#eaf1ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","space-lg":"1.5rem","space-md":"1rem","space-xl":"2rem","space-xs":"0.25rem","margin":"1.5rem","gutter-lg":"2rem","gutter":"1.5rem","gutter-sm":"1rem","margin-desktop":"2rem","margin-mobile":"1rem"},"fontFamily":{"body-default":["Inter"],"display-hero":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-lead":["Inter"],"display-hero-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"ui-action":["Inter"],"code-meta":["JetBrains Mono"],"code-badge":["JetBrains Mono"],"ui-caption":["Inter"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"body-default":["1rem",{"lineHeight":"1.6","letterSpacing":"0em","fontWeight":"400"}],"display-hero":["3.5rem",{"lineHeight":"1.1","letterSpacing":"-0.03em","fontWeight":"800"}],"headline-lg":["2.25rem",{"lineHeight":"1.2","letterSpacing":"-0.025em","fontWeight":"700"}],"body-lead":["1.125rem",{"lineHeight":"1.65","letterSpacing":"0em","fontWeight":"400"}],"display-hero-mobile":["2.25rem",{"lineHeight":"1.15","letterSpacing":"-0.025em","fontWeight":"700"}],"body-sm":["0.875rem",{"lineHeight":"1.55","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["1.75rem",{"lineHeight":"1.25","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["1.125rem",{"lineHeight":"1.4","letterSpacing":"-0.01em","fontWeight":"600"}],"ui-action":["0.875rem",{"lineHeight":"1.25","letterSpacing":"0.01em","fontWeight":"600"}],"code-meta":["0.8125rem",{"lineHeight":"1.4","letterSpacing":"0em","fontWeight":"400"}],"code-badge":["0.75rem",{"lineHeight":"1.2","letterSpacing":"0.04em","fontWeight":"500"}],"ui-caption":["0.75rem",{"lineHeight":"1.3","letterSpacing":"0.01em","fontWeight":"500"}],"headline-md":["1.375rem",{"lineHeight":"1.3","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface-subtle font-body-default text-body-default text-text-primary antialiased min-h-screen"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-canvas-pure z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center justify-between"><a class="flex items-center gap-space-xs no-underline" data-path="overview-dashboard" href="#"><span class="font-headline-md text-headline-md font-bold tracking-tight text-text-primary">ksdev<span class="text-primary-container">_</span></span></a><span class="font-code-badge text-code-badge px-space-xs py-0.5 rounded bg-surface-muted text-text-secondary">ADMIN CMS v2.4</span></div><div class="px-space-md py-space-sm"><nav class="flex flex-col gap-1" data-active-classes="bg-accent-tint text-primary font-bold rounded-lg"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="overview-dashboard" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span>Overview Dashboard</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="site-copy-and-settings" href="#"><span class="material-symbols-outlined text-[18px]">tune</span>Site Copy &amp; Settings</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="services-and-pricing" href="#"><span class="material-symbols-outlined text-[18px]">payments</span>Services &amp; Pricing</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="projects-directory" href="#"><span class="material-symbols-outlined text-[18px]">folder</span>Projects Directory</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="new-project" href="#"><span class="material-symbols-outlined text-[18px]">add_circle</span>New Project</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="tech-stack-catalog" href="#"><span class="material-symbols-outlined text-[18px]">terminal</span>Tech Stack Catalog</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors text-ui-action font-ui-action" data-path="admin-users-and-roles" href="#"><span class="material-symbols-outlined text-[18px]">shield_person</span>Admin Users &amp; Roles</a></nav></div></div><div class="p-space-md bg-canvas-pure flex flex-col gap-space-md"><div class="p-space-sm rounded-lg bg-surface-muted flex flex-col gap-1.5"><div class="flex items-center justify-between font-code-meta text-code-meta text-text-secondary"><span class="flex items-center gap-1.5"><span class="h-2 w-2 rounded-full bg-tertiary-container animate-pulse"></span>API: Online</span><span class="text-tertiary font-medium">200 OK</span></div><div class="flex items-center justify-between font-code-meta text-code-meta text-text-secondary"><span class="flex items-center gap-1.5"><span class="h-2 w-2 rounded-full bg-primary-container"></span>DB: Supabase</span><span class="text-primary font-medium">Connected</span></div></div><a class="flex items-center justify-center gap-space-xs w-full py-2 px-space-md rounded-lg text-ui-action font-ui-action text-text-secondary hover:bg-surface-muted hover:text-status-danger transition-colors" data-path="admin-login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span>Log Out</a></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-canvas-pure/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-lg"><div class="flex items-center gap-space-sm font-code-meta text-code-meta text-text-muted"><span class="text-text-secondary">ksdev</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-text-primary font-medium font-ui-action text-ui-action">Console</span></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-1 px-3 py-1.5 rounded-lg text-ui-action font-ui-action text-text-primary bg-canvas-pure hover:bg-surface-muted hover:text-primary transition-colors" href="/" target="_blank"><span class="material-symbols-outlined text-[16px]">north_east</span>View Live Site</a><div class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-muted text-text-secondary font-code-badge text-code-badge"><span class="h-1.5 w-1.5 rounded-full bg-status-warning"></span>ENV: PROD</div><div class="flex items-center gap-space-sm pl-space-xs"><div class="hidden sm:flex flex-col text-right"><span class="text-ui-action font-ui-action text-text-primary leading-tight">Admin Principal</span><span class="font-code-badge text-code-badge text-text-muted">admin@ksdev.studio</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface-subtle px-gutter-lg py-space-xl"><div class="flex flex-col w-full pb-28">
+<!-- TOP CONTEXTUAL SUB-HEADER / ACTIONS -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-xl">
+<div class="flex flex-col gap-1.5">
+<div class="flex flex-wrap items-center gap-space-xs font-code-meta text-code-meta text-text-muted">
+<span class="text-text-secondary">ksdev</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-text-secondary">Console</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-text-secondary">Projects</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-text-primary font-medium font-code-badge text-code-badge px-2 py-0.5 rounded bg-surface-muted">EDIT: 0x8F04..PROD</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm mt-0.5">
+<h1 class="font-headline-lg text-headline-lg font-bold text-text-primary tracking-tight">Edit Project Specification</h1>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary/10 text-tertiary font-code-badge text-code-badge border border-tertiary/20">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary-container animate-pulse"></span>
+          PUBLISHED • PRODUCTION
+        </div>
+<span class="flex items-center gap-1 font-code-meta text-code-meta text-text-muted">
+<span class="material-symbols-outlined text-[15px] text-tertiary">check_circle</span>
+          Auto-saved 2m ago
+        </span>
+</div>
+</div>
+<!-- Quick Action Cluster -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-4 py-2 rounded-lg text-ui-action font-ui-action text-text-secondary bg-canvas-pure shadow-sm hover:bg-surface-muted hover:text-text-primary transition-all" type="button">
+        Discard
+      </button>
+<a class="flex items-center gap-1.5 px-4 py-2 rounded-lg text-ui-action font-ui-action text-text-primary bg-canvas-pure shadow-sm hover:bg-surface-muted hover:text-primary transition-all" href="#" target="_blank">
+        Preview Case Study
+        <span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+<button class="flex items-center gap-1.5 px-5 py-2.5 rounded-lg text-ui-action font-ui-action text-on-primary bg-primary-container hover:bg-accent-primary-hover shadow-md transition-all" id="headerSaveBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">publish</span>
+        Save &amp; Publish Changes
+      </button>
+</div>
+</div>
+<!-- MAIN 2-COLUMN ARCHITECTURAL WORKSPACE (65% / 35%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- ==================== LEFT COLUMN (65% -> 8 cols) ==================== -->
+<div class="lg:col-span-8 flex flex-col gap-space-xl min-w-0">
+<!-- SECTION 1: General & Taxonomy -->
+<section class="bg-canvas-pure rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded bg-accent-tint text-primary flex items-center justify-center font-code-badge text-code-badge font-bold">01</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-text-primary">General Metadata &amp; Taxonomy</h2>
+</div>
+<span class="font-code-meta text-code-meta text-text-muted">Entity: Project Record</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Project Title -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-ui-action text-ui-action font-semibold text-text-primary" for="proj-title">Project Title</label>
+<span class="font-code-meta text-code-meta text-text-muted">74 / 100 chars</span>
+</div>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface-subtle font-body-default text-body-default text-text-primary focus:bg-canvas-pure focus:outline-none transition-all shadow-inner" id="proj-title" type="text" value="GearGo Fleet Telematics: High-Throughput Real-Time Telemetry &amp; Dispatch System">
+</div>
+<!-- Slug Field with Auto-gen button -->
+<div class="flex flex-col gap-1.5">
+<label class="font-ui-action text-ui-action font-semibold text-text-primary" for="proj-slug">Canonical URL Slug</label>
+<div class="flex items-stretch rounded-lg shadow-sm bg-surface-subtle overflow-hidden">
+<span class="px-3.5 py-2.5 bg-surface-muted text-text-muted font-code-meta text-code-meta flex items-center select-none">
+                ksdev.studio/projects/
+              </span>
+<input class="flex-1 px-3.5 py-2.5 font-code-meta text-code-meta text-text-primary bg-transparent focus:bg-canvas-pure focus:outline-none transition-colors" id="proj-slug" type="text" value="geargo-fleet-telematics">
+<button class="px-3.5 py-2 bg-canvas-pure hover:bg-surface-muted text-text-secondary hover:text-primary transition-colors flex items-center gap-1 font-code-badge text-code-badge" title="Regenerate slug from title" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+                Sync
+              </button>
+</div>
+</div>
+<!-- Tagline / Meta Description -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-ui-action text-ui-action font-semibold text-text-primary" for="proj-desc">Short Tagline / Meta Description</label>
+<span class="font-code-meta text-code-meta text-text-muted">142 / 160 chars</span>
+</div>
+<textarea class="w-full px-3.5 py-2.5 rounded-lg bg-surface-subtle font-body-default text-body-default text-text-primary focus:bg-canvas-pure focus:outline-none transition-all shadow-inner resize-y" id="proj-desc" rows="3">Engineering a multi-tenant IoT ingestion pipeline and responsive telemetry command dashboard capable of handling 50,000+ stateful ping events/sec with sub-second driver dispatch latency.</textarea>
+</div>
+<!-- Triple Row: Client, Deliverable Model, Milestone Delivery -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-xs">
+<div class="flex flex-col gap-1.5">
+<label class="font-ui-action text-ui-action font-semibold text-text-primary" for="proj-client">Client / Industry</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface-subtle font-body-default text-body-default text-text-primary focus:bg-canvas-pure focus:outline-none transition-all" id="proj-client" type="text" value="Enterprise Freight Logistics">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-ui-action text-ui-action font-semibold text-text-primary" for="proj-model">Deliverable Model</label>
+<select class="w-full px-3.5 py-2.5 rounded-lg bg-surface-subtle font-body-default text-body-default text-text-primary focus:bg-canvas-pure focus:outline-none transition-all cursor-pointer" id="proj-model">
+<option selected="" value="fixed-scale">Turnkey Fixed-Scope Gig ($2,800)</option>
+<option value="growth">Production MVP Sprint ($1,450)</option>
+<option value="enterprise">Full Architecture Retainer ($4,500)</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-ui-action text-ui-action font-semibold text-text-primary" for="proj-turnaround">Milestone Delivery</label>
+<div class="relative flex items-center">
+<input class="w-full pl-3.5 pr-9 py-2.5 rounded-lg bg-surface-subtle font-code-meta text-code-meta text-text-primary focus:bg-canvas-pure focus:outline-none transition-all" id="proj-turnaround" type="text" value="18 Days">
+<span class="material-symbols-outlined text-text-muted absolute right-2.5 pointer-events-none text-[18px]">calendar_today</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Technology Stack & Architectural Badges -->
+<section class="bg-canvas-pure rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded bg-accent-tint text-primary flex items-center justify-center font-code-badge text-code-badge font-bold">02</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-text-primary">Technology Stack &amp; Classification</h2>
+<p class="font-body-sm text-body-sm text-text-secondary">Assigned architectural components displayed across case study badges</p>
+</div>
+</div>
+<span class="font-code-badge text-code-badge px-2 py-1 rounded bg-surface-muted text-text-secondary">8 Badges Linked</span>
+</div>
+<!-- Searchable Pill Container -->
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center gap-2 p-space-sm rounded-lg bg-surface-subtle">
+<!-- Active Pills -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-canvas-pure shadow-sm font-code-badge text-code-badge text-text-primary">
+<span class="h-2 w-2 rounded-full bg-primary-container"></span>
+              Next.js 14 (App Router)
+              <button class="hover:text-status-danger flex items-center" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-canvas-pure shadow-sm font-code-badge text-code-badge text-text-primary">
+<span class="h-2 w-2 rounded-full bg-primary-container"></span>
+              TypeScript
+              <button class="hover:text-status-danger flex items-center" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-canvas-pure shadow-sm font-code-badge text-code-badge text-text-primary">
+<span class="h-2 w-2 rounded-full bg-accent-devops"></span>
+              Go (Golang v1.22)
+              <button class="hover:text-status-danger flex items-center" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-canvas-pure shadow-sm font-code-badge text-code-badge text-text-primary">
+<span class="h-2 w-2 rounded-full bg-tertiary-container"></span>
+              TimescaleDB / Postgres
+              <button class="hover:text-status-danger flex items-center" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-canvas-pure shadow-sm font-code-badge text-code-badge text-text-primary">
+<span class="h-2 w-2 rounded-full bg-status-danger"></span>
+              Redis Cluster (Geo-PubSub)
+              <button class="hover:text-status-danger flex items-center" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-canvas-pure shadow-sm font-code-badge text-code-badge text-text-primary">
+<span class="h-2 w-2 rounded-full bg-status-warning"></span>
+              AWS IoT Core (MQTT)
+              <button class="hover:text-status-danger flex items-center" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-canvas-pure shadow-sm font-code-badge text-code-badge text-text-primary">
+<span class="h-2 w-2 rounded-full bg-accent-devops"></span>
+              Docker / AWS EKS
+              <button class="hover:text-status-danger flex items-center" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-canvas-pure shadow-sm font-code-badge text-code-badge text-text-primary">
+<span class="h-2 w-2 rounded-full bg-primary-container"></span>
+              Tailwind CSS
+              <button class="hover:text-status-danger flex items-center" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<!-- Quick Add Input -->
+<div class="inline-flex items-center gap-1 ml-1">
+<input class="px-2.5 py-1 text-code-badge font-code-badge bg-transparent focus:outline-none placeholder:text-text-muted text-text-primary min-w-[130px]" placeholder="+ Add technology..." type="text">
+</div>
+</div>
+<!-- Category Classification Pairs -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-ui-action text-ui-action font-semibold text-text-primary" for="primary-cat">Primary Architecture Domain</label>
+<select class="w-full px-3.5 py-2.5 rounded-lg bg-surface-subtle font-body-default text-body-default text-text-primary focus:bg-canvas-pure focus:outline-none transition-all" id="primary-cat">
+<option selected="" value="iot-telematics">IoT Ingestion &amp; Telematics Engine</option>
+<option value="distributed-systems">High-Throughput Distributed Microservices</option>
+<option value="fullstack-saas">Fullstack Enterprise Web Systems</option>
+<option value="cloud-devops">Cloud Infrastructure &amp; Kubernetes Orchestration</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-ui-action text-ui-action font-semibold text-text-primary" for="secondary-cat">Commercial Industry Segment</label>
+<select class="w-full px-3.5 py-2.5 rounded-lg bg-surface-subtle font-body-default text-body-default text-text-primary focus:bg-canvas-pure focus:outline-none transition-all" id="secondary-cat">
+<option selected="" value="logistics">Enterprise Freight &amp; Commercial Fleets</option>
+<option value="fintech">Fintech &amp; High-Frequency Payment Infrastructure</option>
+<option value="health">Regulated Healthcare / MedTech</option>
+<option value="developer-tools">Developer Tooling &amp; Infrastructure</option>
+</select>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Technical Case Study Markdown & Specification Editor -->
+<section class="bg-canvas-pure rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded bg-accent-tint text-primary flex items-center justify-center font-code-badge text-code-badge font-bold">03</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-text-primary">Case Study Markdown &amp; Architectural Deep Dive</h2>
+<p class="font-body-sm text-body-sm text-text-secondary">Structured technical narrative rendered on public showcase</p>
+</div>
+</div>
+<!-- Editor Mode Tabs -->
+<div class="flex items-center p-1 rounded-lg bg-surface-muted">
+<button class="px-3 py-1 rounded-md bg-canvas-pure font-ui-action text-ui-action text-text-primary shadow-sm font-semibold" type="button">Write</button>
+<button class="px-3 py-1 rounded-md text-text-muted hover:text-text-primary font-ui-action text-ui-action transition-colors" type="button">Split</button>
+<button class="px-3 py-1 rounded-md text-text-muted hover:text-text-primary font-ui-action text-ui-action transition-colors" type="button">Preview</button>
+</div>
+</div>
+<!-- Markdown Formatting Sub-toolbar -->
+<div class="flex flex-wrap items-center gap-1 p-1.5 rounded-lg bg-surface-subtle text-text-secondary">
+<button class="p-1.5 rounded hover:bg-canvas-pure hover:text-text-primary transition-colors" title="Heading 2" type="button"><span class="font-headline-sm text-headline-sm font-bold leading-none px-1">H2</span></button>
+<button class="p-1.5 rounded hover:bg-canvas-pure hover:text-text-primary transition-colors" title="Heading 3" type="button"><span class="font-headline-sm text-headline-sm font-semibold leading-none px-1">H3</span></button>
+<span class="h-4 w-px bg-border-subtle mx-1"></span>
+<button class="p-1.5 rounded hover:bg-canvas-pure hover:text-text-primary transition-colors" title="Bold" type="button"><span class="material-symbols-outlined text-[18px]">format_bold</span></button>
+<button class="p-1.5 rounded hover:bg-canvas-pure hover:text-text-primary transition-colors" title="Italic" type="button"><span class="material-symbols-outlined text-[18px]">format_italic</span></button>
+<button class="p-1.5 rounded hover:bg-canvas-pure hover:text-text-primary transition-colors" title="Code Block" type="button"><span class="material-symbols-outlined text-[18px]">code_blocks</span></button>
+<button class="p-1.5 rounded hover:bg-canvas-pure hover:text-text-primary transition-colors" title="Bullet List" type="button"><span class="material-symbols-outlined text-[18px]">format_list_bulleted</span></button>
+<button class="p-1.5 rounded hover:bg-canvas-pure hover:text-text-primary transition-colors" title="Insert Quote" type="button"><span class="material-symbols-outlined text-[18px]">format_quote</span></button>
+<span class="h-4 w-px bg-border-subtle mx-1"></span>
+<button class="p-1.5 rounded hover:bg-canvas-pure hover:text-text-primary transition-colors" title="Link Formula" type="button"><span class="material-symbols-outlined text-[18px]">link</span></button>
+<button class="p-1.5 rounded hover:bg-canvas-pure hover:text-text-primary transition-colors" title="Callout Box" type="button"><span class="material-symbols-outlined text-[18px]">info</span></button>
+<span class="ml-auto font-code-meta text-code-meta text-text-muted px-2">Markdown + GFM Enabled</span>
+</div>
+<!-- 3.1 Architecture Challenge Prose Box -->
+<div class="flex flex-col gap-1.5">
+<label class="font-ui-action text-ui-action font-semibold text-text-primary flex items-center justify-between" for="cs-challenge">
+<span>Section: Architectural Challenge &amp; Bottlenecks</span>
+<span class="font-code-meta text-code-meta text-text-muted font-normal">Section Key: #challenge</span>
+</label>
+<textarea class="w-full p-3.5 rounded-lg bg-surface-subtle font-code-meta text-code-meta text-text-primary focus:bg-canvas-pure focus:outline-none transition-all shadow-inner leading-relaxed" id="cs-challenge" rows="5">Prior to our refactoring, GearGo’s monolithic legacy server struggled during peak shift changes across 12,000 active delivery vehicles. High MQTT ingestion volume produced cascading Postgres connection exhaustion, introducing up to 14-second telemetry latency and erratic geofence boundary alerts.
+
+Key Bottlenecks Solved:
+- High I/O contention on synchronous position writes
+- Lack of memory-bounded backpressure during network disconnect storms
+- Absence of client-side delta compression for remote driver clients</textarea>
+</div>
+<!-- 3.2 System Implementation & Code Artifact Box -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-ui-action text-ui-action font-semibold text-text-primary" for="cs-code">
+              Technical Artifact Preview (Golang Dispatch Pipeline Worker)
+            </label>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-surface-muted text-text-secondary">worker_pool.go</span>
+</div>
+<!-- Code Window Container -->
+<div class="rounded-lg overflow-hidden shadow-sm bg-surface-muted">
+<div class="flex items-center justify-between px-3.5 py-2 bg-canvas-pure">
+<div class="flex items-center gap-2">
+<span class="h-2.5 w-2.5 rounded-full bg-status-danger/70"></span>
+<span class="h-2.5 w-2.5 rounded-full bg-status-warning/70"></span>
+<span class="h-2.5 w-2.5 rounded-full bg-tertiary-container/70"></span>
+<span class="font-code-badge text-code-badge text-text-secondary font-medium ml-2">pkg/telemetry/ingest.go</span>
+</div>
+<span class="font-code-badge text-code-badge text-text-muted">Go 1.22 • 28 LOC</span>
+</div>
+<textarea class="w-full p-4 font-code-meta text-code-meta text-text-primary bg-surface-muted focus:bg-canvas-pure focus:outline-none transition-colors font-mono leading-relaxed resize-y" id="cs-code" rows="8">// IngestStream processes burst raw MQTT payloads into buffered batch channels
+func (p *Pipeline) IngestStream(ctx context.Context, incoming &lt;-chan DevicePing) error {
+    batch := make([]DevicePing, 0, p.batchThreshold)
+    ticker := time.NewTicker(p.flushInterval)
+    defer ticker.Stop()
+
+    for {
+        select {
+        case &lt;-ctx.Done():
+            return p.flushRemaining(batch)
+        case ping := &lt;-incoming:
+            batch = append(batch, ping)
+            if len(batch) &gt;= p.batchThreshold {
+                p.commitToTimescale(batch)
+                batch = batch[:0]
+            }
+        case &lt;-ticker.C:
+            if len(batch) &gt; 0 {
+                p.commitToTimescale(batch)
+                batch = batch[:0]
+            }
+        }
+    }
+}</textarea>
+</div>
+</div>
+<!-- 3.3 Measured Production Impact Checklist -->
+<div class="flex flex-col gap-2 pt-space-xs">
+<label class="font-ui-action text-ui-action font-semibold text-text-primary">
+            Measured Production Deliverables &amp; Artifact Checklist
+          </label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<div class="flex items-center gap-2.5 p-3 rounded-lg bg-surface-subtle">
+<input checked="" class="h-4 w-4 rounded text-primary-container focus:ring-primary-container" id="chk-docker" type="checkbox">
+<label class="font-body-sm text-body-sm text-text-primary cursor-pointer select-none" for="chk-docker">
+<span class="font-semibold block leading-tight">Turnkey Multi-Arch Docker Setup</span>
+<span class="font-code-meta text-code-meta text-text-muted">AMD64 / ARM64 Compose with volume caches</span>
+</label>
+</div>
+<div class="flex items-center gap-2.5 p-3 rounded-lg bg-surface-subtle">
+<input checked="" class="h-4 w-4 rounded text-primary-container focus:ring-primary-container" id="chk-cicd" type="checkbox">
+<label class="font-body-sm text-body-sm text-text-primary cursor-pointer select-none" for="chk-cicd">
+<span class="font-semibold block leading-tight">Audited GitHub Actions CI/CD</span>
+<span class="font-code-meta text-code-meta text-text-muted">Linting, unit tests, automated ECR deployment</span>
+</label>
+</div>
+<div class="flex items-center gap-2.5 p-3 rounded-lg bg-surface-subtle">
+<input checked="" class="h-4 w-4 rounded text-primary-container focus:ring-primary-container" id="chk-runbook" type="checkbox">
+<label class="font-body-sm text-body-sm text-text-primary cursor-pointer select-none" for="chk-runbook">
+<span class="font-semibold block leading-tight">Production Runbook &amp; Ops Manual</span>
+<span class="font-code-meta text-code-meta text-text-muted">Failover steps, Grafana dashboards, env guide</span>
+</label>
+</div>
+<div class="flex items-center gap-2.5 p-3 rounded-lg bg-surface-subtle">
+<input checked="" class="h-4 w-4 rounded text-primary-container focus:ring-primary-container" id="chk-sla" type="checkbox">
+<label class="font-body-sm text-body-sm text-text-primary cursor-pointer select-none" for="chk-sla">
+<span class="font-semibold block leading-tight">Post-Delivery Warranty &amp; Handover</span>
+<span class="font-code-meta text-code-meta text-text-muted">30-day bug fix guarantee &amp; architecture walkthrough</span>
+</label>
+</div>
+</div>
+</div>
+<!-- 3.4 Client Testimonial & Attribution -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<label class="font-ui-action text-ui-action font-semibold text-text-primary">
+            Client Testimonial Quote &amp; Verification
+          </label>
+<div class="p-space-md rounded-lg bg-surface-subtle flex flex-col gap-space-md">
+<textarea class="w-full px-3.5 py-2.5 rounded-lg bg-canvas-pure font-body-default text-body-default text-text-primary focus:outline-none transition-all shadow-sm" placeholder="Testimonial quote text..." rows="2">"KSDev rebuilt our ingestion cluster from the ground up in 18 days. The telemetry dispatch lag dropped from 14s to 210ms immediately. Outstanding engineering discipline."</textarea>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<input class="px-3.5 py-2 rounded-lg bg-canvas-pure font-body-sm text-body-sm text-text-primary focus:outline-none shadow-sm" placeholder="Client Name" type="text" value="Marcus Vance">
+<input class="px-3.5 py-2 rounded-lg bg-canvas-pure font-body-sm text-body-sm text-text-primary focus:outline-none shadow-sm" placeholder="Client Title &amp; Company" type="text" value="VP of Infrastructure, GearGo Logistics">
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: Live Links & Conditional Visibility -->
+<section class="bg-canvas-pure rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded bg-accent-tint text-primary flex items-center justify-center font-code-badge text-code-badge font-bold">04</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-text-primary">Deployment Endpoints &amp; Public Visibility</h2>
+</div>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-tertiary/10 text-tertiary">Verified Build</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Live Demo Link & Toggle -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md p-space-md rounded-lg bg-surface-subtle">
+<div class="flex-1 flex flex-col gap-1">
+<span class="font-ui-action text-ui-action font-semibold text-text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">launch</span>
+                Production Demo URL
+              </span>
+<input class="w-full px-3 py-1.5 rounded-md bg-canvas-pure font-code-meta text-code-meta text-text-primary focus:outline-none shadow-sm" type="url" value="https://telemetry.geargo-logistics.io/demo">
+</div>
+<div class="flex items-center gap-2 shrink-0 pt-2 sm:pt-0">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+<span class="font-ui-action text-ui-action text-text-secondary select-none">Show Demo CTA</span>
+</div>
+</div>
+<!-- Architecture Repo Link & Toggle -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md p-space-md rounded-lg bg-surface-subtle">
+<div class="flex-1 flex flex-col gap-1">
+<span class="font-ui-action text-ui-action font-semibold text-text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-text-primary text-[18px]">terminal</span>
+                Sanitized Architecture Repository (Public / Client)
+              </span>
+<input class="w-full px-3 py-1.5 rounded-md bg-canvas-pure font-code-meta text-code-meta text-text-primary focus:outline-none shadow-sm" type="url" value="https://github.com/ksdev-studio/geargo-telemetry-core-oss">
+</div>
+<div class="flex items-center gap-2 shrink-0 pt-2 sm:pt-0">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+<span class="font-ui-action text-ui-action text-text-secondary select-none">Show Repo Link</span>
+</div>
+</div>
+<!-- Agency Trust Badge Toggle -->
+<div class="flex items-center justify-between p-space-md rounded-lg bg-accent-tint/60">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-ui-action text-ui-action font-semibold text-text-primary">Verified KSDev Studio Build Stamp</span>
+<span class="font-body-sm text-body-sm text-text-secondary">Appends cryptographic commit hash &amp; agency quality guarantee badge</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+</section>
+</div>
+<!-- ==================== RIGHT COLUMN (35% -> 4 cols) ==================== -->
+<div class="lg:col-span-4 flex flex-col gap-space-xl">
+<!-- SECTION A: Multi-Image Asset Uploader & Media Gallery -->
+<section class="bg-canvas-pure rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded bg-accent-tint text-primary flex items-center justify-center font-code-badge text-code-badge font-bold">A</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-text-primary">Media &amp; Diagrams</h2>
+</div>
+<span class="font-code-badge text-code-badge text-text-muted">3 / 8 Assets</span>
+</div>
+<!-- Drag & Drop Dropzone -->
+<div class="p-space-lg rounded-xl bg-surface-subtle flex flex-col items-center justify-center text-center cursor-pointer hover:bg-accent-tint/40 transition-colors group">
+<div class="w-12 h-12 rounded-full bg-canvas-pure shadow-sm flex items-center justify-center text-primary group-hover:scale-105 transition-transform mb-space-sm">
+<span class="material-symbols-outlined text-[24px]">cloud_upload</span>
+</div>
+<span class="font-ui-action text-ui-action font-bold text-text-primary">Click or drop WebP / PNG screenshots</span>
+<p class="font-code-meta text-code-meta text-text-muted mt-1 max-w-[240px]">
+            High-res architecture schematics or UI captures (Max 5MB per file)
+          </p>
+<button class="mt-space-md px-3 py-1.5 rounded-md bg-canvas-pure shadow-sm font-code-badge text-code-badge text-text-secondary hover:text-primary transition-colors" type="button">
+            Browse Local Disk
+          </button>
+</div>
+<!-- Active Uploaded Media List with Reorder Handles -->
+<div class="flex flex-col gap-space-sm mt-space-xs">
+<span class="font-ui-action text-ui-action font-semibold text-text-secondary flex items-center justify-between">
+<span>Uploaded Assets</span>
+<span class="font-code-meta text-code-meta text-text-muted font-normal">Drag handles to reorder</span>
+</span>
+<!-- Asset 1 (Primary Thumbnail) -->
+<div class="p-space-sm rounded-lg bg-surface-subtle shadow-sm flex flex-col gap-2">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-text-muted cursor-grab text-[20px] pt-1">drag_indicator</span>
+<!-- Thumbnail preview placeholder -->
+<div class="w-16 h-12 rounded-md bg-surface-muted overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="High-resolution fleet telematics operations console screenshot showing dark blue map with green vehicle telemetry vectors and real-time status cards on a clean engineering dashboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3LjtXCii9n7VVPW357CzGXr8cXGDLbVRATVtFFbWicuInfvS0-NFiXe0zWEwvTAevNd-C3TY1lXWi_wjmQvgN3xunIf8XT7PP-tmseKClrKpcZmxwUiCqdlCOUwRma9CW_PHoBrPRPcLFS6tXO_38Er1t169o-wjsuYoHyYNznOtHX3sNy7WjoLjBoAybfGYcYDQmzqj4q5d3Teta0yGCcK5s7wXtEZ4In0RJZk3E8MeQJ6hOC3AT">
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-code-badge text-code-badge font-semibold text-text-primary truncate">01_telemetry_console.webp</span>
+<button class="text-text-muted hover:text-status-danger transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+<span class="font-code-meta text-code-meta text-text-muted">1.2 MB • 2560x1440</span>
+</div>
+</div>
+<!-- Primary Thumbnail Radio Indicator -->
+<div class="flex items-center justify-between pt-1 px-1">
+<label class="flex items-center gap-2 cursor-pointer font-ui-caption text-ui-caption font-semibold text-primary">
+<input checked="" class="text-primary focus:ring-0 h-3.5 w-3.5" name="thumbnail-choice" type="radio">
+                Primary Case Study Cover
+              </label>
+<span class="font-code-badge text-code-badge px-1.5 py-0.5 rounded bg-tertiary/10 text-tertiary">Cover</span>
+</div>
+<!-- Alt Text Field -->
+<input class="w-full px-2.5 py-1 text-code-meta font-code-meta rounded bg-canvas-pure text-text-primary focus:outline-none" placeholder="Describe asset for accessibility..." type="text" value="Fleet command dashboard showing real-time ping clusters and dispatch status">
+</div>
+<!-- Asset 2 -->
+<div class="p-space-sm rounded-lg bg-surface-subtle shadow-sm flex flex-col gap-2">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-text-muted cursor-grab text-[20px] pt-1">drag_indicator</span>
+<div class="w-16 h-12 rounded-md bg-surface-muted overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Technical architectural diagram showing Kafka pipeline and TimescaleDB ingestion flow with blue and slate nodes connecting microservices with clean wireframe lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmz3si8wdjwhAb2I7OcbEuxOe0AIIHi2SFBSizYnfl01L-FJANQsDe1-OPi-T8Ph6AyvSwAfck_ipu3D6HSpyfo908O0kWChzdI4RJwXrWmk2cgu48D06-6Y9yjpDZU_eqsSNYbV_dDopYIynXZVp50q8OJUBtlQpaCu_JNj_cLHmGo3acKOZdWGZHFOKQv-6ss2YwpMKTPLlxyzuyI0IbInaUI1Wd2tkVTIgyU3f7bjkLAjG9p4RD">
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-code-badge text-code-badge font-semibold text-text-primary truncate">02_kafka_ingestion_arch.webp</span>
+<button class="text-text-muted hover:text-status-danger transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+<span class="font-code-meta text-code-meta text-text-muted">840 KB • Vector Scaled</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 px-1">
+<label class="flex items-center gap-2 cursor-pointer font-ui-caption text-ui-caption text-text-secondary">
+<input class="text-primary focus:ring-0 h-3.5 w-3.5" name="thumbnail-choice" type="radio">
+                Set as Primary
+              </label>
+<span class="font-code-badge text-code-badge text-text-muted">Diagram</span>
+</div>
+<input class="w-full px-2.5 py-1 text-code-meta font-code-meta rounded bg-canvas-pure text-text-primary focus:outline-none" placeholder="Describe asset for accessibility..." type="text" value="System topology showing distributed MQTT broker routing to Go worker cluster">
+</div>
+<!-- Asset 3 -->
+<div class="p-space-sm rounded-lg bg-surface-subtle shadow-sm flex flex-col gap-2">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-text-muted cursor-grab text-[20px] pt-1">drag_indicator</span>
+<div class="w-16 h-12 rounded-md bg-surface-muted overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Geofence spatial polygon visualization showing dynamic delivery zones with green boundary rings on an architectural blueprint map layout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWF-qrvye5FupA-uRVB5n7dBuKicc9weYiS6zl-kZlhbmqEEdo2SC2gOCwH_Z0xmrmnJ6BMAFQSINeiI5PsmyZxX0DGbhz9hY93xMTyX0SjK1jq8FVIxaPXlfXGUgoNDrvtqPdVph_QkJY3aW2_8EREbIde_d9LF9OxTx3BuM1YmuG_pYh_v4pCtncTaMwMGjUq4BJpSBDwDKISj0B9gpV0pyhGT9VgUUX3iEdusQLDx1k_uzNKxiQ">
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-code-badge text-code-badge font-semibold text-text-primary truncate">03_spatial_rtree_engine.webp</span>
+<button class="text-text-muted hover:text-status-danger transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+<span class="font-code-meta text-code-meta text-text-muted">1.1 MB • 1920x1080</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 px-1">
+<label class="flex items-center gap-2 cursor-pointer font-ui-caption text-ui-caption text-text-secondary">
+<input class="text-primary focus:ring-0 h-3.5 w-3.5" name="thumbnail-choice" type="radio">
+                Set as Primary
+              </label>
+<span class="font-code-badge text-code-badge text-text-muted">Detail View</span>
+</div>
+<input class="w-full px-2.5 py-1 text-code-meta font-code-meta rounded bg-canvas-pure text-text-primary focus:outline-none" placeholder="Describe asset for accessibility..." type="text" value="R-Tree polygon geofence bounding evaluation visualization">
+</div>
+</div>
+</section>
+<!-- SECTION B: Publishing & Conversion Association -->
+<section class="bg-canvas-pure rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded bg-accent-tint text-primary flex items-center justify-center font-code-badge text-code-badge font-bold">B</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-text-primary">Publishing &amp; Routing</h2>
+</div>
+<span class="font-code-badge text-code-badge px-2 py-0.5 rounded bg-surface-muted text-text-secondary">Production</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Visibility Status -->
+<div class="flex flex-col gap-1.5">
+<label class="font-ui-action text-ui-action font-semibold text-text-primary" for="pub-status">Visibility State</label>
+<select class="w-full px-3.5 py-2.5 rounded-lg bg-surface-subtle font-body-default text-body-default text-text-primary focus:bg-canvas-pure focus:outline-none transition-all cursor-pointer font-medium" id="pub-status">
+<option selected="" value="published">Published (Publicly Indexed)</option>
+<option value="unlisted">Unlisted (Direct Link Only)</option>
+<option value="draft">Draft (Restricted to Admin)</option>
+<option value="archived">Archived (Deprecated)</option>
+</select>
+</div>
+<!-- Featured Star Toggle -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-subtle">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-status-warning text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<div class="flex flex-col">
+<span class="font-ui-action text-ui-action font-semibold text-text-primary">Homepage Spotlight</span>
+<span class="font-code-meta text-code-meta text-text-muted">Pin to Top 3 Featured Portfolio Slots</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-10 h-5 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-status-warning"></div>
+</label>
+</div>
+<!-- Display Sort Order -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-subtle">
+<div class="flex flex-col">
+<span class="font-ui-action text-ui-action font-semibold text-text-primary">Display Sort Priority</span>
+<span class="font-code-meta text-code-meta text-text-muted">Ascending index on catalog lists</span>
+</div>
+<input class="w-20 px-3 py-1.5 rounded-md bg-canvas-pure font-code-meta text-code-meta text-text-primary focus:outline-none text-center shadow-sm" max="99" min="1" type="number" value="1">
+</div>
+<!-- Associated Fiverr Package Tier -->
+<div class="flex flex-col gap-1.5">
+<label class="font-ui-action text-ui-action font-semibold text-text-primary" for="fiverr-tier">
+              Associated Fiverr Commercial Tier
+            </label>
+<select class="w-full px-3.5 py-2.5 rounded-lg bg-surface-subtle font-body-default text-body-default text-text-primary focus:bg-canvas-pure focus:outline-none transition-all cursor-pointer" id="fiverr-tier">
+<option selected="" value="tier-3">Enterprise Scale Gig ($2,800 USD)</option>
+<option value="tier-2">Production MVP Gig ($1,450 USD)</option>
+<option value="tier-1">Sprint Diagnostic Gig ($650 USD)</option>
+<option value="custom">Custom Commercial Engagement</option>
+</select>
+<span class="font-code-meta text-code-meta text-text-muted">Triggers matching instant-order or scoping deep-link</span>
+</div>
+<!-- Scoping Drawer Routing -->
+<div class="p-space-md rounded-lg bg-surface-muted flex flex-col gap-2">
+<span class="font-ui-action text-ui-action font-semibold text-text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">alt_route</span>
+              Inquiry Drawer Pre-selection
+            </span>
+<p class="font-body-sm text-body-sm text-text-secondary">
+              When prospective clients click "Request Similar Architecture", the lead modal will initialize with:
+            </p>
+<div class="px-3 py-1.5 rounded bg-canvas-pure font-code-badge text-code-badge text-text-primary">
+              scope=telematics_iot_pipeline&amp;tier=enterprise
+            </div>
+</div>
+</div>
+</section>
+<!-- System Diagnostic Panel -->
+<section class="bg-surface-muted rounded-xl p-space-md flex flex-col gap-2">
+<span class="font-code-badge text-code-badge text-text-secondary font-bold uppercase tracking-wider">Build Metadata</span>
+<div class="font-code-meta text-code-meta text-text-muted flex flex-col gap-1">
+<div class="flex justify-between"><span>Record UUID:</span><span class="text-text-primary">b84f910a-3c12-42e1</span></div>
+<div class="flex justify-between"><span>Database:</span><span class="text-primary font-medium">Supabase prod-us-east-1</span></div>
+<div class="flex justify-between"><span>CDN Cache TTL:</span><span class="text-text-primary">3,600s (Edge Invalidation on Save)</span></div>
+</div>
+</section>
+</div>
+</div>
+<!-- STICKY BOTTOM SAVE & AUDIT BAR -->
+<aside aria-label="Publishing Controls" class="fixed bottom-0 left-[260px] right-0 h-16 bg-canvas-pure/95 backdrop-blur-md shadow-[0_-4px_16px_rgba(0,0,0,0.05)] z-40 flex items-center justify-between px-gutter-lg">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-2 font-code-meta text-code-meta text-text-secondary">
+<span class="h-2 w-2 rounded-full bg-tertiary-container"></span>
+        Last deployed to production: <strong class="text-text-primary font-semibold">Today at 09:42 UTC</strong> by Admin Principal
+      </span>
+<span class="hidden md:inline font-code-meta text-code-meta text-text-muted">|</span>
+<span class="hidden md:inline font-code-meta text-code-meta text-text-muted">Revision #42 (SHA: 0x8F04CE)</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-4 py-2 rounded-lg text-ui-action font-ui-action text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-all" type="button">
+        Revert to Last Version
+      </button>
+<button class="flex items-center gap-2 px-6 py-2.5 rounded-lg text-ui-action font-ui-action text-on-primary bg-primary-container hover:bg-accent-primary-hover shadow-md transition-all active:scale-[0.99]" id="stickySaveBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+        Save &amp; Deploy Changes
+      </button>
+</div>
+</aside>
+<!-- Interactive Feedback Script -->
+<script>
+    (function() {
+      const headerSave = document.getElementById('headerSaveBtn');
+      const stickySave = document.getElementById('stickySaveBtn');
+
+      function triggerSaveFeedback(btn) {
+        if (!btn) return;
+        const originalContent = btn.innerHTML;
+        btn.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> Deploying...`;
+        btn.classList.add('opacity-90');
+        
+        setTimeout(() => {
+          btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">check</span> Deployed!`;
+          btn.classList.remove('bg-primary-container', 'hover:bg-accent-primary-hover');
+          btn.classList.add('bg-tertiary-container');
+
+          setTimeout(() => {
+            btn.innerHTML = originalContent;
+            btn.classList.remove('bg-tertiary-container', 'opacity-90');
+            btn.classList.add('bg-primary-container', 'hover:bg-accent-primary-hover');
+          }, 2000);
+        }, 1200);
+      }
+
+      if (headerSave) headerSave.addEventListener('click', () => triggerSaveFeedback(headerSave));
+      if (stickySave) stickySave.addEventListener('click', () => triggerSaveFeedback(stickySave));
+    })();
+  </script>
+</div></main></div></body></html>
