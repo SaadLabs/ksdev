@@ -1,0 +1,46 @@
+services:
+  # MongoDB
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_DATABASE: ksdev_studio
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - ksdev_net
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # App (Express API + served React frontend)
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "${PORT}:${PORT}"
+    depends_on:
+      mongo:
+        condition: service_healthy
+    volumes:
+      - uploads_data:/app/server/uploads
+    networks:
+      - ksdev_net
+
+volumes:
+  mongo_data:
+  uploads_data:
+
+networks:
+  ksdev_net:
+    driver: bridge
