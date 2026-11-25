@@ -35,6 +35,6 @@ EXPOSE 5000
 
 # Health check: Express API should respond within 10 s after startup
 HEALTHCHECK --interval=30s --timeout=10s --start-period=20s --retries=3 \
-  CMD wget -qO- http://localhost:5000/api/site || exit 1
+  CMD wget -qO- http://127.0.0.1:${PORT:-5000}/api/site || exit 1
 
 CMD ["node", "server/index.js"]
